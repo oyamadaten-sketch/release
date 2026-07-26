@@ -1,0 +1,186 @@
+{
+  "chapters": [
+    {
+      "index": 0,
+      "title": "導入 ─ 古き家と古き呪",
+      "file": "data/scenarios/ch00.json",
+      "tap_count": 4,
+      "folder": "chapter_00_intro"
+    },
+    {
+      "index": 1,
+      "title": "第零章 ─ 月の昏き夜の踏み出し",
+      "file": "data/scenarios/ch01.json",
+      "tap_count": 8,
+      "folder": "chapter_00_intro"
+    },
+    {
+      "index": 2,
+      "title": "第1章 ─ 座牢の朝",
+      "file": "data/scenarios/ch02.json",
+      "tap_count": 11,
+      "folder": "chapter_01"
+    },
+    {
+      "index": 3,
+      "title": "第2章 ─ 廊下の声と書斎の対峙",
+      "file": "data/scenarios/ch03.json",
+      "tap_count": 8,
+      "folder": "chapter_02"
+    },
+    {
+      "index": 4,
+      "title": "第3章 ─ 商人の影",
+      "file": "data/scenarios/ch04.json",
+      "tap_count": 6,
+      "folder": "chapter_03"
+    },
+    {
+      "index": 5,
+      "title": "第4章 ─ 測る眼",
+      "file": "data/scenarios/ch05.json",
+      "tap_count": 9,
+      "folder": "chapter_04"
+    },
+    {
+      "index": 6,
+      "title": "第5章 ─ 会釈と祭壇の影",
+      "file": "data/scenarios/ch06.json",
+      "tap_count": 10,
+      "folder": "chapter_05"
+    },
+    {
+      "index": 7,
+      "title": "第6章 ─ 障子越しの問い",
+      "file": "data/scenarios/ch07.json",
+      "tap_count": 8,
+      "folder": "chapter_06"
+    },
+    {
+      "index": 8,
+      "title": "第7章 ─ 共謀の夜",
+      "file": "data/scenarios/ch08.json",
+      "tap_count": 5,
+      "folder": "chapter_07"
+    },
+    {
+      "index": 9,
+      "title": "第8章 ─ 庭の骸と祭壇の影",
+      "file": "data/scenarios/ch09.json",
+      "tap_count": 7,
+      "folder": "chapter_08"
+    },
+    {
+      "index": 10,
+      "title": "第9章 ─ 座敷の怒号と蔵の影",
+      "file": "data/scenarios/ch10.json",
+      "tap_count": 6,
+      "folder": "chapter_09"
+    },
+    {
+      "index": 11,
+      "title": "第10章 ─ 燈下の影",
+      "file": "data/scenarios/ch11.json",
+      "tap_count": 8,
+      "folder": "chapter_10"
+    },
+    {
+      "index": 12,
+      "title": "第11章 ─ 蔵の文字と兄の油",
+      "file": "data/scenarios/ch12.json",
+      "tap_count": 7,
+      "folder": "chapter_11"
+    },
+    {
+      "index": 13,
+      "title": "第12章 ─ 手形の符号",
+      "file": "data/scenarios/ch13.json",
+      "tap_count": 5,
+      "folder": "chapter_12"
+    },
+    {
+      "index": 14,
+      "title": "第13章 ─ 障子越しの視線",
+      "file": "data/scenarios/ch14.json",
+      "tap_count": 3,
+      "folder": "chapter_13"
+    },
+    {
+      "index": 15,
+      "title": "第14章 ─ 煙管の音",
+      "file": "data/scenarios/ch15.json",
+      "tap_count": 5,
+      "folder": "chapter_14"
+    },
+    {
+      "index": 16,
+      "title": "第15章 ─ 贈り物",
+      "file": "data/scenarios/ch16.json",
+      "tap_count": 6,
+      "folder": "chapter_15"
+    },
+    {
+      "index": 17,
+      "title": "第16章 ─ 梁の影",
+      "file": "data/scenarios/ch17.json",
+      "tap_count": 3,
+      "folder": "chapter_16"
+    },
+    {
+      "index": 18,
+      "title": "第17章 ─ 紅き廊下と祭壇の前",
+      "file": "data/scenarios/ch18.json",
+      "tap_count": 8,
+      "folder": "chapter_17"
+    },
+    {
+      "index": 19,
+      "title": "第18章 ─ 病床",
+      "file": "data/scenarios/ch19.json",
+      "tap_count": 4,
+      "folder": "chapter_18"
+    },
+    {
+      "index": 20,
+      "title": "第19章 ─ 嫁入りと囁き",
+      "file": "data/scenarios/ch20.json",
+      "tap_count": 7,
+      "folder": "chapter_19"
+    },
+    {
+      "index": 21,
+      "title": "第20章 ─ 祖母の手",
+      "file": "data/scenarios/ch21.json",
+      "tap_count": 3,
+      "folder": "chapter_20"
+    },
+    {
+      "index": 22,
+      "title": "第21章 ─ 葬列と発作",
+      "file": "data/scenarios/ch22.json",
+      "tap_count": 6,
+      "folder": "chapter_21"
+    },
+    {
+      "index": 23,
+      "title": "第22章 ─ 詰問と告白",
+      "file": "data/scenarios/ch23.json",
+      "tap_count": 9,
+      "folder": "chapter_22"
+    },
+    {
+      "index": 24,
+      "title": "第23章 ─ 業火と門越え",
+      "file": "data/scenarios/ch24.json",
+      "tap_count": 6,
+      "folder": "chapter_23"
+    },
+    {
+      "index": 25,
+      "title": "終幕 ─ 円環",
+      "file": "data/scenarios/ch25.json",
+      "tap_count": 3,
+      "folder": "chapter_finale"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "_meta": {
+    "locale": "en",
+    "name": "English",
+    "direction": "ltr",
+    "version": "1.0",
+    "translationStatus": "draft"
+  },
+  "title": {
+    "gameName": "Thumb-Hiding and the Daughter of the Cell",
+    "gameNameSplit1": "Thumb-Hiding",
+    "gameNameSplit2": "Daughter of",
+    "gameNameSplit3": "the Cell",
+    "subtitle": "Kyoto Traditional Wooden Puzzle",
+    "openingLine": "─ Beginning of the Tale ─",
+    "eraTag": "Early Meiji Era ─ Northern Mountains of Kyoto",
+    "visualStyle": "Shadow-Puppet Style"
+  },
+  "loading": {
+    "loading": "LOADING...",
+    "ready": "SYSTEM READY.  TAP TO START.",
+    "tapToStart": "Tap screen to continue"
+  },
+  "titleMenu": {
+    "gameStart": "New Game",
+    "continue": "Continue",
+    "chapterSelect": "Chapter Select",
+    "specialThanks": "Special Thanks"
+  },
+  "buttons": {
+    "back": "← Back",
+    "backToChapters": "← Chapters",
+    "backToTitle": "Back to Title",
+    "next": "Next ▷",
+    "continueStory": "Continue Story ▷",
+    "skip": "Skip ▶▶",
+    "skipIntro": "▶ Skip Introduction",
+    "trigger": "▶Fire",
+    "interrupt": "← Interrupt",
+    "resetBoard": "↻ Reset Board",
+    "prevPage": "◁ Prev"
+  },
+  "puzzle": {
+    "zaro": "The Cell",
+    "genkan": "Entrance",
+    "moveCount": "0 moves",
+    "escapeSuccess": "─ E S C A P E D ─",
+    "clearDefault": "─ Softly, outside ─",
+    "countUnit": "moves to glimpse the outside",
+    "escapeAttempt": "Escape Attempt",
+    "daughter": "Daughter"
+  },
+  "select": {
+    "chapterList": "Chapter Select",
+    "total": "All",
+    "chapters": "chapters",
+    "taps": "taps",
+    "footerTemplate": "All {chapters} chapters / {taps} taps total"
+  },
+  "adv": {
+    "imageMissing": "[ Image missing: {url} ]",
+    "imageIdMissing": "[ No image ID ]",
+    "pageIndicator": "{current}/{total}"
+  },
+  "dev": {
+    "puzzleLauncher": "DEV: Launch Puzzle Directly",
+    "advJump": "DEV: Jump to Pre-Trigger ADV",
+    "toBeAdded": "─ (To be added) ─"
+  },
+  "credits": {
+    "sectionScreenplay": "Screenplay, Structure, Direction",
+    "sectionMusic": "Music & Sound Effects",
+    "sectionVisualStyle": "Shadow-Puppet Visuals",
+    "sectionPlayer": "To the Players",
+    "end": "END"
+  }
+}

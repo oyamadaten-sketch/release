@@ -1,0 +1,24 @@
+# 元画像PNG（プレイには不要、WebPが本番用）
+# バックアップとして親フォルダ側に保持されている前提
+*.png
+
+# macOS / Windows OS 生成ファイル
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# エディタ一時ファイル
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# その他一時ファイル
+*.tmp
+*.bak
+*.log
+
+# 開発中の一時ディレクトリ（もしあれば）
+_wip/
+_scratch/
