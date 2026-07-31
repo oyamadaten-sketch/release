@@ -318,7 +318,8 @@ const PuzzleGame = (function() {
       setTimeout(() => {
         state.pieces = state.pieces.filter(p => p.id !== piece.id);
         state.gameState = 'playing';
-        $('puz-hint').textContent = '娘を中央下へ';
+        // ★LID除去後の共通ヒント（各ステージ startHint はオミット、v20260712bc〜）
+        $('puz-hint').textContent = '娘を中央下の玄関へ';
         renderBoard();
       }, 700);
       return;
@@ -591,16 +592,34 @@ const PuzzleGame = (function() {
       if (titleEl) {
         titleEl.textContent = state.stage.clearTitle || '─ そっと、外へ ─';
       }
-      // 本文：ADVと同じ改行ロジック（行頭禁則・コピュラ保護）を適用
-      let text = state.stage.clearText;
-      if (window.TextEngine && typeof TextEngine.paginate === 'function') {
-        const pages = TextEngine.paginate(text);
-        text = pages[0] || text;
+      // 本文：物語テイスト文言はオミット（v20260712bg〜、CSS 側で display:none）
+      // 代わりに、章の最初の ADV イラストをモノクロ背景として表示する
+      $('puz-clear-text').textContent = '';
+      // ★背景画像：章の最初のイラストを実 DOM 要素で表示（v20260712bh〜 pseudo-element ではなく確実な方式に）
+      //   overlay 内に .puz-clear-bg 子要素を作成/取得し、background-image を直接設定
+      let bgEl = overlay.querySelector('.puz-clear-bg');
+      if (!bgEl) {
+        bgEl = document.createElement('div');
+        bgEl.className = 'puz-clear-bg';
+        overlay.insertBefore(bgEl, overlay.firstChild);  // z-index を保つため一番先頭に
       }
-      $('puz-clear-text').textContent = text;
+      bgEl.style.backgroundImage = '';  // reset
+      const chIdx = state.stage.chapterTrigger;
+      if (typeof chIdx === 'number' && window.SCENARIOS_V8 && window.SCENARIOS_V8[chIdx]) {
+        const firstTap = window.SCENARIOS_V8[chIdx].taps && window.SCENARIOS_V8[chIdx].taps[0];
+        if (firstTap && firstTap.img) {
+          bgEl.style.backgroundImage = 'url("' + firstTap.img + '")';
+          console.log('[showClearOverlay] bg img set:', firstTap.img);
+        } else {
+          console.log('[showClearOverlay] no first tap img for chIdx=' + chIdx);
+        }
+      } else {
+        console.log('[showClearOverlay] chapterTrigger unavailable, chIdx=' + chIdx + ', SCENARIOS_V8 loaded=' + !!window.SCENARIOS_V8);
+      }
       // 手数表記（ステージごとに段階変化）
       const unit = state.stage.countUnit || '手で外を望めり';
-      $('puz-clear-count').textContent = '── ' + state.moveCount + ' ' + unit + ' ──';
+      // ★手数だけ span で囲み、数字を大きく金色で強調（v20260712bf〜）
+      $('puz-clear-count').innerHTML = '── <span class="count-num">' + state.moveCount + '</span> ' + unit + ' ──';
       overlay.classList.add('visible');
     }
   }
@@ -858,8 +877,9 @@ const PuzzleGame = (function() {
     }
 
     $('puz-stage-label').textContent = state.stage.label;
-    $('puz-stage-sub').textContent = state.stage.sub;
-    $('puz-hint').textContent = state.stage.startHint || '';
+    $('puz-stage-sub').textContent = state.stage.sub;  // CSS で非表示、保険で値は入れる
+    // ★全ステージ共通ヒント：LID あり時（各ステージ startHint はオミット、v20260712bc〜）
+    $('puz-hint').textContent = '左上の駒を外し、娘を中央下へ';
     $('puz-count').textContent = '0 手';
 
     const clear = $('puz-clear');
