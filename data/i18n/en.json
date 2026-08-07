@@ -7,14 +7,14 @@
     "translationStatus": "draft"
   },
   "title": {
-    "gameName": "Thumb-Hiding and the Daughter of the Cell",
-    "gameNameSplit1": "Thumb-Hiding",
-    "gameNameSplit2": "Daughter of",
-    "gameNameSplit3": "the Cell",
-    "subtitle": "Kyoto Traditional Wooden Puzzle",
-    "openingLine": "─ Beginning of the Tale ─",
-    "eraTag": "Early Meiji Era ─ Northern Mountains of Kyoto",
-    "visualStyle": "Shadow-Puppet Style"
+    "gameName": "Yubikakushi: The Cell Daughter",
+    "gameNameSplit1": "Yubikakushi:",
+    "gameNameSplit2": "The Cell",
+    "gameNameSplit3": "Daughter",
+    "subtitle": "A Traditional Kyoto Woodwork Puzzle",
+    "openingLine": "─ The Story Begins ─",
+    "eraTag": "Early Meiji Era ─ Kitayama, Kyoto",
+    "visualStyle": "Silhouette Visuals"
   },
   "loading": {
     "loading": "LOADING...",
@@ -25,37 +25,64 @@
     "gameStart": "New Game",
     "continue": "Continue",
     "chapterSelect": "Chapter Select",
+    "howToPlay": "How to Play",
     "specialThanks": "Special Thanks"
+  },
+  "howto": {
+    "gameplayHeading": "■ How to Play",
+    "gameplayDesc": "A sliding puzzle. First, remove the \"Lid\" piece from the top-left, then guide the \"Girl\" piece down to the \"Threshold\" at the bottom-center.<br>Move one piece at a time, sliding it into an empty adjacent square.<br>Plan the order and path carefully so that no piece blocks the goal.",
+    "controlsHeading": "■ Controls",
+    "controlsDesc": "Tap or click a piece, then drag it in the direction you want to move.<br>Use \"↻ Reset Board\" to restart the stage, or \"← Pause\" to return to the title and continue later.",
+    "piecesHeading": "■ Pieces in the Game",
+    "piecesNote": "Short-form labels are used due to display space. Here is the reference.",
+    "tableLabel": "Piece",
+    "tableMeaning": "Meaning"
   },
   "buttons": {
     "back": "← Back",
     "backToChapters": "← Chapters",
-    "backToTitle": "Back to Title",
+    "backToTitle": "Return to Title",
     "next": "Next ▷",
-    "continueStory": "Continue Story ▷",
+    "continueStory": "Continue the Story ▷",
     "skip": "Skip ▶▶",
-    "skipIntro": "▶ Skip Introduction",
-    "trigger": "▶Fire",
-    "interrupt": "← Interrupt",
+    "skipIntro": "▶ Skip the Prologue",
+    "trigger": "▶ Trigger",
+    "interrupt": "← Pause",
     "resetBoard": "↻ Reset Board",
-    "prevPage": "◁ Prev"
+    "prevPage": "◁ Back"
   },
   "puzzle": {
     "zaro": "The Cell",
-    "genkan": "Entrance",
+    "genkan": "Threshold",
     "moveCount": "0 moves",
+    "moveCountTemplate": "{n} moves",
     "escapeSuccess": "─ E S C A P E D ─",
-    "clearDefault": "─ Softly, outside ─",
-    "countUnit": "moves to glimpse the outside",
-    "escapeAttempt": "Escape Attempt",
-    "daughter": "Daughter"
+    "clearDefault": "─ Softly, outward ─",
+    "clearFinal": "─ Beyond the Gate ─",
+    "countUnit": "moves to freedom",
+    "countUnitFinal": "moves to reach the outside",
+    "escapeAttempt": "The Escape Attempt",
+    "daughter": "Daughter",
+    "hintWithLid": "Remove the Lid, then lead the Girl to the Threshold",
+    "hintNoLid": "Lead the Girl to the Threshold below",
+    "hintContinue": "Resuming from where you paused",
+    "continueSuffix": " (continued)",
+    "hintChooseDirection": "Drag in the direction to move"
   },
   "select": {
     "chapterList": "Chapter Select",
     "total": "All",
-    "chapters": "chapters",
-    "taps": "taps",
-    "footerTemplate": "All {chapters} chapters / {taps} taps total"
+    "chapters": "Chapters",
+    "taps": "Taps",
+    "footerTemplate": "{chapters} Chapters ／ {taps} Taps",
+    "tapCountTemplate": "{n} taps",
+    "bestMovesTemplate": "── Best: {n} moves ──"
+  },
+  "gameOver": {
+    "title": "─ ESCAPE FAILED ─",
+    "text": "The manor was consumed by flame;<br/>the Girl could not escape.",
+    "retry": "Try Again",
+    "titleBack": "To the Beginning"
   },
   "adv": {
     "imageMissing": "[ Image missing: {url} ]",
@@ -69,9 +96,8 @@
   },
   "credits": {
     "sectionScreenplay": "Screenplay, Structure, Direction",
-    "sectionMusic": "Music & Sound Effects",
-    "sectionVisualStyle": "Shadow-Puppet Visuals",
     "sectionPlayer": "To the Players",
+    "creator": "OYAMADA TEN",
     "end": "END"
   }
 }

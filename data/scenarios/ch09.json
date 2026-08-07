@@ -1,41 +1,108 @@
 {
-  "title": "第8章 ─ 庭の骸と祭壇の影",
+  "title": "第九章 ─ 庭の骸と祭壇の影",
   "folder": "chapter_08",
   "taps": [
     {
       "no": 1,
-      "text": "翌朝の早く、屋敷の裏庭で、番頭がひとつの布包みを抱えていた。",
-      "img": "assets/images/chapter_08/IMG-070.webp"
+      "img": "assets/images/chapter_08/IMG-070.webp",
+      "pages": [
+        "翌朝の早く、屋敷の裏庭で、\n番頭がひとつの布包みを抱えていた。"
+      ],
+      "text": "翌朝の早く、屋敷の裏庭で、\n番頭がひとつの布包みを抱えていた。",
+      "pages_en": [
+        "Early the next morning,\nin the manor's back garden,\nthe head clerk carried a wrapped bundle."
+      ],
+      "text_en": "Early the next morning,\nin the manor's back garden,\nthe head clerk carried a wrapped bundle."
     },
     {
       "no": 2,
-      "text": "布包みの中身は、昨夜の老猫の骸である。番頭はそれを屋敷の裏の竹藪の方角へと運んでゆく。\n竹藪の手前では、祭祀役の兄が、燈明の灯を片手に静かに立っていた。\n番頭が骸を竹藪の根元に置くのを、兄はただ無言で見つめる。屋敷の者は誰ひとり、その場には立ち会わなかった。\n番頭が竹藪を去った後、兄の視線は、骸の伸びる方角 ── 祭壇の方角 ── をいつまでも見つめていた。\nやがて兄の視線は、骸でも竹藪でもなく、いつの間にか兄自身の足元へと、静かに落ちてゆく。",
-      "img": "assets/images/chapter_08/IMG-071.webp"
+      "img": "assets/images/chapter_08/IMG-070.webp",
+      "pages": [
+        "布包みの中身は、昨夜の老猫の骸である。\n番頭はそれを屋敷の裏の竹藪の方角へと\n運んでゆく。"
+      ],
+      "text": "布包みの中身は、昨夜の老猫の骸である。\n番頭はそれを屋敷の裏の竹藪の方角へと\n運んでゆく。",
+      "pages_en": [
+        "Within the wrapping\nlay the body of last night's cat.\nHe carried it toward the bamboo grove\nbehind the manor."
+      ],
+      "text_en": "Within the wrapping\nlay the body of last night's cat.\nHe carried it toward the bamboo grove\nbehind the manor."
     },
     {
       "no": 3,
-      "text": "同じ朝、屋敷の中ほどの台所では、母が膳の支度を終えていた。膳の上の塩むすびは、心なしか、形が歪んでいる。",
-      "img": "assets/images/chapter_08/IMG-072.webp"
+      "img": "assets/images/chapter_08/IMG-071.webp",
+      "pages": [
+        "竹藪の手前では、祭祀役の兄が、\n燈明の灯を片手に静かに立っていた。\n番頭が骸を竹藪の根元に置くのを、\n兄はただ無言で見つめる。",
+        "番頭が竹藪を去った後、兄の視線は、\n骸の向こうにある特別な場所──、",
+        "祭壇をいつまでも見つめていた。\nやがて兄の視線は、骸でも祭壇でもなく、\n兄自身の足元へと、静かに落ちてゆく。"
+      ],
+      "text": "竹藪の手前では、祭祀役の兄が、\n燈明の灯を片手に静かに立っていた。\n番頭が骸を竹藪の根元に置くのを、\n兄はただ無言で見つめる。\n番頭が竹藪を去った後、兄の視線は、\n骸の向こうにある特別な場所──、\n祭壇をいつまでも見つめていた。\nやがて兄の視線は、骸でも祭壇でもなく、\n兄自身の足元へと、静かに落ちてゆく。",
+      "pages_en": [
+        "Before the grove,\nthe elder brother, tender of the shrine,\nstood quietly, a votive lamp in hand.\nHe watched, in silence,",
+        "as the clerk set the small body\nat the roots of the bamboo.\nOnce the clerk had gone,\nthe brother's gaze passed beyond the body ─",
+        "and settled long upon the altar.\nAt last, his eyes fell\nneither on the body nor the altar,\nbut quietly, upon his own feet."
+      ],
+      "text_en": "Before the grove,\nthe elder brother, tender of the shrine,\nstood quietly, a votive lamp in hand.\nHe watched, in silence,\nas the clerk set the small body\nat the roots of the bamboo.\nOnce the clerk had gone,\nthe brother's gaze passed beyond the body ─\nand settled long upon the altar.\nAt last, his eyes fell\nneither on the body nor the altar,\nbut quietly, upon his own feet."
     },
     {
       "no": 4,
-      "text": "母は膳を抱え、廊下を北へと歩く。座牢の前まで来ると、格子戸の脇の小窓を開き、膳を中へと差し入れた。\n母は今朝、ひとつも口を利かなかった。",
-      "img": "assets/images/chapter_08/IMG-073.webp"
+      "img": "assets/images/chapter_08/IMG-072.webp",
+      "pages": [
+        "同じ朝、屋敷の中ほどの台所では、\n母が膳の支度を終えていた。\n膳の上の塩むすびは、\n心なしか、形が歪んでいる。"
+      ],
+      "text": "同じ朝、屋敷の中ほどの台所では、\n母が膳の支度を終えていた。\n膳の上の塩むすびは、\n心なしか、形が歪んでいる。",
+      "pages_en": [
+        "That same morning,\nin the kitchen at the center of the manor,\nthe mother had finished the tray.\nThe rice ball's shape, somehow, was crooked."
+      ],
+      "text_en": "That same morning,\nin the kitchen at the center of the manor,\nthe mother had finished the tray.\nThe rice ball's shape, somehow, was crooked."
     },
     {
       "no": 5,
-      "text": "娘の指先がそっと、格子の隙を通して、母の指に触れる。けれども母は静かに袂を引き、廊下を戻ってゆく。\n母の歩みは、他の朝とは、何かが違うように見えた。",
-      "img": "assets/images/chapter_08/IMG-074.webp"
+      "img": "assets/images/chapter_08/IMG-073.webp",
+      "pages": [
+        "母は膳を手に、廊下を歩く。\n座牢の前まで来ると、格子戸の脇の\n小窓を開き、膳を中へと差し入れた。\n母は今朝、ひとつも口を利かなかった。"
+      ],
+      "text": "母は膳を手に、廊下を歩く。\n座牢の前まで来ると、格子戸の脇の\n小窓を開き、膳を中へと差し入れた。\n母は今朝、ひとつも口を利かなかった。",
+      "pages_en": [
+        "Tray in hand, she walked the hall.\nAt the Cell, she opened the small hatch\nand pushed the tray through.\nThat morning, she did not speak once."
+      ],
+      "text_en": "Tray in hand, she walked the hall.\nAt the Cell, she opened the small hatch\nand pushed the tray through.\nThat morning, she did not speak once."
     },
     {
       "no": 6,
-      "text": "同じ刻、屋敷の納屋の脇では、父が酒杯を傾けていた。盃の縁を口に当てる手が、ほんのわずかに震えている。",
-      "img": "assets/images/chapter_08/IMG-075.webp"
+      "img": "assets/images/chapter_08/IMG-074.webp",
+      "pages": [
+        "娘の指先がそっと、格子の隙を通して、\n母の指に触れる。\nけれども母は静かに袂を引き、\n廊下を戻ってゆく。",
+        "母の歩みは、他の朝とは、\n何かが違うように見えた。"
+      ],
+      "text": "娘の指先がそっと、格子の隙を通して、\n母の指に触れる。\nけれども母は静かに袂を引き、\n廊下を戻ってゆく。\n母の歩みは、他の朝とは、\n何かが違うように見えた。",
+      "pages_en": [
+        "The girl's fingertips\nsoftly passed through the lattice,\nand touched her mother's hand.\nBut the mother quietly drew her sleeve back,",
+        "and returned down the hall.\nHer gait, this morning,\ncarried something different\nfrom all the others."
+      ],
+      "text_en": "The girl's fingertips\nsoftly passed through the lattice,\nand touched her mother's hand.\nBut the mother quietly drew her sleeve back,\nand returned down the hall.\nHer gait, this morning,\ncarried something different\nfrom all the others."
     },
     {
       "no": 7,
-      "text": "膳の塩むすびを見つめながら、娘の指の中には、昨夜書生が掴んだ手の感触が、まだ消えずに残る。あの手の力の意味を、娘は、まだ知らずにいたのであった。",
-      "img": "assets/images/chapter_08/IMG-076.webp"
+      "img": "assets/images/chapter_08/IMG-075.webp",
+      "pages": [
+        "同じ刻、屋敷の納屋の脇では、\n父が酒杯を傾けていた。\n盃の縁を口に当てる手が、\nほんのわずかに震えている。"
+      ],
+      "text": "同じ刻、屋敷の納屋の脇では、\n父が酒杯を傾けていた。\n盃の縁を口に当てる手が、\nほんのわずかに震えている。",
+      "pages_en": [
+        "At that hour, beside the storehouse,\nthe father was tilting his cup.\nThe hand that pressed the rim to his lips\ntrembled the barest amount."
+      ],
+      "text_en": "At that hour, beside the storehouse,\nthe father was tilting his cup.\nThe hand that pressed the rim to his lips\ntrembled the barest amount."
+    },
+    {
+      "no": 8,
+      "img": "assets/images/chapter_08/IMG-076.webp",
+      "pages": [
+        "膳の塩むすびを見つめる娘の指には、\n昨夜書生が掴んだ手の感触が、\n消えずに残っていた……。"
+      ],
+      "text": "膳の塩むすびを見つめる娘の指には、\n昨夜書生が掴んだ手の感触が、\n消えずに残っていた……。",
+      "pages_en": [
+        "Upon the rice ball of the tray,\nthe girl's fingers still bore\nthe touch of the student's grip\nfrom the night before…"
+      ],
+      "text_en": "Upon the rice ball of the tray,\nthe girl's fingers still bore\nthe touch of the student's grip\nfrom the night before…"
     }
   ]
 }

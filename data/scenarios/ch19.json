@@ -1,26 +1,74 @@
 {
-  "title": "第18章 ─ 病床",
+  "title": "第十九章 ─ 病床",
   "folder": "chapter_18",
   "taps": [
     {
       "no": 1,
-      "text": "その翌朝、祖母の寝所では、祖母が床から起き上がらぬままに、朝の光を浴びていた。\nかねてより「年じゃ、年じゃ」と笑うておられた祖母である。",
-      "img": "assets/images/chapter_18/IMG-128.webp"
+      "img": "assets/images/chapter_18/IMG-128.webp",
+      "pages": [
+        "ある朝、祖母の寝所では、\n祖母が床から起き上がらぬままに、\n朝の光を浴びていた。かねてより\n「もう年じゃ」と笑うていた祖母である。"
+      ],
+      "text": "ある朝、祖母の寝所では、\n祖母が床から起き上がらぬままに、\n朝の光を浴びていた。かねてより\n「もう年じゃ」と笑うていた祖母である。",
+      "pages_en": [
+        "One morning, in Grandmother's chamber,\nshe did not rise from her bed,\nbut lay bathed in the morning light.\nShe who had laughed \"I am old now\"",
+        "remained still."
+      ],
+      "text_en": "One morning, in Grandmother's chamber,\nshe did not rise from her bed,\nbut lay bathed in the morning light.\nShe who had laughed \"I am old now\"\nremained still."
     },
     {
       "no": 2,
-      "text": "朝餉の刻になっても起きてこない祖母を案じて、母が娘の座牢の格子戸を開いた。\n「お前様、御祖母様の枕元へ」── 母はそう、静かに告げた。\n祖父の寝所へ赴くは、娘にとって久しぶりのことであった。\n祖母の枕元に、娘は静かに膝を折る。\n祖母の眼は、虚ろであった。\n「来てくれたか、お前」── それだけを、祖母は呟いた。\n娘がそっと祖母の手を取ると、骨の節が、薄き皮膚の下にくっきりと浮かんでいる。\n祖母の口元が、何かを言いかけて、止まった。「いえ……今は、よい」",
-      "img": "assets/images/chapter_18/IMG-129.webp"
+      "img": "assets/images/chapter_18/IMG-129.webp",
+      "pages": [
+        "朝餉の刻になっても起きてこない\n祖母を案じて母が座牢の格子戸を開いた。\n「お前様、御祖母様の枕元へ」\n母はそう、静かに告げた。",
+        "祖母の寝所へ赴くは、\n娘にとって久しぶりのことであった。\n祖母の枕元に、娘は静かに膝を折る。\n祖母の眼は、もはや虚ろであった。",
+        "「来てくれたか、お前」\nそれだけを、祖母は呟いた。\n娘がそっと祖母の手を取ると、骨の節が、\n薄き皮膚の下にくっきりと浮かんでいる。"
+      ],
+      "text": "朝餉の刻になっても起きてこない\n祖母を案じて母が座牢の格子戸を開いた。\n「お前様、御祖母様の枕元へ」\n母はそう、静かに告げた。\n祖母の寝所へ赴くは、\n娘にとって久しぶりのことであった。\n祖母の枕元に、娘は静かに膝を折る。\n祖母の眼は、もはや虚ろであった。\n「来てくれたか、お前」\nそれだけを、祖母は呟いた。\n娘がそっと祖母の手を取ると、骨の節が、\n薄き皮膚の下にくっきりと浮かんでいる。",
+      "pages_en": [
+        "When she did not come to the morning meal,\nthe mother opened the Cell.\n\"Come, my child, to Grandmother's side.\"\nSo she said, quietly.",
+        "It had been long\nsince the girl had gone\nto Grandmother's bedside.\nShe knelt in silence at the pillow.",
+        "Grandmother's eyes were already vacant.\n\"You came, my child,\"\nshe murmured, and that was all.\nAs the girl took her hand,",
+        "the joints of the bones stood out\nsharply beneath thin skin."
+      ],
+      "text_en": "When she did not come to the morning meal,\nthe mother opened the Cell.\n\"Come, my child, to Grandmother's side.\"\nSo she said, quietly.\nIt had been long\nsince the girl had gone\nto Grandmother's bedside.\nShe knelt in silence at the pillow.\nGrandmother's eyes were already vacant.\n\"You came, my child,\"\nshe murmured, and that was all.\nAs the girl took her hand,\nthe joints of the bones stood out\nsharply beneath thin skin."
     },
     {
       "no": 3,
-      "text": "娘は、長く、祖母の枕元に座り続けていた。",
-      "img": "assets/images/chapter_18/IMG-130.webp"
+      "img": "assets/images/chapter_18/IMG-130.webp",
+      "pages": [
+        "「お前に言わねばならぬことが……」\n弱々しく語る祖母の口元が、\n何かを言いかけて、止まった。\n「いえ……今は、よい」と。"
+      ],
+      "text": "「お前に言わねばならぬことが……」\n弱々しく語る祖母の口元が、\n何かを言いかけて、止まった。\n「いえ……今は、よい」と。",
+      "pages_en": [
+        "\"There is something I must tell you…\"\nGrandmother's weak lips began,\nthen stopped.\n\"No… not now,\" she said."
+      ],
+      "text_en": "\"There is something I must tell you…\"\nGrandmother's weak lips began,\nthen stopped.\n\"No… not now,\" she said."
     },
     {
       "no": 4,
-      "text": "祖母の口元が静まったあとも、廊下の彼方では、祭壇の灯が何ものかに揺らされたようにふいと震えている。座牢に戻る道すがら、娘の耳には、祖母のかすかな息音だけが、まだ残っていたのであった。",
-      "img": "assets/images/chapter_18/IMG-131.webp"
+      "img": "assets/images/chapter_18/IMG-130.webp",
+      "pages": [
+        "娘は、長く、祖母の枕元に\n座り続けていた。"
+      ],
+      "text": "娘は、長く、祖母の枕元に\n座り続けていた。",
+      "pages_en": [
+        "The girl remained long\nat Grandmother's bedside."
+      ],
+      "text_en": "The girl remained long\nat Grandmother's bedside."
+    },
+    {
+      "no": 5,
+      "img": "assets/images/chapter_18/IMG-131.webp",
+      "pages": [
+        "祖母が語るのをやめた後、\n廊下の彼方では、祭壇の灯が\n何ものかに揺らされたように、\nふいと震えていた。",
+        "座牢に戻る道すがら、娘の耳には、\n祖母のかすかな息音だけが、\nまだ残っていたのであった。"
+      ],
+      "text": "祖母が語るのをやめた後、\n廊下の彼方では、祭壇の灯が\n何ものかに揺らされたように、\nふいと震えていた。\n座牢に戻る道すがら、娘の耳には、\n祖母のかすかな息音だけが、\nまだ残っていたのであった。",
+      "pages_en": [
+        "After Grandmother ceased to speak,\nfar down the hall\nthe altar's lamp shuddered once,\nas though shaken by something unseen.",
+        "On the way back to the Cell,\nonly Grandmother's faint breath\nstill remained\nin the girl's ear."
+      ],
+      "text_en": "After Grandmother ceased to speak,\nfar down the hall\nthe altar's lamp shuddered once,\nas though shaken by something unseen.\nOn the way back to the Cell,\nonly Grandmother's faint breath\nstill remained\nin the girl's ear."
     }
   ]
 }

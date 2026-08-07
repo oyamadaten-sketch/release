@@ -1,36 +1,104 @@
 {
-  "title": "第23章 ─ 業火と門越え",
+  "title": "第二十四章 ─ 業火と門越え",
   "folder": "chapter_23",
   "taps": [
     {
       "no": 1,
-      "text": "屋敷の祭壇の前に、兄が立っている。\n書生と母の声を、襖越しに、兄はずっと聞いていた。\n兄の唇が、ふいに低く動く。\n「俺の母も、父様の妾。下女のたまも、妾」\n「ということは、俺もまた、この家の贄の子か」",
-      "img": "assets/images/chapter_23/IMG-157.webp"
+      "img": "assets/images/chapter_23/IMG-157.webp",
+      "pages": [
+        "屋敷の祭壇の前に、兄が立っている。\n書生や母の声を、襖越しに、\n兄はずっと聞いていた。\nやがて――兄の唇が、ふいに低く動く。",
+        "「俺の母も、父様の妾。下女のたまも、妾。\nということは……、俺もまた、\nこの家の贄の子か」"
+      ],
+      "text": "屋敷の祭壇の前に、兄が立っている。\n書生や母の声を、襖越しに、\n兄はずっと聞いていた。\nやがて――兄の唇が、ふいに低く動く。\n「俺の母も、父様の妾。下女のたまも、妾。\nということは……、俺もまた、\nこの家の贄の子か」",
+      "pages_en": [
+        "Before the altar stood the elder brother.\nThe voices of the student and mother,\nhe had listened to them all\nthrough the doors.",
+        "At last, his lips moved low.\n\"My mother was Father's concubine.\nSo was the maid Tama.\nWhich means… I too,",
+        "am one of this manor's offering children.\""
+      ],
+      "text_en": "Before the altar stood the elder brother.\nThe voices of the student and mother,\nhe had listened to them all\nthrough the doors.\nAt last, his lips moved low.\n\"My mother was Father's concubine.\nSo was the maid Tama.\nWhich means… I too,\nam one of this manor's offering children.\""
     },
     {
       "no": 2,
-      "text": "兄の手が、わなわなと震えた。祭壇の蝋燭が、その震えに揺られて、ことりと倒れる。",
-      "img": "assets/images/chapter_23/IMG-158.webp"
+      "img": "assets/images/chapter_23/IMG-158.webp",
+      "pages": [
+        "兄の手が、わなわなと震えた。\n祭壇の蝋燭が、その震えに揺られて、\nことりと倒れる。"
+      ],
+      "text": "兄の手が、わなわなと震えた。\n祭壇の蝋燭が、その震えに揺られて、\nことりと倒れる。",
+      "pages_en": [
+        "His hands shook, and shook again.\nThe altar's candle, jarred by the tremor,\ntoppled with a soft ring."
+      ],
+      "text_en": "His hands shook, and shook again.\nThe altar's candle, jarred by the tremor,\ntoppled with a soft ring."
     },
     {
       "no": 3,
-      "text": "兄が幾夜にも渡って屋敷の方々に運んできた油は、その瞬間、燃える運命を背負った。\n炎は白き紙垂を舐め、襖を伝い、廊下を一気に走ってゆく。\n屋敷の中には、見る間に、煙が満ちていった。\n座牢の格子もまた、炎に焼かれ、軋み始めている。\nそこへ、書生が駆けつけ、座牢の錠を一息に断ち切った。",
-      "img": "assets/images/chapter_23/IMG-159.webp"
+      "img": "assets/images/chapter_23/IMG-159.webp",
+      "pages": [
+        "兄が幾夜にも渡って方々に運んできた油は、\nその瞬間、燃える運命を背負った。\n炎は白き紙垂を舐め、襖を伝い、\n廊下を一気に走ってゆく。",
+        "屋敷の中には、見る間に煙が満ちていった。\n座牢の格子もまた、炎に焼かれ、\n軋み始めている。そこへ、書生が駆けつけ、\n座牢の錠を一息に断ち切った。"
+      ],
+      "text": "兄が幾夜にも渡って方々に運んできた油は、\nその瞬間、燃える運命を背負った。\n炎は白き紙垂を舐め、襖を伝い、\n廊下を一気に走ってゆく。\n屋敷の中には、見る間に煙が満ちていった。\n座牢の格子もまた、炎に焼かれ、\n軋み始めている。そこへ、書生が駆けつけ、\n座牢の錠を一息に断ち切った。",
+      "pages_en": [
+        "The oil the brother had carried\nnight after night, place to place,\nin that instant\ntook up its destiny to burn.",
+        "Flame licked the white paper streamers,\nran along the sliding doors,\nand tore through the corridor at speed.\nSmoke filled the manor in an instant.",
+        "The lattice of the Cell itself\nbegan to burn and creak.\nThe student rushed to the Cell\nand broke the lock in a single stroke."
+      ],
+      "text_en": "The oil the brother had carried\nnight after night, place to place,\nin that instant\ntook up its destiny to burn.\nFlame licked the white paper streamers,\nran along the sliding doors,\nand tore through the corridor at speed.\nSmoke filled the manor in an instant.\nThe lattice of the Cell itself\nbegan to burn and creak.\nThe student rushed to the Cell\nand broke the lock in a single stroke."
     },
     {
       "no": 4,
-      "text": "番頭は、火の手の中から、震える弟と妹を抱え上げ、外へと走ってゆく。家業ではなく命を背負った、最後の姿であった。\n書生は娘の手を、強く引いた。",
-      "img": "assets/images/chapter_23/IMG-160.webp"
+      "img": "assets/images/chapter_23/IMG-160.webp",
+      "pages": [
+        "番頭は、火の手の中から、震える弟と妹を\n抱え上げ、外へと走ってゆく。家業ではなく\n命を背負った、最後の姿であった。\n書生は娘の手を、強く引いた。"
+      ],
+      "text": "番頭は、火の手の中から、震える弟と妹を\n抱え上げ、外へと走ってゆく。家業ではなく\n命を背負った、最後の姿であった。\n書生は娘の手を、強く引いた。",
+      "pages_en": [
+        "The head clerk lifted the trembling siblings\nfrom the smoke and rushed outside.\nNot the trade, but their lives,\nhe bore on his back in the end.",
+        "The student pulled the girl's hand\nwith all his strength."
+      ],
+      "text_en": "The head clerk lifted the trembling siblings\nfrom the smoke and rushed outside.\nNot the trade, but their lives,\nhe bore on his back in the end.\nThe student pulled the girl's hand\nwith all his strength."
     },
     {
       "no": 5,
-      "text": "廊下を駆け抜ける途中、人事不省の父の寝所が、ふと娘の目に入った。父は動かぬまま、炎の中にあった。父の唇は、半ば開いている。",
-      "img": "assets/images/chapter_23/IMG-161.webp"
+      "img": "assets/images/chapter_23/IMG-161.webp",
+      "pages": [
+        "廊下を駆け抜ける途中、\n人事不省の父の寝所が、娘の目に入った。\n父は動かぬまま、炎の中にあった。\n父の唇は、半ば開いている。"
+      ],
+      "text": "廊下を駆け抜ける途中、\n人事不省の父の寝所が、娘の目に入った。\n父は動かぬまま、炎の中にあった。\n父の唇は、半ば開いている。",
+      "pages_en": [
+        "As they fled through the hall,\nthe father's chamber came into sight.\nMotionless, he lay within the fire.\nHis lips, half open."
+      ],
+      "text_en": "As they fled through the hall,\nthe father's chamber came into sight.\nMotionless, he lay within the fire.\nHis lips, half open."
     },
     {
       "no": 6,
-      "text": "それが祖父の名であったか、母の名であったか、たまの名であったか ── 娘には知る術が、ない。父はそのままの姿で、炎に呑まれていった。\nそして母の姿は、廊下のどこにも見当たらなかった。\nやがて娘と書生は玄関を抜け、屋敷の門前へと辿り着く。\n屋敷は、もう、業火に深く包まれている。娘は両手の親指を、隠さなかった。両の親指を夜の空に向けて、まっすぐに差し出したのである。\n娘は門の敷居を、ついに踏み越えた。火の粉が夜空に舞い、舞い、そして消えてゆく。娘の懐には桐の小箱がなお抱かれていた。その中で、螺鈿の貝殻が、屋敷の炎とは別の淡い光を、確かに放っていたのであった。",
-      "img": "assets/images/chapter_23/IMG-162.webp"
+      "img": "assets/images/chapter_23/IMG-161.webp",
+      "pages": [
+        "それが祖父の名であったか、\n母の名であったか、たまの名であったか、\n娘には知る術が、ない。\n父はそのままの姿で、炎に呑まれていった。",
+        "そして母の姿は、廊下のどこにも\n見当たらなかった。\nやがて娘と書生は玄関を抜け、\n屋敷の門前へと辿り着く。"
+      ],
+      "text": "それが祖父の名であったか、\n母の名であったか、たまの名であったか、\n娘には知る術が、ない。\n父はそのままの姿で、炎に呑まれていった。\nそして母の姿は、廊下のどこにも\n見当たらなかった。\nやがて娘と書生は玄関を抜け、\n屋敷の門前へと辿り着く。",
+      "pages_en": [
+        "Whether it was Grandfather's name,\nor Mother's, or Tama's ─\nthe girl had no way to know.\nThe father was swallowed by the flames",
+        "as he lay.\nAnd of the mother,\nthere was no trace anywhere\nin the corridors.",
+        "At length, the girl and the student\npassed through the entrance\nand reached the manor's gate."
+      ],
+      "text_en": "Whether it was Grandfather's name,\nor Mother's, or Tama's ─\nthe girl had no way to know.\nThe father was swallowed by the flames\nas he lay.\nAnd of the mother,\nthere was no trace anywhere\nin the corridors.\nAt length, the girl and the student\npassed through the entrance\nand reached the manor's gate."
+    },
+    {
+      "no": 7,
+      "img": "assets/images/chapter_23/IMG-162.webp",
+      "pages": [
+        "屋敷は、もう業火に深く包まれている。\n娘は両手の親指を、隠さなかった。\n両の親指を夜の空に向けて、まっすぐに\n差し出したのである。",
+        "娘は門の敷居を、ついに踏み越えた。\n火の粉が夜空に舞い、そして消えてゆく。\n娘の懐には桐の小箱がなお抱かれていた。",
+        "その中で、螺鈿の貝殻が、\n屋敷の炎とは別の\n淡い光を、確かに放っていたのであった。"
+      ],
+      "text": "屋敷は、もう業火に深く包まれている。\n娘は両手の親指を、隠さなかった。\n両の親指を夜の空に向けて、まっすぐに\n差し出したのである。\n娘は門の敷居を、ついに踏み越えた。\n火の粉が夜空に舞い、そして消えてゆく。\n娘の懐には桐の小箱がなお抱かれていた。\nその中で、螺鈿の貝殻が、\n屋敷の炎とは別の\n淡い光を、確かに放っていたのであった。",
+      "pages_en": [
+        "The manor was already deep in hellfire.\nThe girl did not hide her thumbs.\nBoth thumbs she thrust straight\ntoward the night sky.",
+        "She crossed the threshold of the gate.\nSparks danced in the night and vanished.\nStill, in her bosom,\nthe paulownia box was cradled.",
+        "And within it,\nthe mother-of-pearl shell\ngave off a pale light of its own,\nunmixed with the flames of the house."
+      ],
+      "text_en": "The manor was already deep in hellfire.\nThe girl did not hide her thumbs.\nBoth thumbs she thrust straight\ntoward the night sky.\nShe crossed the threshold of the gate.\nSparks danced in the night and vanished.\nStill, in her bosom,\nthe paulownia box was cradled.\nAnd within it,\nthe mother-of-pearl shell\ngave off a pale light of its own,\nunmixed with the flames of the house."
     }
   ]
 }

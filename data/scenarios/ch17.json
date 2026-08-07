@@ -1,21 +1,81 @@
 {
-  "title": "第16章 ─ 梁の影",
+  "title": "第十七章 ─ 梁の影",
   "folder": "chapter_16",
   "taps": [
     {
       "no": 1,
-      "text": "翌朝、屋敷の納屋の方から、女中の悲鳴がひとつ上がった。\n続いて、別の女中の声が呼ぶ。「人が、人が、梁に……」\n梁から下がっていたのは、叔父であった。\n座牢に近い納屋の梁に、首を吊って、ゆっくりと揺れている。",
-      "img": "assets/images/chapter_16/IMG-117.webp"
+      "img": "assets/images/chapter_16/IMG-117.webp",
+      "pages": [
+        "翌朝、屋敷の納屋の方から、\n女中の悲鳴がひとつ上がった。\n続いて、別の女中の声が激しく飛ぶ。\n「人が、人が、梁に……」",
+        "梁から下がっていたのは、叔父であった。\n座牢に近い納屋の梁に、首を吊って、\nゆっくりと揺れている。"
+      ],
+      "text": "翌朝、屋敷の納屋の方から、\n女中の悲鳴がひとつ上がった。\n続いて、別の女中の声が激しく飛ぶ。\n「人が、人が、梁に……」\n梁から下がっていたのは、叔父であった。\n座牢に近い納屋の梁に、首を吊って、\nゆっくりと揺れている。",
+      "pages_en": [
+        "The next morning, from the storehouse\ncame the scream of a maid.\nAnother maid's voice followed:\n\"A person ─ upon the beam ─\"",
+        "From the beam of a shed\nnear the Cell hung the uncle,\na rope about his neck,\nswaying slowly."
+      ],
+      "text_en": "The next morning, from the storehouse\ncame the scream of a maid.\nAnother maid's voice followed:\n\"A person ─ upon the beam ─\"\nFrom the beam of a shed\nnear the Cell hung the uncle,\na rope about his neck,\nswaying slowly."
     },
     {
       "no": 2,
-      "text": "叔父の右の手には、書生に渡そうとしたらしい古文書の一片が、しかと握り締められていた。\n屋敷の者は、誰ひとり、悼みはしなかった。\n父は黙して煙管を吹かし、祖父は煙の中に目を細めている。父の煙管の灰は、その日に限って、少しだけ早く、火桶の縁に落ちた。\n叔母だけが、異様に冷静な顔つきで、葬儀の手配を始めてゆく。\nやがて廊下を、叔父の棺が静かに運ばれていった。\nその廊下を、人々の往来が幾重にも行き交う。\n座牢に残された娘は、桐の小箱をいっそう深く抱きしめていた。",
-      "img": "assets/images/chapter_16/IMG-118.webp"
+      "img": "assets/images/chapter_16/IMG-118.webp",
+      "pages": [
+        "叔父の手には、書生に渡そうとしたらしい\n古文書の一片が、握り締められていた。\n家族の突然の死。だが、屋敷の者の多くは、\n感心を示そうともしなかった。"
+      ],
+      "text": "叔父の手には、書生に渡そうとしたらしい\n古文書の一片が、握り締められていた。\n家族の突然の死。だが、屋敷の者の多くは、\n感心を示そうともしなかった。",
+      "pages_en": [
+        "In his hand, still gripped,\nwas a fragment of the old text\nhe had meant to pass to the student.\nA sudden death in the family.",
+        "Yet most in the manor\nshowed no interest at all."
+      ],
+      "text_en": "In his hand, still gripped,\nwas a fragment of the old text\nhe had meant to pass to the student.\nA sudden death in the family.\nYet most in the manor\nshowed no interest at all."
     },
     {
       "no": 3,
-      "text": "小箱の中で、螺鈿の貝殻と古文書の写しとが、寄り添うようにひとつの低き音をたてたのであった。",
-      "img": "assets/images/chapter_16/IMG-119.webp"
+      "img": "assets/images/chapter_09/IMG-079.webp",
+      "pages": [
+        "父は黙して盃を傾け、\n祖父は煙の中に目を細めている。"
+      ],
+      "text": "父は黙して盃を傾け、\n祖父は煙の中に目を細めている。",
+      "pages_en": [
+        "The father held silent, cup at his lips.\nGrandfather narrowed his eyes\nwithin the smoke."
+      ],
+      "text_en": "The father held silent, cup at his lips.\nGrandfather narrowed his eyes\nwithin the smoke."
+    },
+    {
+      "no": 4,
+      "img": "assets/images/chapter_09/IMG-078.webp",
+      "pages": [
+        "叔母は、異様に冷静な顔つきで、\n葬儀の手配を始めてゆく。"
+      ],
+      "text": "叔母は、異様に冷静な顔つきで、\n葬儀の手配を始めてゆく。",
+      "pages_en": [
+        "The aunt, with startling composure,\nbegan to arrange the funeral."
+      ],
+      "text_en": "The aunt, with startling composure,\nbegan to arrange the funeral."
+    },
+    {
+      "no": 5,
+      "img": "assets/images/chapter_16/IMG-119.webp",
+      "pages": [
+        "座牢に残された娘は、\n桐の小箱をいっそう深く抱きしめていた。"
+      ],
+      "text": "座牢に残された娘は、\n桐の小箱をいっそう深く抱きしめていた。",
+      "pages_en": [
+        "Within the Cell,\nthe girl held the paulownia box\nyet more tightly to her chest."
+      ],
+      "text_en": "Within the Cell,\nthe girl held the paulownia box\nyet more tightly to her chest."
+    },
+    {
+      "no": 6,
+      "img": "assets/images/chapter_16/IMG-119.webp",
+      "pages": [
+        "小箱の中では、螺鈿の貝殻と\n古文書の写しとが、寄り添うように\n重なり合っていたのであった。"
+      ],
+      "text": "小箱の中では、螺鈿の貝殻と\n古文書の写しとが、寄り添うように\n重なり合っていたのであった。",
+      "pages_en": [
+        "Within the box,\nthe mother-of-pearl shell\nand the copy of the old text\nlay overlapping, as though for shelter."
+      ],
+      "text_en": "Within the box,\nthe mother-of-pearl shell\nand the copy of the old text\nlay overlapping, as though for shelter."
     }
   ]
 }

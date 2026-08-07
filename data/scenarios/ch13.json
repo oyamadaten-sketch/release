@@ -1,31 +1,86 @@
 {
-  "title": "第12章 ─ 手形の符号",
+  "title": "第十三章 ─ 手形の符号",
   "folder": "chapter_12",
   "taps": [
     {
       "no": 1,
-      "text": "翌朝、屋敷の北面の座牢の柱に、また朱の手形がひとつ、増えていた。",
-      "img": "assets/images/chapter_12/IMG-098.webp"
+      "img": "assets/images/chapter_12/IMG-098.webp",
+      "pages": [
+        "翌朝、屋敷の座牢の柱に、\nまた朱の手形がひとつ、増えていた。"
+      ],
+      "text": "翌朝、屋敷の座牢の柱に、\nまた朱の手形がひとつ、増えていた。",
+      "pages_en": [
+        "The next morning, on a pillar of the Cell,\nyet another vermilion print\nhad been added."
+      ],
+      "text_en": "The next morning, on a pillar of the Cell,\nyet another vermilion print\nhad been added."
     },
     {
       "no": 2,
-      "text": "いつの間にか、この朱の印は、屋敷の至るところに静かに増え続けている。",
-      "img": "assets/images/chapter_12/IMG-099.webp"
+      "img": "assets/images/chapter_12/IMG-099.webp",
+      "pages": [
+        "いつの間にか、この朱の印は、\n屋敷の至るところに\n静かに増え続けている。"
+      ],
+      "text": "いつの間にか、この朱の印は、\n屋敷の至るところに\n静かに増え続けている。",
+      "pages_en": [
+        "When had it begun?\nThis crimson mark\nwas quietly multiplying\nthroughout the manor."
+      ],
+      "text_en": "When had it begun?\nThis crimson mark\nwas quietly multiplying\nthroughout the manor."
     },
     {
       "no": 3,
-      "text": "廊下の柱、襖の縁、欄間の桟── あちこちに点々と朱が滲んでいた。\n廊下を通りがかった妹が、ふとその印に気づき、母の袂に駆け寄って縋りつく。\n「お母さん、あれ、なあに？」\n「あれ、こわい」\n妹の小さな手が、母の袂の中で震えた。\n母は妹の手を引き、ふと目を伏せる。「気のせいじゃ」\n母はそれだけを告げると、妹の手を引いて、奥の納戸の方へと姿を消した。",
-      "img": "assets/images/chapter_12/IMG-100.webp"
+      "img": "assets/images/chapter_12/IMG-100.webp",
+      "pages": [
+        "廊下の柱、襖の縁、欄間の桟──。\nあちこちに点々と朱が滲んでいた。\n廊下を通りがかった妹が、その印に気づき、\n母の袂に駆け寄って縋りつく。",
+        "「お母さん、あれ、なあに？」\n「あれ、こわい」\n妹の小さな手が、母の袂の中で震えた。\n母は妹の手を引き、ふと目を伏せる。",
+        "「気にせんでも、すぐ消えるものじゃ」\n母はそれだけを告げると、\n妹の手を引いて、納戸の方へと姿を消した。"
+      ],
+      "text": "廊下の柱、襖の縁、欄間の桟──。\nあちこちに点々と朱が滲んでいた。\n廊下を通りがかった妹が、その印に気づき、\n母の袂に駆け寄って縋りつく。\n「お母さん、あれ、なあに？」\n「あれ、こわい」\n妹の小さな手が、母の袂の中で震えた。\n母は妹の手を引き、ふと目を伏せる。\n「気にせんでも、すぐ消えるものじゃ」\n母はそれだけを告げると、\n妹の手を引いて、納戸の方へと姿を消した。",
+      "pages_en": [
+        "Corridor pillars, the edges of doors,\nthe rails of the transom ─\ncrimson stained here and there.\nThe younger sister passed by,",
+        "saw them, and clung\nto her mother's sleeve.\n\"Mother, what is that?\nIt's scary.\"",
+        "The small hand trembled\ninside the mother's sleeve.\nThe mother took her daughter's hand\nand cast her eyes down.",
+        "\"Pay it no mind ─\nit shall soon vanish.\"\nSo saying, she led the child\ntoward the storeroom, and was gone."
+      ],
+      "text_en": "Corridor pillars, the edges of doors,\nthe rails of the transom ─\ncrimson stained here and there.\nThe younger sister passed by,\nsaw them, and clung\nto her mother's sleeve.\n\"Mother, what is that?\nIt's scary.\"\nThe small hand trembled\ninside the mother's sleeve.\nThe mother took her daughter's hand\nand cast her eyes down.\n\"Pay it no mind ─\nit shall soon vanish.\"\nSo saying, she led the child\ntoward the storeroom, and was gone."
     },
     {
       "no": 4,
-      "text": "廊下の往来が遠ざかった後、座牢にはひとり、娘が残されていた。",
-      "img": "assets/images/chapter_12/IMG-101.webp"
+      "img": "assets/images/chapter_12/IMG-101.webp",
+      "pages": [
+        "廊下の往来が遠ざかった後、\nその場には、娘がひとり残されていた。"
+      ],
+      "text": "廊下の往来が遠ざかった後、\nその場には、娘がひとり残されていた。",
+      "pages_en": [
+        "After the footsteps departed,\nthe girl was left alone in the hall."
+      ],
+      "text_en": "After the footsteps departed,\nthe girl was left alone in the hall."
     },
     {
       "no": 5,
-      "text": "娘は自らの柱の朱の手形を、しばし見つめる。それから、おそるおそる、自分の掌をその朱に重ねてみた。\n朱の手形と娘の掌の輪郭は、寸分の違いとて、見出されはせぬ。\n娘の指が震えながら、手形からゆっくりと離れてゆく。指先には、知らぬ間にも、自分の鼓動がしかと伝わる。鼓動は朱の縁にも伝わっているのではないかと、娘はふと思ったのであった。",
-      "img": "assets/images/chapter_12/IMG-102.webp"
+      "img": "assets/images/chapter_12/IMG-102.webp",
+      "pages": [
+        "娘は障子の手形を、しばし見つめる。\nそれから、おそるおそる、\n自分の掌をその朱に重ねてみた。",
+        "朱の手形と娘の掌の輪郭は、\n寸分の違いとて、見出されなかった。\n娘の指が震えながら、手形から\nゆっくりと離れてゆく。"
+      ],
+      "text": "娘は障子の手形を、しばし見つめる。\nそれから、おそるおそる、\n自分の掌をその朱に重ねてみた。\n朱の手形と娘の掌の輪郭は、\n寸分の違いとて、見出されなかった。\n娘の指が震えながら、手形から\nゆっくりと離れてゆく。",
+      "pages_en": [
+        "She gazed for a while\nat the crimson print on the door.\nThen, with cautious care,\nshe laid her own palm against it.",
+        "Between the vermilion print\nand her own hand,\nthere was not a hair's difference.\nHer fingers trembled as they drew away."
+      ],
+      "text_en": "She gazed for a while\nat the crimson print on the door.\nThen, with cautious care,\nshe laid her own palm against it.\nBetween the vermilion print\nand her own hand,\nthere was not a hair's difference.\nHer fingers trembled as they drew away."
+    },
+    {
+      "no": 6,
+      "img": "assets/images/chapter_12/IMG-101.webp",
+      "pages": [
+        "指先には、知らぬ間にも、\n自分の鼓動がしかと伝わる。同時に、\n娘は自らの鼓動が手形にも伝わって\nいるのではないかと思ったのであった。"
+      ],
+      "text": "指先には、知らぬ間にも、\n自分の鼓動がしかと伝わる。同時に、\n娘は自らの鼓動が手形にも伝わって\nいるのではないかと思ったのであった。",
+      "pages_en": [
+        "Her fingertips, without her knowing,\nrelayed her own pulse.\nAnd the girl wondered ─\nwhether her pulse, too,",
+        "was passing to the print itself."
+      ],
+      "text_en": "Her fingertips, without her knowing,\nrelayed her own pulse.\nAnd the girl wondered ─\nwhether her pulse, too,\nwas passing to the print itself."
     }
   ]
 }

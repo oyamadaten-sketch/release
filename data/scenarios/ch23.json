@@ -1,51 +1,164 @@
 {
-  "title": "第22章 ─ 詰問と告白",
+  "title": "第二十三章 ─ 詰問と告白",
   "folder": "chapter_22",
   "taps": [
     {
       "no": 1,
-      "text": "老医師は、父の寝所で脈を診て、ゆっくりと首を振った。\n「これは、もう、起き上がられぬ」",
-      "img": "assets/images/chapter_22/IMG-148.webp"
+      "img": "assets/images/chapter_22/IMG-148.webp",
+      "pages": [
+        "老医師は、父の寝所で脈を診て、\nゆっくりと首を振った。\n「これは、もう起き上がられぬ」"
+      ],
+      "text": "老医師は、父の寝所で脈を診て、\nゆっくりと首を振った。\n「これは、もう起き上がられぬ」",
+      "pages_en": [
+        "The old physician took the father's pulse\nand slowly shook his head.\n\"He shall not rise again.\""
+      ],
+      "text_en": "The old physician took the father's pulse\nand slowly shook his head.\n\"He shall not rise again.\""
     },
     {
       "no": 2,
-      "text": "父は人事不省のまま、寝所に静かに横たえられた。父の枕元では、母が父の手を取って、静かに握りしめている。\n四十九日の席で、家の者は皆、黙して箸を運ばなかった。\n番頭が、父の代わりに家業の差配を引き受け始めている。痩せた背に、家業の重みがにわかにのしかかったのである。\nその夜、屋敷の南面の書生の部屋では、書生がひとり、和紙を膝の上に広げていた。\nそこへ、襖が音もなく開き、叔母が裾を引いて入ってきた。\n「お前様の、まことの素性を、私は知っておるよ」── 叔母の声は低く、澄み切っていた。\n「お前様は、呪術の符牒を探しに、この家に潜り込んだ者じゃろう」\n書生は応えを返さなかった。書生の咽の奥から、絞り出すような呼吸の音だけが洩れる。",
-      "img": "assets/images/chapter_22/IMG-149.webp"
+      "img": "assets/images/chapter_17/IMG-124.webp",
+      "pages": [
+        "父は人事不省のまま、\n寝所に静かに横たえられた。\n父の枕元では、母が父の手を取って、\n静かに握りしめている。",
+        "四十九日の席で、家の者は皆、\n黙して箸を運ばなかった。そんな中、\n番頭が、父の代わりに家業の差配を\n引き受け始めている。"
+      ],
+      "text": "父は人事不省のまま、\n寝所に静かに横たえられた。\n父の枕元では、母が父の手を取って、\n静かに握りしめている。\n四十九日の席で、家の者は皆、\n黙して箸を運ばなかった。そんな中、\n番頭が、父の代わりに家業の差配を\n引き受け始めている。",
+      "pages_en": [
+        "The father lay unconscious,\nquietly, upon his bedding.\nBeside him, the mother took his hand\nand held it, silent.",
+        "At the forty-ninth day meal,\nthe household sat with chopsticks unmoved.\nMeanwhile, the head clerk\nhad begun to take charge of the trade",
+        "in the father's place."
+      ],
+      "text_en": "The father lay unconscious,\nquietly, upon his bedding.\nBeside him, the mother took his hand\nand held it, silent.\nAt the forty-ninth day meal,\nthe household sat with chopsticks unmoved.\nMeanwhile, the head clerk\nhad begun to take charge of the trade\nin the father's place."
     },
     {
       "no": 3,
-      "text": "「言うな。私はお前様を責めはせぬ。だが、もうこの家には居られぬよ」",
-      "img": "assets/images/chapter_22/IMG-150.webp"
+      "img": "assets/images/chapter_11/IMG-091.webp",
+      "pages": [
+        "痩せた背に、家業の重みが\nにわかにのしかかったのである。\nその夜、屋敷の南面の書生の部屋では、\n書生がひとり、和紙を膝の上に広げていた。"
+      ],
+      "text": "痩せた背に、家業の重みが\nにわかにのしかかったのである。\nその夜、屋敷の南面の書生の部屋では、\n書生がひとり、和紙を膝の上に広げていた。",
+      "pages_en": [
+        "Upon his thin back, the weight of the house\nsuddenly bore down.\nThat night, in the student's south room,\nhe sat alone,",
+        "a sheet of paper spread\nupon his knees."
+      ],
+      "text_en": "Upon his thin back, the weight of the house\nsuddenly bore down.\nThat night, in the student's south room,\nhe sat alone,\na sheet of paper spread\nupon his knees."
     },
     {
       "no": 4,
-      "text": "「呪術の真相は、お前様の家にも、必ず祟る」── 叔母はそう告げ、襖を音もなく閉ざして廊下を去ってゆく。",
-      "img": "assets/images/chapter_22/IMG-151.webp"
+      "img": "assets/images/chapter_22/IMG-149.webp",
+      "pages": [
+        "そこへ、襖が音もなく開き、\n叔母が裾を引いて入ってきた。\n「お前様の、まことの素性を、\n私は知っておるよ」",
+        "叔母の声は低く、澄み切っていた。\n「お前様は、呪術の符牒を探しに、\nこの家に潜り込んだ者じゃろう」\n書生は応えを返さなかった。"
+      ],
+      "text": "そこへ、襖が音もなく開き、\n叔母が裾を引いて入ってきた。\n「お前様の、まことの素性を、\n私は知っておるよ」\n叔母の声は低く、澄み切っていた。\n「お前様は、呪術の符牒を探しに、\nこの家に潜り込んだ者じゃろう」\n書生は応えを返さなかった。",
+      "pages_en": [
+        "Without a sound the door slid open,\nand the aunt entered,\ntrailing her hem.\n\"Your true nature ─",
+        "I know it.\"\nHer voice was low, crystalline.\n\"You slipped into this house\nseeking the ciphers of the spellcraft.\"",
+        "The student gave no reply."
+      ],
+      "text_en": "Without a sound the door slid open,\nand the aunt entered,\ntrailing her hem.\n\"Your true nature ─\nI know it.\"\nHer voice was low, crystalline.\n\"You slipped into this house\nseeking the ciphers of the spellcraft.\"\nThe student gave no reply."
     },
     {
       "no": 5,
-      "text": "叔母の去った後、書生は廊下を渡って、座牢の障子の前でふいに立ち止まる。\n障子越しに、書生の声が震えていた。\n「お前様の家の呪術は── 外を焦がるる娘の、その心そのものを、贄として食らう呪術にござります」\n「『外を望む娘』が一代に一人生まれ、その娘の心が屋敷の繁栄を生むのでござりまする」\n「されど娘の心が満たされる時── 娘は、家の中で、死なねばならぬのです」",
-      "img": "assets/images/chapter_22/IMG-152.webp"
+      "img": "assets/images/chapter_09/IMG-080.webp",
+      "pages": [
+        "書生の咽の奥から、\n絞り出すような呼吸の音だけが洩れる。"
+      ],
+      "text": "書生の咽の奥から、\n絞り出すような呼吸の音だけが洩れる。",
+      "pages_en": [
+        "Only the sound of forced breath\nescaped from his throat."
+      ],
+      "text_en": "Only the sound of forced breath\nescaped from his throat."
     },
     {
       "no": 6,
-      "text": "同じ刻、屋敷の北側の別の座敷では、母と叔母が向かい合っていた。母の頬には、すでに涙の跡が幾筋にも伸びている。",
-      "img": "assets/images/chapter_22/IMG-153.webp"
+      "img": "assets/images/chapter_22/IMG-150.webp",
+      "pages": [
+        "「言うな。\n私はお前様を責めはせぬ。\nだが、もうこの家には居られぬよ」"
+      ],
+      "text": "「言うな。\n私はお前様を責めはせぬ。\nだが、もうこの家には居られぬよ」",
+      "pages_en": [
+        "\"Say nothing.\nI shall not accuse you.\nBut you can no longer remain here.\""
+      ],
+      "text_en": "\"Say nothing.\nI shall not accuse you.\nBut you can no longer remain here.\""
     },
     {
       "no": 7,
-      "text": "母の絞り出すような声。「あの子のまことの母は── 下女の、たま」「御祖父様が、手を出された下女にござります」",
-      "img": "assets/images/chapter_22/IMG-154.webp"
+      "img": "assets/images/chapter_22/IMG-151.webp",
+      "pages": [
+        "「呪術の真相は、\nお前様の家にも、必ず祟る」\n叔母はそう告げ、襖を音もなく閉ざして\n廊下を去ってゆく。"
+      ],
+      "text": "「呪術の真相は、\nお前様の家にも、必ず祟る」\n叔母はそう告げ、襖を音もなく閉ざして\n廊下を去ってゆく。",
+      "pages_en": [
+        "\"The true nature of the spellcraft\nwill fall as curse\nupon your own house as well.\"\nThe aunt closed the door and vanished."
+      ],
+      "text_en": "\"The true nature of the spellcraft\nwill fall as curse\nupon your own house as well.\"\nThe aunt closed the door and vanished."
     },
     {
       "no": 8,
-      "text": "父の寝所では、人事不省の父の手が、寝間着の襟の下で、わずかに親指を解いていた。それは誰の目にも映らぬほどの、ささやかな動きである。",
-      "img": "assets/images/chapter_22/IMG-155.webp"
+      "img": "assets/images/chapter_22/IMG-152.webp",
+      "pages": [
+        "叔母の去った後、書生は廊下を渡って、\n座牢の障子の前でふいに立ち止まる。\n障子越しに、書生の声が震えていた。",
+        "「お前様の家の呪術は、\n外を焦がるる娘の、その心そのものを、\n贄として食らう呪術にござります」",
+        "「『外を望む娘』が一代に一人生まれ、\nその娘の心が屋敷の繁栄を生むので\nござりまする。されど娘の心が満たされる時\n娘は、家の中で死なねばならぬのです」"
+      ],
+      "text": "叔母の去った後、書生は廊下を渡って、\n座牢の障子の前でふいに立ち止まる。\n障子越しに、書生の声が震えていた。\n「お前様の家の呪術は、\n外を焦がるる娘の、その心そのものを、\n贄として食らう呪術にござります」\n「『外を望む娘』が一代に一人生まれ、\nその娘の心が屋敷の繁栄を生むので\nござりまする。されど娘の心が満たされる時\n娘は、家の中で死なねばならぬのです」",
+      "pages_en": [
+        "After she had gone,\nthe student crossed the hall\nand paused before the Cell's door.\nHis voice, through the paper, trembled.",
+        "\"The spellcraft of this house\nfeeds upon the very heart\nof a girl who yearns for the outside.\nIt takes that heart as offering.\"",
+        "\"Once in each generation is born\n'a girl who longs for outside,'\nand her longing feeds the manor's fortune.\nYet when her heart is at last fulfilled ─",
+        "she must die\nwithin this house.\""
+      ],
+      "text_en": "After she had gone,\nthe student crossed the hall\nand paused before the Cell's door.\nHis voice, through the paper, trembled.\n\"The spellcraft of this house\nfeeds upon the very heart\nof a girl who yearns for the outside.\nIt takes that heart as offering.\"\n\"Once in each generation is born\n'a girl who longs for outside,'\nand her longing feeds the manor's fortune.\nYet when her heart is at last fulfilled ─\nshe must die\nwithin this house.\""
     },
     {
       "no": 9,
-      "text": "娘の手の中では、螺鈿の貝殻が微かに震えていた。震えは、外から来たものではない。娘の指の奥底、まだ知らないはずの場所から、確かに昇ってきていたのであった。",
-      "img": "assets/images/chapter_22/IMG-156.webp"
+      "img": "assets/images/chapter_22/IMG-153.webp",
+      "pages": [
+        "同じ刻、屋敷の別の座敷では、\n母と叔母が向かい合っていた。\n母の頬には、すでに涙の跡が\n幾筋にも伸びている。"
+      ],
+      "text": "同じ刻、屋敷の別の座敷では、\n母と叔母が向かい合っていた。\n母の頬には、すでに涙の跡が\n幾筋にも伸びている。",
+      "pages_en": [
+        "At that same hour, in another chamber,\nthe mother and the aunt sat face to face.\nOn the mother's cheeks,\ntear-tracks already trailed."
+      ],
+      "text_en": "At that same hour, in another chamber,\nthe mother and the aunt sat face to face.\nOn the mother's cheeks,\ntear-tracks already trailed."
+    },
+    {
+      "no": 10,
+      "img": "assets/images/chapter_22/IMG-154.webp",
+      "pages": [
+        "母は絞り出すような声をあげた。\n「あの子のまことの母は──たま」\n「御祖父様が、手を出された\n下女にござります」"
+      ],
+      "text": "母は絞り出すような声をあげた。\n「あの子のまことの母は──たま」\n「御祖父様が、手を出された\n下女にござります」",
+      "pages_en": [
+        "The mother pressed out a voice:\n\"That child's true mother\nwas Tama ─ a maidservant\nGrandfather laid a hand upon.\""
+      ],
+      "text_en": "The mother pressed out a voice:\n\"That child's true mother\nwas Tama ─ a maidservant\nGrandfather laid a hand upon.\""
+    },
+    {
+      "no": 11,
+      "img": "assets/images/chapter_22/IMG-155.webp",
+      "pages": [
+        "父の寝所では、人事不省の父の手が、\n寝間着の襟の下で、わずかに\n親指を解いていた。それは誰の目にも\n映らぬほどの、ささやかな動きであった。"
+      ],
+      "text": "父の寝所では、人事不省の父の手が、\n寝間着の襟の下で、わずかに\n親指を解いていた。それは誰の目にも\n映らぬほどの、ささやかな動きであった。",
+      "pages_en": [
+        "In the father's chamber,\nthe hand of the unconscious father,\nbeneath the collar of his sleeping robe,\nslightly unfolded a thumb ─",
+        "a motion so small\nno eye could catch it."
+      ],
+      "text_en": "In the father's chamber,\nthe hand of the unconscious father,\nbeneath the collar of his sleeping robe,\nslightly unfolded a thumb ─\na motion so small\nno eye could catch it."
+    },
+    {
+      "no": 12,
+      "img": "assets/images/chapter_22/IMG-156.webp",
+      "pages": [
+        "娘の手の中では、螺鈿の貝殻が震えていた。\n震えは、異質な気配に対する恐れではない。\n娘の手の奥底、説明のつかない場所から、\n確かに昇ってきていたのであった。"
+      ],
+      "text": "娘の手の中では、螺鈿の貝殻が震えていた。\n震えは、異質な気配に対する恐れではない。\n娘の手の奥底、説明のつかない場所から、\n確かに昇ってきていたのであった。",
+      "pages_en": [
+        "Within the girl's hand,\nthe mother-of-pearl shell trembled.\nIt was not the fear of the strange air,\nbut something rising",
+        "from the very depths\nof her hand ─\nfrom a place she could not name."
+      ],
+      "text_en": "Within the girl's hand,\nthe mother-of-pearl shell trembled.\nIt was not the fear of the strange air,\nbut something rising\nfrom the very depths\nof her hand ─\nfrom a place she could not name."
     }
   ]
 }

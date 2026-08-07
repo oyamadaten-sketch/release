@@ -1,36 +1,84 @@
 {
-  "title": "第15章 ─ 贈り物",
+  "title": "第十六章 ─ 贈り物",
   "folder": "chapter_15",
   "taps": [
     {
       "no": 1,
-      "text": "その日の夕暮れ、屋敷の北面の座牢の障子が、ふいに外側から開いた。\n障子の縁には、酒臭い息が、うっすらと漂っている。",
-      "img": "assets/images/chapter_15/IMG-111.webp"
+      "img": "assets/images/chapter_15/IMG-111.webp",
+      "pages": [
+        "その日の夕暮れ、座牢を覆う障子が、\nふいに外側から開いた。\n障子の縁には、酒臭い息が、\nうっすらと漂っている。"
+      ],
+      "text": "その日の夕暮れ、座牢を覆う障子が、\nふいに外側から開いた。\n障子の縁には、酒臭い息が、\nうっすらと漂っている。",
+      "pages_en": [
+        "That evening, the paper door of the Cell\nopened suddenly from without.\nThe scent of sake\nfaintly drifted at the seam."
+      ],
+      "text_en": "That evening, the paper door of the Cell\nopened suddenly from without.\nThe scent of sake\nfaintly drifted at the seam."
     },
     {
       "no": 2,
-      "text": "障子を開いたのは、叔父であった。叔父は上がり框に膝をつき、座牢の中の娘を静かに見る。\n叔父は、しばらく何も言わなかった。",
-      "img": "assets/images/chapter_15/IMG-112.webp"
+      "img": "assets/images/chapter_15/IMG-112.webp",
+      "pages": [
+        "障子を開いたのは、叔父であった。\n叔父は冷えた床に膝をつき、\n座牢の中の娘を静かに見る。\n叔父は、しばらく何も言わなかった。"
+      ],
+      "text": "障子を開いたのは、叔父であった。\n叔父は冷えた床に膝をつき、\n座牢の中の娘を静かに見る。\n叔父は、しばらく何も言わなかった。",
+      "pages_en": [
+        "It was the uncle who had opened it.\nHe knelt on the chill floorboards\nand looked upon the girl.\nHe said nothing for a long while."
+      ],
+      "text_en": "It was the uncle who had opened it.\nHe knelt on the chill floorboards\nand looked upon the girl.\nHe said nothing for a long while."
     },
     {
       "no": 3,
-      "text": "やがて、懐から紙の束を取り出し、座牢の格子戸の脇の小窓から、娘の膝の前へとそっと差し入れた。\n書生が訳した、古文書の写しである。\n「これは──」叔父の声は、酒に濡れていた。\n「ろくでなしの、一矢報いる試みじゃ」",
-      "img": "assets/images/chapter_15/IMG-113.webp"
+      "img": "assets/images/chapter_15/IMG-113.webp",
+      "pages": [
+        "叔父はやがて、懐から紙の束を取り出し、\n格子戸に付けられた小窓から、\n娘の膝の前へとそっと差し入れた。\n書生が訳した、古文書の写しであった。",
+        "「これは……」\n叔父の声は、酒に濡れていた。\n「ろくでなしの、一矢報いる試みじゃ」"
+      ],
+      "text": "叔父はやがて、懐から紙の束を取り出し、\n格子戸に付けられた小窓から、\n娘の膝の前へとそっと差し入れた。\n書生が訳した、古文書の写しであった。\n「これは……」\n叔父の声は、酒に濡れていた。\n「ろくでなしの、一矢報いる試みじゃ」",
+      "pages_en": [
+        "At last he drew from his robe\na sheaf of papers,\nand slid it through the small hatch\ninto the girl's lap.",
+        "It was a copy of the old text,\ntranslated by the student.\n\"This is…\"\nThe uncle's voice was wet with sake.",
+        "\"A wretch's attempt\nat one last blow of resistance.\""
+      ],
+      "text_en": "At last he drew from his robe\na sheaf of papers,\nand slid it through the small hatch\ninto the girl's lap.\nIt was a copy of the old text,\ntranslated by the student.\n\"This is…\"\nThe uncle's voice was wet with sake.\n\"A wretch's attempt\nat one last blow of resistance.\""
     },
     {
       "no": 4,
-      "text": "それだけを告げると、叔父は立ち上がり、座牢の障子を静かに閉じた。\n障子を閉じる手つきは、ひどく丁寧であった。\n座牢にひとり残された娘は、両腕で紙の束を抱きしめる。",
-      "img": "assets/images/chapter_15/IMG-114.webp"
+      "img": "assets/images/chapter_15/IMG-114.webp",
+      "pages": [
+        "それだけを告げると、叔父は立ち上がり、\n座牢の障子を静かに閉じた。\n障子を閉じる手つきは、\nやけに丁寧であった。",
+        "座牢にひとり残された娘は、\n両腕で紙の束を抱きしめる。"
+      ],
+      "text": "それだけを告げると、叔父は立ち上がり、\n座牢の障子を静かに閉じた。\n障子を閉じる手つきは、\nやけに丁寧であった。\n座牢にひとり残された娘は、\n両腕で紙の束を抱きしめる。",
+      "pages_en": [
+        "Saying only that, he rose\nand quietly closed the paper door.\nHis hand upon the door\nmoved with strange gentleness.",
+        "Left alone within the Cell,\nthe girl held the papers to her chest."
+      ],
+      "text_en": "Saying only that, he rose\nand quietly closed the paper door.\nHis hand upon the door\nmoved with strange gentleness.\nLeft alone within the Cell,\nthe girl held the papers to her chest."
     },
     {
       "no": 5,
-      "text": "その紙の上に、桐の小箱から取り出した螺鈿の貝殻を、そっと重ねた。",
-      "img": "assets/images/chapter_15/IMG-115.webp"
+      "img": "assets/images/chapter_15/IMG-115.webp",
+      "pages": [
+        "その紙の上に、桐の小箱から取り出した\n螺鈿の貝殻を、そっと重ねた。"
+      ],
+      "text": "その紙の上に、桐の小箱から取り出した\n螺鈿の貝殻を、そっと重ねた。",
+      "pages_en": [
+        "Upon them she gently placed\nthe mother-of-pearl shell\nfrom the paulownia box."
+      ],
+      "text_en": "Upon them she gently placed\nthe mother-of-pearl shell\nfrom the paulownia box."
     },
     {
       "no": 6,
-      "text": "廊下の奥へと去ってゆく叔父の背は、これまでのどの夜よりも、軽い足取りで見えた。その軽さの意味を、娘はその夜、いくたび心の中でなぞったことであろうか。",
-      "img": "assets/images/chapter_15/IMG-116.webp"
+      "img": "assets/images/chapter_15/IMG-116.webp",
+      "pages": [
+        "廊下の奥へと去ってゆく叔父の歩みは、\nこれまでとは違い、やけに軽やかに見えた。\nそれとは裏腹に、娘の心の中には、\n不安の種が静かに育ち始めていた。"
+      ],
+      "text": "廊下の奥へと去ってゆく叔父の歩みは、\nこれまでとは違い、やけに軽やかに見えた。\nそれとは裏腹に、娘の心の中には、\n不安の種が静かに育ち始めていた。",
+      "pages_en": [
+        "The uncle's step down the hall\nseemed strangely light this night ─\nquite unlike before.\nAnd yet, within the girl's breast,",
+        "a quiet seed of unease\nhad begun to take root."
+      ],
+      "text_en": "The uncle's step down the hall\nseemed strangely light this night ─\nquite unlike before.\nAnd yet, within the girl's breast,\na quiet seed of unease\nhad begun to take root."
     }
   ]
 }

@@ -18,6 +18,41 @@ const CHAPTER_META = {
   22:{label:'第二十二章',sub:'葬列と発作'}, 23:{label:'第二十三章',sub:'詰問と告白'},
   24:{label:'第二十四章',sub:'業火と門越え'}, 25:{label:'終幕',sub:'円環'}
 };
+// ★英訳版章メタ（言語切替対応）
+const CHAPTER_META_EN = {
+  0:{label:'Prologue',sub:'The Old House and the Ancient Curse'},
+  1:{label:'Chapter I',sub:'A Step into the Moonless Night'},
+  2:{label:'Chapter II',sub:'Morning in the Cell'},
+  3:{label:'Chapter III',sub:"Voices in the Hall, the Study's Confrontation"},
+  4:{label:'Chapter IV',sub:"The Merchant's Shadow"},
+  5:{label:'Chapter V',sub:'Measuring Eyes'},
+  6:{label:'Chapter VI',sub:"A Bow and the Altar's Shadow"},
+  7:{label:'Chapter VII',sub:'A Question Through the Shoji'},
+  8:{label:'Chapter VIII',sub:'The Night of Conspiracy'},
+  9:{label:'Chapter IX',sub:"The Corpse in the Garden, the Altar's Shadow"},
+  10:{label:'Chapter X',sub:"The Parlor's Roar, the Storehouse's Shadow"},
+  11:{label:'Chapter XI',sub:'Shadow Beneath the Lamp'},
+  12:{label:'Chapter XII',sub:"Letters in the Storehouse, the Brother's Oil"},
+  13:{label:'Chapter XIII',sub:'The Sign of the Handprint'},
+  14:{label:'Chapter XIV',sub:'A Gaze Through the Shoji'},
+  15:{label:'Chapter XV',sub:'The Sound of the Kiseru'},
+  16:{label:'Chapter XVI',sub:'The Gift'},
+  17:{label:'Chapter XVII',sub:'Shadow on the Beam'},
+  18:{label:'Chapter XVIII',sub:'The Crimson Hall, Before the Altar'},
+  19:{label:'Chapter XIX',sub:'Sickbed'},
+  20:{label:'Chapter XX',sub:'Marriage and Whispers'},
+  21:{label:'Chapter XXI',sub:"Grandmother's Hand"},
+  22:{label:'Chapter XXII',sub:'The Funeral Procession and the Seizure'},
+  23:{label:'Chapter XXIII',sub:'Interrogation and Confession'},
+  24:{label:'Chapter XXIV',sub:'Hellfire and the Gate Beyond'},
+  25:{label:'Epilogue',sub:'The Circle'}
+};
+// ★現在言語に応じた章メタを取得
+function getChapterMeta(idx) {
+  const isEn = document.body && document.body.classList.contains('lang-en');
+  const src = isEn ? CHAPTER_META_EN : CHAPTER_META;
+  return src[idx];
+}
 
 let chapterIdx = 0, tapIdx = 0, pageIdx = 0;
 let pages = [];
@@ -50,17 +85,106 @@ function bootLogo() {
   }
   urls.forEach(u => ImageLoader.loadImage(u).then(done).catch(done));
   setTimeout(() => { if (!ready) { ready=true; bar.style.width='100%'; status.textContent='SYSTEM READY.  TAP TO START.'; }}, 8000);
-  $('logo-screen').onclick = () => { if (ready) startIntroAdv(); };
+  // ★ロゴ画面全体のクリックで進む（ただし設定ボタンは除外）
+  $('logo-screen').onclick = (ev) => {
+    if (ev.target && ev.target.closest('.logo-settings')) return;  // 設定ボタン領域は無視
+    if (ready) startIntroAdv();
+  };
+
+  // ★セグメント式言語トグル（日本語 | English、現在言語がハイライト）
+  const langBtnJa = $('btn-lang-ja');
+  const langBtnEn = $('btn-lang-en');
+  function updateLangUI() {
+    const cur = (window.I18n && I18n.current) || 'ja';
+    if (langBtnJa) langBtnJa.classList.toggle('active', cur === 'ja');
+    if (langBtnEn) langBtnEn.classList.toggle('active', cur === 'en');
+  }
+  updateLangUI();
+  async function switchLang(target, ev) {
+    if (ev) ev.stopPropagation();
+    if (!window.I18n) return;
+    if (I18n.current === target) return;  // 同じ言語なら何もしない
+    await I18n.setLocale(target);
+    updateLangUI();
+    if (typeof buildHowToPieceTable === 'function') buildHowToPieceTable();
+    // ★言語切替時に章選択リストを再生成（章名の英/日切替反映）
+    if (typeof buildSelectList === 'function') buildSelectList();
+    // ★シナリオ画面が表示中なら現在ページを再描画（英/日切替反映）
+    if (document.getElementById('scenario-screen') &&
+        document.getElementById('scenario-screen').classList.contains('active') &&
+        typeof renderTap === 'function') {
+      try { renderTap(); } catch(e) { console.warn('[lang] renderTap error:', e); }
+    }
+    console.log('[lang] switched to:', target);
+  }
+  if (langBtnJa) langBtnJa.onclick = (ev) => switchLang('ja', ev);
+  if (langBtnEn) langBtnEn.onclick = (ev) => switchLang('en', ev);
+
+  // ★音量設定パネル（🔊 アイコンで開閉、BGM/SE スライダー+ミュート）
+  const btnAudio = $('btn-audio-settings');
+  const audioPanel = $('audio-panel');
+  const sliderBgm = $('slider-bgm');
+  const sliderSe  = $('slider-se');
+  const bgmVal    = $('slider-bgm-val');
+  const seVal     = $('slider-se-val');
+  const chkMute   = $('chk-mute');
+  const audioIcon = $('audio-icon');
+  function updateAudioIcon() {
+    if (!audioIcon) return;
+    if (!window.GameAudio) return;
+    audioIcon.textContent = GameAudio.muted ? '🔇' : '🔊';
+  }
+  if (window.GameAudio) {
+    if (sliderBgm) sliderBgm.value = Math.round(GameAudio.bgmVol * 100);
+    if (sliderSe)  sliderSe.value  = Math.round(GameAudio.seVol * 100);
+    if (bgmVal)    bgmVal.textContent = sliderBgm ? sliderBgm.value : '50';
+    if (seVal)     seVal.textContent  = sliderSe  ? sliderSe.value  : '70';
+    if (chkMute)   chkMute.checked = GameAudio.muted;
+    updateAudioIcon();
+  }
+  if (btnAudio && audioPanel) {
+    btnAudio.onclick = (ev) => {
+      ev.stopPropagation();
+      audioPanel.classList.toggle('open');
+    };
+    // パネル外クリックで閉じる
+    document.addEventListener('click', (ev) => {
+      if (!audioPanel.classList.contains('open')) return;
+      if (audioPanel.contains(ev.target) || btnAudio.contains(ev.target)) return;
+      audioPanel.classList.remove('open');
+    });
+  }
+  if (sliderBgm) sliderBgm.oninput = () => {
+    if (bgmVal) bgmVal.textContent = sliderBgm.value;
+    if (window.GameAudio) GameAudio.setBgmVolume(parseInt(sliderBgm.value, 10) / 100);
+  };
+  if (sliderSe) sliderSe.oninput = () => {
+    if (seVal) seVal.textContent = sliderSe.value;
+    if (window.GameAudio) GameAudio.setSeVolume(parseInt(sliderSe.value, 10) / 100);
+  };
+  if (chkMute) chkMute.onchange = () => {
+    if (window.GameAudio) GameAudio.setMuted(chkMute.checked);
+    updateAudioIcon();
+  };
+
+  // ★ロゴ画面のBGM開始（BGM-01 = 導入ADVで使うが、まずタイトル画面BGM-05を鳴らす）
+  //   ロゴ画面はロゴだけの静的画面なので、BGM-05（タイトル画面）を先行再生してもOK
+  //   → 実際にはユーザーが画面をタップ→startIntroAdv でBGM-01に切替、が流れる
+  if (window.GameAudio) {
+    // ロゴ画面到達時点で自動再生を試みる（ジェスチャー待ちなら受信後に再生）
+    GameAudio.playBgm('BGM-05');
+  }
 }
 
 function startIntroAdv() {
   mode = 'intro';
   chapterIdx = 0; tapIdx = 0; pageIdx = 0;
   currentImgUrl = '';
+  if (window.GameAudio) GameAudio.playBgm('BGM-01');  // 導入ADV BGM
   $('img-layer-a').innerHTML = ''; $('img-layer-a').classList.remove('visible');
   $('img-layer-b').innerHTML = ''; $('img-layer-b').classList.remove('visible');
   activeLayer = 'a';
-  $('btn-sc-back').textContent = '▶ 導入をスキップ';
+  $('btn-sc-back').textContent = (window.I18n && I18n.loaded) ? I18n.t('buttons.skipIntro') : '▶ 導入を飛ばす';
   // intro時は右側の章スキップボタンは非表示（同じ機能なので重複解消）
   const skipBtn = $('btn-sc-skip');
   if (skipBtn) skipBtn.style.visibility = 'hidden';
@@ -68,10 +192,23 @@ function startIntroAdv() {
   renderTap();
 }
 
+// ★章に応じた ADV BGM を選択
+function selectAdvBgm(chIdx) {
+  // 章25（終幕）はエンディングBGM、それ以外は導入BGMを流用
+  if (chIdx === 25) return 'BGM-06';
+  return 'BGM-01';
+}
+// ★ステージに応じたパズルBGM
+function selectPuzzleBgm(stageNum) {
+  if (stageNum === 24) return 'BGM-04';       // 最終ステージ 業火
+  if (stageNum === 13 || stageNum === 22) return 'BGM-03';  // 手形 or 祭壇
+  return 'BGM-02';                            // 通常パズル
+}
 function showTitleScreen() {
   mode = 'normal';
   if (typeof hardClearImageLayers === 'function') hardClearImageLayers();
   showScreen('title-screen');
+  if (window.GameAudio) GameAudio.playBgm('BGM-05');  // タイトル画面BGM
   const lid = $('lid'); const body = $('box-body');
   if (lid) lid.classList.remove('opened');
   if (body) body.classList.remove('visible');
@@ -131,6 +268,9 @@ function bootTitle() {
     startScenario(chapterIdx, tapIdx, pageIdx);
   });
   $('btn-select').onclick = () => openLidThen(() => showScreen('select-screen'));
+  // ★遊び方 / How to Play 画面へ
+  $('btn-howto').onclick = () => { buildHowToPieceTable(); showScreen('howto-screen'); };
+  $('btn-howto-back').onclick = () => showTitleScreen();
 
   // DEV: パズル直接起動ボタン群（body.dev-mode でのみ表示される）
   document.querySelectorAll('#dev-puzzle-launcher button[data-stage]').forEach(function(btn) {
@@ -150,38 +290,111 @@ function bootTitle() {
   });
 }
 
+// ★「遊戯方法 / How to Play」画面のピース一覧テーブルを生成
+// 単言語表示：日本語版 = 日本語ラベルのみ、英語版 = 英語ラベルのみ
+function buildHowToPieceTable() {
+  const table = document.getElementById('howto-piece-table');
+  if (!table) return;
+  const isEn = document.body.classList.contains('lang-en');
+  // 画像も言語で切替
+  const img = document.getElementById('howto-board-img');
+  if (img) img.src = 'assets/images/tutorial/board_' + (isEn ? 'en' : 'ja') + '.webp';
+  const headLabel = isEn ? 'Piece' : '駒';
+  const headMeaning = isEn ? 'Meaning' : '意味';
+
+  // 全登場ピース（重複除去済）
+  const PIECES = [
+    {ja:'蓋',       en:'Lid',     meaningJa:'遊戯開始を告げる駒。<br>まず外さねば道は拓けぬ。', meaningEn:'The piece that heralds the start of play.<br>It must first be removed to open the way.', special:true},
+    {ja:'娘',       en:'Girl',    meaningJa:'主人公。<br>玄関まで導かねばならぬ。', meaningEn:'The protagonist.<br>She must be led to the Threshold.', special:true},
+    {ja:'父',       en:'Dad',     meaningJa:'娘の父。',                              meaningEn:'The girl’s father.'},
+    {ja:'母',       en:'Mom',     meaningJa:'娘の母。',                              meaningEn:'The girl’s mother.'},
+    {ja:'祖父',     en:'Papa',    meaningJa:'娘の祖父。',                            meaningEn:'The girl’s grandfather.'},
+    {ja:'祖母',     en:'Nana',    meaningJa:'娘の祖母。',                            meaningEn:'The girl’s grandmother.'},
+    {ja:'叔父',     en:'Uncle',   meaningJa:'娘の叔父。',                            meaningEn:'The girl’s uncle.'},
+    {ja:'叔母',     en:'Aunt',    meaningJa:'娘の叔母。',                            meaningEn:'The girl’s aunt.'},
+    {ja:'弟',       en:'Bro',     meaningJa:'娘の弟。',                              meaningEn:'The girl’s younger brother.'},
+    {ja:'妹',       en:'Sis',     meaningJa:'娘の妹。',                              meaningEn:'The girl’s younger sister.'},
+    {ja:'兄',       en:'Bro E.',  meaningJa:'家の風習を守りし兄。',                  meaningEn:'The elder brother who upholds the family customs.'},
+    {ja:'番頭',     en:'Clerk',   meaningJa:'商家の統括役。',                        meaningEn:'The head clerk of the merchant house.'},
+    {ja:'手代',     en:'Junior',  meaningJa:'番頭の下で働く若手。',                  meaningEn:'The junior clerk under the head clerk.'},
+    {ja:'女中／下女', en:'Maid',    meaningJa:'住み込みの女中／下女。',                meaningEn:'The live-in housemaid.'},
+    {ja:'書生',     en:'Pupil',   meaningJa:'住み込みで学ぶ書生。',                  meaningEn:'The live-in student.'},
+    {ja:'丁稚',     en:'Boy',     meaningJa:'見習いの若者。',                        meaningEn:'The apprentice boy.'},
+    {ja:'客人',     en:'Guest',   meaningJa:'商家を訪ねし客人。',                    meaningEn:'A guest visiting the merchant house.'},
+    {ja:'医者',     en:'Doc',     meaningJa:'往診に訪れし医者。',                    meaningEn:'The visiting physician.'},
+    {ja:'助手',     en:'Nurse',   meaningJa:'医者の助手。',                          meaningEn:'The physician’s assistant.'},
+    {ja:'猫',       en:'Cat',     meaningJa:'家に住まう猫。',                        meaningEn:'The family cat.'},
+    {ja:'犬',       en:'Dog',     meaningJa:'家に住まう犬。',                        meaningEn:'The family dog.'},
+    {ja:'子犬',     en:'Pup',     meaningJa:'家に住まう子犬。',                      meaningEn:'The family puppy.'},
+    {ja:'手形',     en:'Print',   meaningJa:'血の手形。動かぬ駒。',                  meaningEn:'A bloody handprint. A piece that cannot move.', special:true},
+    {ja:'祭壇',     en:'Altar',   meaningJa:'祭壇。動かぬ駒。',                      meaningEn:'The altar. A piece that cannot move.', special:true},
+    {ja:'炎',       en:'Fire',    meaningJa:'火事の炎。動くと燃え広がる。',          meaningEn:'The flame of a fire. Spreads with each move.', special:true},
+  ];
+  // テーブル全体を再構築（thead + tbody）
+  table.innerHTML =
+    '<thead><tr>' +
+      '<th class="col-label-head">' + headLabel + '</th>' +
+      '<th class="col-meaning-head">' + headMeaning + '</th>' +
+    '</tr></thead>' +
+    '<tbody id="howto-piece-tbody"></tbody>';
+  const tbody = document.getElementById('howto-piece-tbody');
+  PIECES.forEach(p => {
+    const tr = document.createElement('tr');
+    if (p.special) tr.className = 'piece-special';
+    const label = isEn ? p.en : p.ja;
+    const meaning = isEn ? p.meaningEn : p.meaningJa;
+    tr.innerHTML =
+      '<td class="col-label">' + label + '</td>' +
+      '<td class="col-meaning">' + meaning + '</td>';
+    tbody.appendChild(tr);
+  });
+}
+window.buildHowToPieceTable = buildHowToPieceTable;
+
 function buildSelectList() {
   const list = $('chapter-list');
   list.innerHTML = '';
   // ★ステージ別最少手数記録を読み込み（章対応するステージのクリア手数を章カードに表示）
   const scores = (window.SaveEngine && SaveEngine.loadStageScores) ? SaveEngine.loadStageScores() : {};
   const triggerMap = window.PUZZLE_TRIGGER_MAP || {};
+  const hasI18n = window.I18n && I18n.loaded;
+  const t = (key, vars) => hasI18n ? I18n.t(key, vars) : null;
   SCENARIOS_V8.forEach((ch, idx) => {
-    const meta = CHAPTER_META[idx] || {label: ch.title, sub: ''};
+    const meta = getChapterMeta(idx) || {label: ch.title, sub: ''};
     // 章idx → 対応するパズルステージ番号（chapterTrigger マップから逆引き）
     const stageNum = triggerMap[idx];
     const bestScore = (stageNum && scores[String(stageNum)]) || null;
-    const scoreHtml = bestScore
-      ? '<div class="score">── 最少 ' + bestScore + ' 手 ──</div>'
+    const bestText = bestScore
+      ? (t('select.bestMovesTemplate', {n: bestScore}) || ('── 最少 ' + bestScore + ' 手 ──'))
       : '';
+    const scoreHtml = bestScore ? '<div class="score">' + bestText + '</div>' : '';
+    const tapText = t('select.tapCountTemplate', {n: ch.taps.length}) || (ch.taps.length + 'タップ');
     const btn = document.createElement('button');
     btn.className = 'ch-card' + (bestScore ? ' cleared' : '');
     btn.innerHTML = '<div class="label">'+meta.label+'</div>' +
                     '<div class="sub">'+meta.sub+'</div>' +
-                    '<div class="meta">'+ch.taps.length+'タップ</div>' +
+                    '<div class="meta">'+tapText+'</div>' +
                     scoreHtml;
     btn.onclick = () => showChapterTitle(idx, () => startScenario(idx, 0, 0));
     list.appendChild(btn);
   });
-  $('select-footer').textContent = '全 '+SCENARIOS_V8.length+' 章 ／ 全 '+SCENARIOS_V8.reduce((s,c)=>s+c.taps.length,0)+' タップ';
+  const chapters = SCENARIOS_V8.length;
+  const taps = SCENARIOS_V8.reduce((s,c)=>s+c.taps.length,0);
+  $('select-footer').textContent = t('select.footerTemplate', {chapters, taps}) || ('全 '+chapters+' 章 ／ 全 '+taps+' タップ');
   $('btn-select-back').onclick = () => showTitleScreen();
 }
 
 function showChapterTitle(idx, onComplete) {
   console.log('[showChapterTitle] START idx=' + idx);
-  const meta = CHAPTER_META[idx];
+  const meta = getChapterMeta(idx);
   if (!meta) { console.log('[showChapterTitle] meta なし → onComplete即実行'); if (onComplete) onComplete(); return; }
   hardClearImageLayers();
+  // ★章タイトル表示と同時に該当章のADV BGMへクロスフェード
+  //   （例：リザルト画面のBGM-07 → BGM-01。既存BGMなら再生継続）
+  if (window.GameAudio) {
+    const nextBgm = selectAdvBgm(idx);
+    if (GameAudio.currentBgmId !== nextBgm) GameAudio.playBgm(nextBgm);
+  }
   $('cto-label').textContent = meta.label;
   $('cto-sub').textContent = meta.sub;
   const overlay = $('chapter-title-overlay');
@@ -215,8 +428,9 @@ function startScenario(idx, tap, page) {
   tap = tap || 0; page = page || 0;
   mode = 'normal';
   chapterIdx = idx; tapIdx = tap; pageIdx = page;
+  if (window.GameAudio) GameAudio.playBgm(selectAdvBgm(idx));  // 章に応じたADV BGM
   ImageLoader.preloadForChapter(SCENARIOS_V8, idx);
-  $('btn-sc-back').textContent = '← 章選択';
+  $('btn-sc-back').textContent = (window.I18n && I18n.loaded) ? I18n.t('buttons.backToChapters') : '← 章選択';
   // 通常モード時は右側の章スキップボタンを再表示
   const skipBtn = $('btn-sc-skip');
   if (skipBtn) skipBtn.style.visibility = '';
@@ -244,7 +458,18 @@ function renderCnt() {
 function renderTap() {
   const ch = SCENARIOS_V8[chapterIdx];
   const tap = ch.taps[tapIdx];
-  pages = TextEngine.paginate(tap.text);
+  const isEn = document.body.classList.contains('lang-en');
+  // ★言語別 pages を優先：英語版があれば pages_en、無ければ日本語 pages にフォールバック
+  const enPages = Array.isArray(tap.pages_en) && tap.pages_en.length > 0 ? tap.pages_en : null;
+  const jaPages = Array.isArray(tap.pages) && tap.pages.length > 0 ? tap.pages : null;
+  const chosen = (isEn && enPages) ? enPages : (jaPages || null);
+  if (chosen) {
+    pages = chosen.slice();
+  } else {
+    // 従来通り自動改行（フォールバック）
+    const text = (isEn && tap.text_en) ? tap.text_en : tap.text;
+    pages = TextEngine.paginate(text);
+  }
   if (pageIdx >= pages.length) pageIdx = 0;
   // 章タイトル表示はカット済（章冒頭のフルスクリーン表示で代替）
   const chLabel = $('sc-ch-label');
@@ -349,6 +574,7 @@ function startPuzzle(puzzleNum, nextChapterIdx) {
   // パズル発火時に背景を強制クリア（前画面の画像が残らないように）
   hardClearImageLayers();
   showScreen('puzzle-screen');
+  if (window.GameAudio) GameAudio.playBgm(selectPuzzleBgm(puzzleNum));  // ステージ別パズルBGM
   const savedChapterIdx = chapterIdx;  // ★closureに固定（クリア時にchapterIdxが変わっても安全）
   PuzzleGame.start(puzzleNum, {
     onClear: function() {
@@ -476,6 +702,8 @@ window.addEventListener('DOMContentLoaded', async () => {
   if (window.I18n) {
     try { await I18n.init(); } catch (e) { console.warn('[i18n] init failed, using HTML defaults:', e); }
   }
+  // ★音声エンジン初期化（プリロード＋ジェスチャー待機）
+  if (window.GameAudio) { try { GameAudio.init(); } catch(e) { console.warn('[audio] init failed:', e); } }
   bootLogo();
   bootTitle();
   buildSelectList();

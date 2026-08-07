@@ -1,36 +1,115 @@
 {
-  "title": "第9章 ─ 座敷の怒号と蔵の影",
+  "title": "第十章 ─ 座敷の怒号と蔵の影",
   "folder": "chapter_09",
   "taps": [
     {
       "no": 1,
-      "text": "その日の昼下がり、屋敷の南面の座敷から、父の怒号が突如として響き渡った。\n座敷の中央には、書生が畳に手をついて控えている。父はその書生を前に、煙管を畳に強く打ちつけた。\n「書生！　お前様は、何のために此処に居るのじゃ！」\n父の声には、家の主としての怒気のほかに、何ものかをかろうじて押さえつけているような揺らぎが、ふと混じった。",
-      "img": "assets/images/chapter_09/IMG-077.webp"
+      "img": "assets/images/chapter_09/IMG-077.webp",
+      "pages": [
+        "その日の昼下がり、屋敷の南面の座敷から、\n父の怒号が突如として響き渡った。\n座敷の中央には、書生が畳に手をついて\n控えている。",
+        "父はその書生を前に、\n煙管を畳に強く打ちつけた。\n「お前様は、何のために\n此処に居るのじゃ！」",
+        "父の声には、家の主としての怒気のほかに、\n何かをかろうじて押さえつけているような\n奇妙な揺らぎが、混じっていた。"
+      ],
+      "text": "その日の昼下がり、屋敷の南面の座敷から、\n父の怒号が突如として響き渡った。\n座敷の中央には、書生が畳に手をついて\n控えている。\n父はその書生を前に、\n煙管を畳に強く打ちつけた。\n「お前様は、何のために\n此処に居るのじゃ！」\n父の声には、家の主としての怒気のほかに、\n何かをかろうじて押さえつけているような\n奇妙な揺らぎが、混じっていた。",
+      "pages_en": [
+        "That day, in the afternoon,\nfrom the south parlor of the manor,\nthe father's shouting suddenly rang out.\nBefore him, the student knelt low.",
+        "The father, before the student,\nstruck his pipe hard against the tatami.\n\"What purpose brings you\ninto this house?\"",
+        "In the father's voice,\nbeyond a master's anger,\nlay a strange wavering ─\nas though something else was held back."
+      ],
+      "text_en": "That day, in the afternoon,\nfrom the south parlor of the manor,\nthe father's shouting suddenly rang out.\nBefore him, the student knelt low.\nThe father, before the student,\nstruck his pipe hard against the tatami.\n\"What purpose brings you\ninto this house?\"\nIn the father's voice,\nbeyond a master's anger,\nlay a strange wavering ─\nas though something else was held back."
     },
     {
       "no": 2,
-      "text": "そのとき、座敷の襖が静かに開き、叔母が裾を引きながら入ってきた。",
-      "img": "assets/images/chapter_09/IMG-078.webp"
+      "img": "assets/images/chapter_09/IMG-078.webp",
+      "pages": [
+        "そのとき、座敷の襖が静かに開き、\n叔母が裾を引きながら入ってきた。"
+      ],
+      "text": "そのとき、座敷の襖が静かに開き、\n叔母が裾を引きながら入ってきた。",
+      "pages_en": [
+        "At that moment the door slid open,\nand the aunt entered,\ntrailing the hem of her robe."
+      ],
+      "text_en": "At that moment the door slid open,\nand the aunt entered,\ntrailing the hem of her robe."
     },
     {
       "no": 3,
-      "text": "「弟様、お目を瞑り下さりませ。この者は、私の縁で雇うた者にござります」\n叔母の声は、父の怒号とは打って変わって、冷たく澄んでいた。\n父は、煙管を再び畳に打つでもなく、ひとつ長き息を吐いた。それから、煙管を畳の上にことりと落とすと、奥の襖の方へと歩み去った。",
-      "img": "assets/images/chapter_09/IMG-079.webp"
+      "img": "assets/images/chapter_09/IMG-079.webp",
+      "pages": [
+        "「弟様、お目を瞑り下さりませ。\nこの者は、私の縁で雇うた者にござります」\n叔母の声は、父の怒号とは打って変わって、\n冷たく澄んでいた。",
+        "父は顔をしかめた後、長き息を吐いた。\nそれから、煙管を畳の上に叩きつけると、\n奥の襖の方へと歩み去った。"
+      ],
+      "text": "「弟様、お目を瞑り下さりませ。\nこの者は、私の縁で雇うた者にござります」\n叔母の声は、父の怒号とは打って変わって、\n冷たく澄んでいた。\n父は顔をしかめた後、長き息を吐いた。\nそれから、煙管を畳の上に叩きつけると、\n奥の襖の方へと歩み去った。",
+      "pages_en": [
+        "\"Younger brother, avert your eyes.\nThis one was taken into service\nthrough my connections,\" said the aunt.",
+        "Her voice, cool and clear,\nstood apart from the father's rage.\nThe father grimaced, drew a long breath,\nthen threw his pipe down",
+        "and departed toward the inner door."
+      ],
+      "text_en": "\"Younger brother, avert your eyes.\nThis one was taken into service\nthrough my connections,\" said the aunt.\nHer voice, cool and clear,\nstood apart from the father's rage.\nThe father grimaced, drew a long breath,\nthen threw his pipe down\nand departed toward the inner door."
     },
     {
       "no": 4,
-      "text": "夜が更けて、屋敷の北西の蔵に、ひとつの灯が点る。蔵の中では、書生が古文書の頁を膝に開き、その灯の下で一文字を、和紙に写し取っていた。\n書生の傍らには、叔父の影が控えている。叔父は和紙を覗き込み、低く一言を漏らした。",
-      "img": "assets/images/chapter_09/IMG-080.webp"
+      "img": "assets/images/chapter_09/IMG-080.webp",
+      "pages": [
+        "夜も更けた頃――、\n屋敷の蔵に、ひとつの灯がともっていた。\n蔵の中では、書生が古文書の頁を膝に開き、\n灯の下で文字を写し取っていた。",
+        "書生の傍らには、叔父の影が控えている。\n叔父は紙を覗き込み、低く一言を漏らした。"
+      ],
+      "text": "夜も更けた頃――、\n屋敷の蔵に、ひとつの灯がともっていた。\n蔵の中では、書生が古文書の頁を膝に開き、\n灯の下で文字を写し取っていた。\n書生の傍らには、叔父の影が控えている。\n叔父は紙を覗き込み、低く一言を漏らした。",
+      "pages_en": [
+        "Late that night,\nin the storehouse of the manor,\na single lamp burned.\nWithin, the student had opened",
+        "an old text upon his knees\nand was transcribing its characters\nbeneath the lamp.\nBeside him stood the uncle's shadow."
+      ],
+      "text_en": "Late that night,\nin the storehouse of the manor,\na single lamp burned.\nWithin, the student had opened\nan old text upon his knees\nand was transcribing its characters\nbeneath the lamp.\nBeside him stood the uncle's shadow."
     },
     {
       "no": 5,
-      "text": "「何の文字じゃ」── 叔父の低い問いに、書生は和紙の文字の上に指を置き、低く返した。「これは……神の名でしょうか」\n「分からぬ。だが、何ぞの呪術の符牒であるらしい」── 叔父の声。\n同じ刻、書生の部屋の障子の前には、もうひとつ別の影が立っていた。叔母の影である。",
-      "img": "assets/images/chapter_09/IMG-081.webp"
+      "img": "assets/images/chapter_09/IMG-081.webp",
+      "pages": [
+        "「何の文字じゃ」\n 叔父の問いに、書生は\n文字の上に指を置き、静かに返した。\n「これは……神の名でしょうか」",
+        "「分からぬ……。\nだが、何ぞの呪術の符牒であるな」\nそう呟く叔父の眼は妖しく輝いていた。"
+      ],
+      "text": "「何の文字じゃ」\n 叔父の問いに、書生は\n文字の上に指を置き、静かに返した。\n「これは……神の名でしょうか」\n「分からぬ……。\nだが、何ぞの呪術の符牒であるな」\nそう呟く叔父の眼は妖しく輝いていた。",
+      "pages_en": [
+        "The uncle leaned close over the paper\nand murmured, low:\n\"What character is this?\"\nThe student set his finger on the mark",
+        "and answered quietly:\n\"Perhaps… the name of a god.\"\n\"I do not know,\" said the uncle,\n\"but it is a cipher of some spellcraft.\"",
+        "His eyes shone with an eerie light."
+      ],
+      "text_en": "The uncle leaned close over the paper\nand murmured, low:\n\"What character is this?\"\nThe student set his finger on the mark\nand answered quietly:\n\"Perhaps… the name of a god.\"\n\"I do not know,\" said the uncle,\n\"but it is a cipher of some spellcraft.\"\nHis eyes shone with an eerie light."
     },
     {
       "no": 6,
-      "text": "叔母は、書生が蔵を去って自室へ戻る頃合いを、身じろぎもせずに待ち続けていた。\n座牢の格子越しには、蔵の灯と、書生の部屋の障子の影とが、二つともわずかに望めた。娘は、その二つの灯を、しばらく交互に見つめていたのであった。",
-      "img": "assets/images/chapter_09/IMG-082.webp"
+      "img": "assets/images/chapter_10/IMG-166.webp",
+      "pages": [
+        "同じ刻、蔵の前には、別の影が立っていた。\n叔母である――。叔母は、\n書生が蔵を去って自室へ戻る頃合いを、\n身じろぎもせずに待ち続けていた。"
+      ],
+      "text": "同じ刻、蔵の前には、別の影が立っていた。\n叔母である――。叔母は、\n書生が蔵を去って自室へ戻る頃合いを、\n身じろぎもせずに待ち続けていた。",
+      "pages_en": [
+        "At that same hour,\nbefore the storehouse\nanother figure stood ─ the aunt.\nShe waited without stirring",
+        "for the time when the student\nwould leave and return to his room."
+      ],
+      "text_en": "At that same hour,\nbefore the storehouse\nanother figure stood ─ the aunt.\nShe waited without stirring\nfor the time when the student\nwould leave and return to his room."
+    },
+    {
+      "no": 7,
+      "img": "assets/images/chapter_10/IMG-166.webp",
+      "pages": [
+        "座牢の格子越しには、蔵の灯と、\n叔母の影とが、二つともわずかに望めた。"
+      ],
+      "text": "座牢の格子越しには、蔵の灯と、\n叔母の影とが、二つともわずかに望めた。",
+      "pages_en": [
+        "Through the lattice of the Cell,\nboth the storehouse's lamp\nand the aunt's shadow\ncould just be seen."
+      ],
+      "text_en": "Through the lattice of the Cell,\nboth the storehouse's lamp\nand the aunt's shadow\ncould just be seen."
+    },
+    {
+      "no": 8,
+      "img": "assets/images/chapter_09/IMG-082.webp",
+      "pages": [
+        "娘は、その二つを、しばらく交互に\n見つめていたのであった。"
+      ],
+      "text": "娘は、その二つを、しばらく交互に\n見つめていたのであった。",
+      "pages_en": [
+        "The girl watched both, in turn,\nfor a long time."
+      ],
+      "text_en": "The girl watched both, in turn,\nfor a long time."
     }
   ]
 }

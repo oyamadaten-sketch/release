@@ -1,36 +1,110 @@
 {
-  "title": "第21章 ─ 葬列と発作",
+  "title": "第二十二章 ─ 葬列と発作",
   "folder": "chapter_21",
   "taps": [
     {
       "no": 1,
-      "text": "翌朝、屋敷の門前には、黒衣の客が静かに並んだ。\n坊主の経が、玄関先より座敷へと響き渡ってゆく。\n弔問の客が、廊下を絶え間なく行き来している。\n娘は座牢の高窓辺で、霊柩の車をじっと見送っていた。\n思わず、両の親指を拳の中に隠す。\n幼き日、母が娘の親指隠しを「もう、その所作はなさるな」と強く制止された場面が、ふいに蘇ってきた。\nいま、母は俯いたまま、何ひとつ仰らない。\n葬列の最後尾には、兄が控えていた。",
-      "img": "assets/images/chapter_21/IMG-142.webp"
+      "img": "assets/images/chapter_01/IMG-014.webp",
+      "pages": [
+        "翌朝、屋敷の門前には、\n黒衣の客が静かに並んだ。坊主の経が、\n玄関先より座敷へと響き渡り、弔問の客が、\n廊下を絶え間なく行き来している。"
+      ],
+      "text": "翌朝、屋敷の門前には、\n黒衣の客が静かに並んだ。坊主の経が、\n玄関先より座敷へと響き渡り、弔問の客が、\n廊下を絶え間なく行き来している。",
+      "pages_en": [
+        "The next morning, before the manor gate,\nblack-robed mourners stood in silence.\nThe sutra of a monk\nreached from the entrance to the parlor,",
+        "and mourners passed ceaselessly\nthrough the corridors."
+      ],
+      "text_en": "The next morning, before the manor gate,\nblack-robed mourners stood in silence.\nThe sutra of a monk\nreached from the entrance to the parlor,\nand mourners passed ceaselessly\nthrough the corridors."
     },
     {
       "no": 2,
-      "text": "兄の眼は、深く翳っている。あの祭壇の前で挑むように放った光は、もうそこにはなかった。\n一度だけ、兄は娘の方を振り返り、すぐに目を伏せる。",
-      "img": "assets/images/chapter_21/IMG-143.webp"
+      "img": "assets/images/chapter_21/IMG-142.webp",
+      "pages": [
+        "娘は座牢の高窓辺で、\n霊柩の車をじっと見送っていた。\n思わず、両の親指を拳の中に隠す。",
+        "幼き日、葬列を前に親指を隠し日――、\n「もう、その所作はなさるな」と、\n強く制止されたことが、ふいに蘇ってきた。\nいま、母が娘に声をかけることはなかった。"
+      ],
+      "text": "娘は座牢の高窓辺で、\n霊柩の車をじっと見送っていた。\n思わず、両の親指を拳の中に隠す。\n幼き日、葬列を前に親指を隠し日――、\n「もう、その所作はなさるな」と、\n強く制止されたことが、ふいに蘇ってきた。\nいま、母が娘に声をかけることはなかった。",
+      "pages_en": [
+        "At the high window of the Cell,\nthe girl watched the funeral cart go.\nWithout thinking,\nshe folded her thumbs into her fists.",
+        "The day of her childhood,\nwhen a bier had passed the manor,\nand she had hidden her thumbs ─\nthat day, forbidden by her mother,",
+        "rose up again unbidden.\nThis time, the mother said\nnothing to her at all."
+      ],
+      "text_en": "At the high window of the Cell,\nthe girl watched the funeral cart go.\nWithout thinking,\nshe folded her thumbs into her fists.\nThe day of her childhood,\nwhen a bier had passed the manor,\nand she had hidden her thumbs ─\nthat day, forbidden by her mother,\nrose up again unbidden.\nThis time, the mother said\nnothing to her at all."
     },
     {
       "no": 3,
-      "text": "葬儀の終わり、廊下を行き過ぎる叔母が、座牢の前で足を止めた。",
-      "img": "assets/images/chapter_21/IMG-144.webp"
+      "img": "assets/images/chapter_21/IMG-143.webp",
+      "pages": [
+        "葬列の最後尾には、兄が控えていた。\n兄の眼は、深く翳っている。\nあの祭壇の前で挑むように放った光は、\nもうそこにはなかった。",
+        "一度だけ、兄は娘の方を振り返り、\nすぐに目を伏せる。"
+      ],
+      "text": "葬列の最後尾には、兄が控えていた。\n兄の眼は、深く翳っている。\nあの祭壇の前で挑むように放った光は、\nもうそこにはなかった。\n一度だけ、兄は娘の方を振り返り、\nすぐに目を伏せる。",
+      "pages_en": [
+        "At the tail of the procession\nwalked the elder brother.\nHis eyes were sunk in shadow.\nThe light that had once flared",
+        "before the altar\nwas nowhere to be seen.\nJust once, he turned to look\ntoward the Cell,",
+        "then quickly lowered his gaze."
+      ],
+      "text_en": "At the tail of the procession\nwalked the elder brother.\nHis eyes were sunk in shadow.\nThe light that had once flared\nbefore the altar\nwas nowhere to be seen.\nJust once, he turned to look\ntoward the Cell,\nthen quickly lowered his gaze."
     },
     {
       "no": 4,
-      "text": "「お母様の御寝言、聞こえなんだか」── 叔母の声は、笑みを含んでいる。\n娘は、思わず息を呑んだ。",
-      "img": "assets/images/chapter_21/IMG-145.webp"
+      "img": "assets/images/chapter_21/IMG-144.webp",
+      "pages": [
+        "葬儀の終わり、廊下を行き過ぎる叔母が、\nふと座牢の前で足を止めた。\nそして唐突に声をかける。\n「お前さん……」"
+      ],
+      "text": "葬儀の終わり、廊下を行き過ぎる叔母が、\nふと座牢の前で足を止めた。\nそして唐突に声をかける。\n「お前さん……」",
+      "pages_en": [
+        "At the funeral's end,\nas the aunt passed down the hall,\nshe stopped before the Cell.\nShe spoke, without warning:",
+        "\"You there…\""
+      ],
+      "text_en": "At the funeral's end,\nas the aunt passed down the hall,\nshe stopped before the Cell.\nShe spoke, without warning:\n\"You there…\""
     },
     {
       "no": 5,
-      "text": "その夜更け、父の寝所から、母の凄まじい声が響いた。「父様！」",
-      "img": "assets/images/chapter_21/IMG-146.webp"
+      "img": "assets/images/chapter_21/IMG-145.webp",
+      "pages": [
+        "「お母様の御寝言、聞こえなんだか？」\n叔母の声は、笑みを含んでいる。\n娘は、思わず息を呑んだ。"
+      ],
+      "text": "「お母様の御寝言、聞こえなんだか？」\n叔母の声は、笑みを含んでいる。\n娘は、思わず息を呑んだ。",
+      "pages_en": [
+        "\"Did you not hear\nyour mother's sleep-talk?\"\nA smile played in her voice.\nThe girl caught her breath despite herself."
+      ],
+      "text_en": "\"Did you not hear\nyour mother's sleep-talk?\"\nA smile played in her voice.\nThe girl caught her breath despite herself."
     },
     {
       "no": 6,
-      "text": "母が御抱の老医師を呼びに、廊下を駆け抜けてゆく。座牢の障子がその風で、僅かに震えた。震えの後に残された静けさの中で、娘は自らの拳の中の親指を、まだ解くことが叶わなかったのであった。",
-      "img": "assets/images/chapter_21/IMG-147.webp"
+      "img": "assets/images/chapter_21/IMG-146.webp",
+      "pages": [
+        "その夜更け、父の寝所から、\n母の凄まじい声が響いた。\n「父様！」"
+      ],
+      "text": "その夜更け、父の寝所から、\n母の凄まじい声が響いた。\n「父様！」",
+      "pages_en": [
+        "Late that night,\nfrom the father's chamber\nthe mother's sudden cry rang out:\n\"Father!\""
+      ],
+      "text_en": "Late that night,\nfrom the father's chamber\nthe mother's sudden cry rang out:\n\"Father!\""
+    },
+    {
+      "no": 7,
+      "img": "assets/images/chapter_21/IMG-146.webp",
+      "pages": [
+        "母が御抱の老医師を呼びに、\n廊下を駆け抜けてゆく。\n座牢の障子がその風で、僅かに震えた。"
+      ],
+      "text": "母が御抱の老医師を呼びに、\n廊下を駆け抜けてゆく。\n座牢の障子がその風で、僅かに震えた。",
+      "pages_en": [
+        "She ran down the hall\nto fetch the old family physician.\nThe wind of her passing\ntrembled the paper of the Cell."
+      ],
+      "text_en": "She ran down the hall\nto fetch the old family physician.\nThe wind of her passing\ntrembled the paper of the Cell."
+    },
+    {
+      "no": 8,
+      "img": "assets/images/chapter_21/IMG-147.webp",
+      "pages": [
+        "震えの後に残された静けさの中で、\n娘は自らの拳の中の親指を、\nまだ解くことが叶わなかったのであった。"
+      ],
+      "text": "震えの後に残された静けさの中で、\n娘は自らの拳の中の親指を、\nまだ解くことが叶わなかったのであった。",
+      "pages_en": [
+        "In the stillness left behind,\nthe girl could not yet\nunfold her thumbs\nfrom within her fists."
+      ],
+      "text_en": "In the stillness left behind,\nthe girl could not yet\nunfold her thumbs\nfrom within her fists."
     }
   ]
 }

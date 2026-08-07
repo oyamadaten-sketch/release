@@ -1,51 +1,128 @@
 {
-  "title": "第4章 ─ 測る眼",
+  "title": "第五章 ─ 測る眼",
   "folder": "chapter_04",
   "taps": [
     {
       "no": 1,
-      "text": "同じ月の夜、座牢の錠は再び娘の指の下で外れた。娘は寝間着の裾を膝で握り、廊下の闇を奥へと進む。",
-      "img": "assets/images/chapter_04/IMG-038.webp"
+      "img": "assets/images/chapter_04/IMG-038.webp",
+      "pages": [
+        "同じ月の夜、座牢の錠は\n再び娘の指の下で外れた。\n娘は着物の裾を膝で握り、\n廊下の闇を奥へと進む。"
+      ],
+      "text": "同じ月の夜、座牢の錠は\n再び娘の指の下で外れた。\n娘は着物の裾を膝で握り、\n廊下の闇を奥へと進む。",
+      "pages_en": [
+        "That same month, on another night,\nthe Cell's lock again yielded\nbeneath the girl's finger.\nShe gathered the hem of her robe",
+        "and pressed on into the hall's darkness."
+      ],
+      "text_en": "That same month, on another night,\nthe Cell's lock again yielded\nbeneath the girl's finger.\nShe gathered the hem of her robe\nand pressed on into the hall's darkness."
     },
     {
       "no": 2,
-      "text": "廊下を抜け、玄関の三和土に降り立った娘の肩を、太き手が後ろから掴んだ。\n番頭であった。番頭は屋敷の玄関口を夜ごと巡回する役であり、その手はやすやすと娘の肩を抑え込む。",
-      "img": "assets/images/chapter_04/IMG-039.webp"
+      "img": "assets/images/chapter_04/IMG-039.webp",
+      "pages": [
+        "廊下を抜け――、\n玄関の三和土に降り立った娘の肩を、\n太き手が後ろから掴んだ。\n番頭であった。",
+        "番頭は屋敷の玄関口を\n夜ごと巡回する役であり、\nその手はやすやすと娘の肩を抑え込む。"
+      ],
+      "text": "廊下を抜け――、\n玄関の三和土に降り立った娘の肩を、\n太き手が後ろから掴んだ。\n番頭であった。\n番頭は屋敷の玄関口を\n夜ごと巡回する役であり、\nその手はやすやすと娘の肩を抑え込む。",
+      "pages_en": [
+        "She passed through the corridor ─\nand as she stepped down\nonto the entrance stones,\na thick hand seized her shoulder.",
+        "It was the head clerk,\nwhose duty was to patrol\nthe manor's entrance in the night.\nHis grip pinned her without effort."
+      ],
+      "text_en": "She passed through the corridor ─\nand as she stepped down\nonto the entrance stones,\na thick hand seized her shoulder.\nIt was the head clerk,\nwhose duty was to patrol\nthe manor's entrance in the night.\nHis grip pinned her without effort."
     },
     {
       "no": 3,
-      "text": "騒ぎを聞きつけて、屋敷の者が次々と廊下に集まってきた。父は奥座敷の障子の蔭から、娘の方を一度だけ見て、それきり奥へと退いた。",
-      "img": "assets/images/chapter_04/IMG-040.webp"
+      "img": "assets/images/chapter_04/IMG-040.webp",
+      "pages": [
+        "騒ぎを聞きつけて、屋敷の者が\n次々と廊下に集まってきた。\n父は奥座敷の障子の蔭から、娘の方を\n一度だけ見て、静かに部屋の奥へ退いた。"
+      ],
+      "text": "騒ぎを聞きつけて、屋敷の者が\n次々と廊下に集まってきた。\n父は奥座敷の障子の蔭から、娘の方を\n一度だけ見て、静かに部屋の奥へ退いた。",
+      "pages_en": [
+        "Roused by the noise,\nmembers of the household\ngathered one by one in the hall.\nThe father, from behind the study door,",
+        "cast one glance at the girl,\nthen quietly withdrew into the room."
+      ],
+      "text_en": "Roused by the noise,\nmembers of the household\ngathered one by one in the hall.\nThe father, from behind the study door,\ncast one glance at the girl,\nthen quietly withdrew into the room."
     },
     {
       "no": 4,
-      "text": "廊下の隅には、見知らぬ若い男がひとり、書物を脇に挟んだまま立っていた。書生である。",
-      "img": "assets/images/chapter_04/IMG-041.webp"
+      "img": "assets/images/chapter_04/IMG-041.webp",
+      "pages": [
+        "廊下の隅には、若い男がひとり、\n書物を脇に挟んだまま立っていた。\n書生である。"
+      ],
+      "text": "廊下の隅には、若い男がひとり、\n書物を脇に挟んだまま立っていた。\n書生である。",
+      "pages_en": [
+        "At the edge of the hall\nstood a young man,\na book pressed under his arm.\nIt was the student."
+      ],
+      "text_en": "At the edge of the hall\nstood a young man,\na book pressed under his arm.\nIt was the student."
     },
     {
       "no": 5,
-      "text": "書生は腕を組むでもなく、ただ娘の身体の動きを、紙の上に写し取るような眼差しで見つめていた。\nその眼差しに、娘は思わず身を竦めた。",
-      "img": "assets/images/chapter_04/IMG-042.webp"
+      "img": "assets/images/chapter_04/IMG-042.webp",
+      "pages": [
+        "書生は、娘の姿を紙の上に\n写し取るような眼差しで見つめていた。\nその眼差しに、娘は思わず身を竦めた。"
+      ],
+      "text": "書生は、娘の姿を紙の上に\n写し取るような眼差しで見つめていた。\nその眼差しに、娘は思わず身を竦めた。",
+      "pages_en": [
+        "He gazed at the girl\nas though writing her likeness\nonto paper.\nUnder his gaze, she flinched instinctively."
+      ],
+      "text_en": "He gazed at the girl\nas though writing her likeness\nonto paper.\nUnder his gaze, she flinched instinctively."
     },
     {
       "no": 6,
-      "text": "廊下のさらに奥では、叔父がやはり、人々の輪には加わらず、柱に背を寄せたまま目を逸らしている。\n番頭の手によって、娘は再び座牢へと連れ戻された。",
-      "img": "assets/images/chapter_04/IMG-043.webp"
+      "img": "assets/images/chapter_04/IMG-043.webp",
+      "pages": [
+        "廊下のさらに奥では、叔父がやはり、\n人々の輪には加わらず、\n柱に背を寄せたまま目を逸らしている。",
+        "そうこうしているうちに、\n娘は番頭の手によって、再び座牢へと\n連れ戻された。"
+      ],
+      "text": "廊下のさらに奥では、叔父がやはり、\n人々の輪には加わらず、\n柱に背を寄せたまま目を逸らしている。\nそうこうしているうちに、\n娘は番頭の手によって、再び座牢へと\n連れ戻された。",
+      "pages_en": [
+        "Farther still down the hall,\nthe uncle again did not join the crowd,\nbut leaned against a post,\nhis eyes turned aside.",
+        "Meanwhile, the head clerk led the girl\nback to the Cell once more."
+      ],
+      "text_en": "Farther still down the hall,\nthe uncle again did not join the crowd,\nbut leaned against a post,\nhis eyes turned aside.\nMeanwhile, the head clerk led the girl\nback to the Cell once more."
     },
     {
       "no": 7,
-      "text": "その夜、母は座牢に膳を運んだ折、格子戸の脇の小窓越しに、低く一言を娘に告げた。\n「あの書生という者の眼差しには、お気をつけなされませ」\n「お前様の挙措を、長く目で追うておりました」",
-      "img": "assets/images/chapter_04/IMG-044.webp"
+      "img": "assets/images/chapter_04/IMG-044.webp",
+      "pages": [
+        "その夜、母は座牢に膳を運んだ折、\n格子戸の脇の小窓越しに、言葉をかけた。\n「あの書生には、お気をつけなされませ」",
+        "「お前様の挙措を、\n長く目で追うておりました」"
+      ],
+      "text": "その夜、母は座牢に膳を運んだ折、\n格子戸の脇の小窓越しに、言葉をかけた。\n「あの書生には、お気をつけなされませ」\n「お前様の挙措を、\n長く目で追うておりました」",
+      "pages_en": [
+        "That night, when the mother\nbrought a tray to the Cell,\nshe spoke through the small hatch:\n\"Be wary of that student.\"",
+        "\"He has followed your every movement\nwith his eyes,\nfor a long time now.\""
+      ],
+      "text_en": "That night, when the mother\nbrought a tray to the Cell,\nshe spoke through the small hatch:\n\"Be wary of that student.\"\n\"He has followed your every movement\nwith his eyes,\nfor a long time now.\""
     },
     {
       "no": 8,
-      "text": "母はそれだけを告げて、座牢の格子戸を閉ざしてゆく。母の袂の影が、廊下の畳の上を、ひとすじだけ揺らして消えた。\n座牢にひとり残された娘は、ふと、畳の縁の朱に気がついた。",
-      "img": "assets/images/chapter_04/IMG-045.webp"
+      "img": "assets/images/chapter_04/IMG-045.webp",
+      "pages": [
+        "母はそれだけを告げて、\n座牢の格子戸を閉ざしてゆく。\n母の袂の影が、廊下の畳の上を、\nひとすじだけ揺らして消えた。",
+        "座牢にひとり残された娘は、\nふと、畳の縁の朱に気がついた。"
+      ],
+      "text": "母はそれだけを告げて、\n座牢の格子戸を閉ざしてゆく。\n母の袂の影が、廊下の畳の上を、\nひとすじだけ揺らして消えた。\n座牢にひとり残された娘は、\nふと、畳の縁の朱に気がついた。",
+      "pages_en": [
+        "The mother said only that,\nand closed the lattice.\nThe shadow of her sleeve trembled once\non the hallway tatami and vanished.",
+        "Left alone in the Cell,\nthe girl noticed a crimson stain\non the edge of the tatami."
+      ],
+      "text_en": "The mother said only that,\nand closed the lattice.\nThe shadow of her sleeve trembled once\non the hallway tatami and vanished.\nLeft alone in the Cell,\nthe girl noticed a crimson stain\non the edge of the tatami."
     },
     {
       "no": 9,
-      "text": "子供の掌ほどの朱の手形がひとつ。それがいつから其処にあるのか、娘にはもう、思い出せなかった。\n朱の縁に指を伸ばすと、指先からは、見られているという ── 言葉にしがたい感覚が、ふいに立ち昇ってくる。\n感覚の主は見えない。けれども娘の指はもう、朱の縁から離れることが叶わなかったのであった。",
-      "img": "assets/images/chapter_04/IMG-046.webp"
+      "img": "assets/images/chapter_04/IMG-046.webp",
+      "pages": [
+        "子供の掌ほどの朱の手形がひとつ。\nそれがいつから其処にあるのか、\n娘には思い出せなかった。",
+        "朱の縁に指を伸ばした、その時、\n何者にか見られているという感覚が、\nふいに立ち昇ってきた。\n感覚の主は見えない。",
+        "されども娘は、朱の縁から、\n手を離さなかった。否、離せなかった。\nその朱の手形には娘を引き付ける、\n奇妙な力が宿っているようであった。"
+      ],
+      "text": "子供の掌ほどの朱の手形がひとつ。\nそれがいつから其処にあるのか、\n娘には思い出せなかった。\n朱の縁に指を伸ばした、その時、\n何者にか見られているという感覚が、\nふいに立ち昇ってきた。\n感覚の主は見えない。\nされども娘は、朱の縁から、\n手を離さなかった。否、離せなかった。\nその朱の手形には娘を引き付ける、\n奇妙な力が宿っているようであった。",
+      "pages_en": [
+        "A small vermilion handprint,\nthe size of a child's palm.\nWhen it had first appeared there,\nthe girl could not recall.",
+        "As her finger reached toward its edge,\na sensation of being watched\nrose from somewhere unseen.\nShe could not tell its source.",
+        "Yet she did not lift her hand ─\nnor could she.\nSome strange power in that print\nseemed to hold her there."
+      ],
+      "text_en": "A small vermilion handprint,\nthe size of a child's palm.\nWhen it had first appeared there,\nthe girl could not recall.\nAs her finger reached toward its edge,\na sensation of being watched\nrose from somewhere unseen.\nShe could not tell its source.\nYet she did not lift her hand ─\nnor could she.\nSome strange power in that print\nseemed to hold her there."
     }
   ]
 }

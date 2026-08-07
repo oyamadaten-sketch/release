@@ -1,56 +1,133 @@
 {
-  "title": "第5章 ─ 会釈と祭壇の影",
+  "title": "第六章 ─ 会釈と祭壇の影",
   "folder": "chapter_05",
   "taps": [
     {
       "no": 1,
-      "text": "翌朝、屋敷の北の廊下を、叔父がゆっくりと歩いていた。",
-      "img": "assets/images/chapter_05/IMG-047.webp"
+      "img": "assets/images/chapter_05/IMG-047.webp",
+      "pages": [
+        "翌朝、屋敷の北の廊下を、\n叔父がゆっくりと歩いていた。"
+      ],
+      "text": "翌朝、屋敷の北の廊下を、\n叔父がゆっくりと歩いていた。",
+      "pages_en": [
+        "The next morning,\nthe uncle walked slowly\ndown the northern hallway of the manor."
+      ],
+      "text_en": "The next morning,\nthe uncle walked slowly\ndown the northern hallway of the manor."
     },
     {
       "no": 2,
-      "text": "叔父の手には、ひとつの膳が抱えられている。屋敷において叔父の膳を運ぶ役は、母をおいて他にはひとりもおらぬ。その朝もまた、叔父は自らの膳を自らの手で運んでいた。",
-      "img": "assets/images/chapter_05/IMG-048.webp"
+      "img": "assets/images/chapter_05/IMG-048.webp",
+      "pages": [
+        "叔父の手には、膳が抱えられている。\n屋敷において叔父の膳を運ぶ役は、\n母をおいて他にはひとりもおらぬ。\nしかし、今日は母の姿が見えなかった。",
+        "その朝は、叔父は自らの膳を\n自らの手で運んでいた。\nすると――、"
+      ],
+      "text": "叔父の手には、膳が抱えられている。\n屋敷において叔父の膳を運ぶ役は、\n母をおいて他にはひとりもおらぬ。\nしかし、今日は母の姿が見えなかった。\nその朝は、叔父は自らの膳を\n自らの手で運んでいた。\nすると――、",
+      "pages_en": [
+        "A tray was in his hands.\nThe carrying of the uncle's tray\nhad always fallen to the mother alone.\nBut this morning she was not to be seen.",
+        "That morning, the uncle carried\nhis own tray with his own hands.\nAnd then ─"
+      ],
+      "text_en": "A tray was in his hands.\nThe carrying of the uncle's tray\nhad always fallen to the mother alone.\nBut this morning she was not to be seen.\nThat morning, the uncle carried\nhis own tray with his own hands.\nAnd then ─"
     },
     {
       "no": 3,
-      "text": "廊下の彼方からは、叔母の鋭い声が「弟嫁、何をぐずぐずしておられるのじゃ」と飛ぶ。母は俯いたまま、決して応えなかった。",
-      "img": "assets/images/chapter_05/IMG-049.webp"
+      "img": "assets/images/chapter_05/IMG-049.webp",
+      "pages": [
+        "廊下の彼方から叔母の鋭い声が飛んできた。\n「弟嫁、何をぐずぐずしておられるのじゃ」\n叔母に睨みつけられた母は、\nただ俯いたまま、叔母の後に続くのだった。"
+      ],
+      "text": "廊下の彼方から叔母の鋭い声が飛んできた。\n「弟嫁、何をぐずぐずしておられるのじゃ」\n叔母に睨みつけられた母は、\nただ俯いたまま、叔母の後に続くのだった。",
+      "pages_en": [
+        "From the far end of the hall came\nthe sharp voice of the aunt:\n\"Sister-in-law, why are you dawdling?\"\nGlared at by the aunt, the mother",
+        "merely bowed her head\nand followed behind her."
+      ],
+      "text_en": "From the far end of the hall came\nthe sharp voice of the aunt:\n\"Sister-in-law, why are you dawdling?\"\nGlared at by the aunt, the mother\nmerely bowed her head\nand followed behind her."
     },
     {
       "no": 4,
-      "text": "叔父は座牢の前まで来ると、格子戸の方をちらりと一度だけ見た。\n座牢の中の娘は、その視線を受けて、格子越しに頭を深く下げる。\n叔父は会釈を返すでもなく、そのまま廊下を遠ざかってゆく。",
-      "img": "assets/images/chapter_05/IMG-050.webp"
+      "img": "assets/images/chapter_05/IMG-050.webp",
+      "pages": [
+        "叔父は座牢の前まで来ると、\n格子戸の方をちらりと一度だけ見た。\n座牢の中の娘は、その視線を受けて、\n格子越しに頭を深く下げる。",
+        "叔父は会釈を返すでもなく、\nそのまま廊下を遠ざかってゆく。"
+      ],
+      "text": "叔父は座牢の前まで来ると、\n格子戸の方をちらりと一度だけ見た。\n座牢の中の娘は、その視線を受けて、\n格子越しに頭を深く下げる。\n叔父は会釈を返すでもなく、\nそのまま廊下を遠ざかってゆく。",
+      "pages_en": [
+        "Reaching the Cell, the uncle\ncast one glance toward the lattice.\nWithin, the girl received his gaze\nand bowed low through the bars.",
+        "The uncle did not return the bow,\nbut walked on down the hall."
+      ],
+      "text_en": "Reaching the Cell, the uncle\ncast one glance toward the lattice.\nWithin, the girl received his gaze\nand bowed low through the bars.\nThe uncle did not return the bow,\nbut walked on down the hall."
     },
     {
       "no": 5,
-      "text": "角を曲がる手前で、叔父は一拍だけ、その場に立ち止まった。それから、奥座敷の方へとそのまま消えていった。\n叔父の姿が消えた後、座牢の娘は、高窓の方へ顔を向ける。",
-      "img": "assets/images/chapter_05/IMG-051.webp"
+      "img": "assets/images/chapter_05/IMG-051.webp",
+      "pages": [
+        "角を曲がる手前で、叔父は一拍だけ、\nその場に立ち止まった。それから、\n奥座敷の方へとそのまま消えていった。",
+        "叔父の姿が消えた後、座牢の娘は、\n高窓の方へ顔を向ける。"
+      ],
+      "text": "角を曲がる手前で、叔父は一拍だけ、\nその場に立ち止まった。それから、\n奥座敷の方へとそのまま消えていった。\n叔父の姿が消えた後、座牢の娘は、\n高窓の方へ顔を向ける。",
+      "pages_en": [
+        "Just before the corner,\nhe paused for one beat,\nthen vanished\ntoward the inner parlor.",
+        "After the uncle disappeared,\nthe girl turned her face\ntoward the high window."
+      ],
+      "text_en": "Just before the corner,\nhe paused for one beat,\nthen vanished\ntoward the inner parlor.\nAfter the uncle disappeared,\nthe girl turned her face\ntoward the high window."
     },
     {
       "no": 6,
-      "text": "高窓の格子の隙からは、屋敷の祭壇の方角が、わずかに望めた。祭壇の前では、ひとりの若き男が、燈明の灯をひとつ、整えている。",
-      "img": "assets/images/chapter_05/IMG-052.webp"
+      "img": "assets/images/chapter_05/IMG-052.webp",
+      "pages": [
+        "高窓の格子の隙からは、\n屋敷の祭壇がわずかに望めた。\n祭壇の前では、ひとりの男が、\n燈明の灯をひとつ、整えている。"
+      ],
+      "text": "高窓の格子の隙からは、\n屋敷の祭壇がわずかに望めた。\n祭壇の前では、ひとりの男が、\n燈明の灯をひとつ、整えている。",
+      "pages_en": [
+        "Through the lattice she could just see\nthe manor's altar.\nBefore it, a man was quietly\ntending a votive lamp."
+      ],
+      "text_en": "Through the lattice she could just see\nthe manor's altar.\nBefore it, a man was quietly\ntending a votive lamp."
     },
     {
       "no": 7,
-      "text": "父が妾に産ませた、腹違いの兄である。家の祭祀の手入れを、ひとりで任されている人であった。",
-      "img": "assets/images/chapter_05/IMG-053.webp"
+      "img": "assets/images/chapter_05/IMG-053.webp",
+      "pages": [
+        "父が妾に産ませた、腹違いの兄である。\n家の祭祀の手入れを、ひとりで\n任されている人であった。"
+      ],
+      "text": "父が妾に産ませた、腹違いの兄である。\n家の祭祀の手入れを、ひとりで\n任されている人であった。",
+      "pages_en": [
+        "He was the elder brother,\nborn of a concubine to the father.\nAlone he had been entrusted\nwith the care of the family shrine."
+      ],
+      "text_en": "He was the elder brother,\nborn of a concubine to the father.\nAlone he had been entrusted\nwith the care of the family shrine."
     },
     {
       "no": 8,
-      "text": "兄は誰とも口を利かず、ただ燈明の灯をひとつ整えると、また奥の納屋の方へと去っていく。屋敷の者は皆、その背に目を向けようとはしない。",
-      "img": "assets/images/chapter_05/IMG-054.webp"
+      "img": "assets/images/chapter_05/IMG-054.webp",
+      "pages": [
+        "兄は誰とも口を利かず、\nただ燈明の灯をひとつ整えると、\n奥の納屋の方へと去っていく。屋敷の者は、\nその背に目を向けようとはしない。"
+      ],
+      "text": "兄は誰とも口を利かず、\nただ燈明の灯をひとつ整えると、\n奥の納屋の方へと去っていく。屋敷の者は、\nその背に目を向けようとはしない。",
+      "pages_en": [
+        "The elder brother spoke to no one.\nHaving tended the lamp,\nhe departed toward the storehouse.\nNo one turned to watch him go."
+      ],
+      "text_en": "The elder brother spoke to no one.\nHaving tended the lamp,\nhe departed toward the storehouse.\nNo one turned to watch him go."
     },
     {
       "no": 9,
-      "text": "座牢の娘はふと、叔父の歩みと他の家族の歩みとが、屋敷の中で別の調子を持ち始めていることに気がついた。",
-      "img": "assets/images/chapter_05/IMG-055.webp"
+      "img": "assets/images/chapter_05/IMG-055.webp",
+      "pages": [
+        "座牢の娘はふと、\n叔父の歩みと他の家族の歩みとが、\n屋敷の中で別の調子を持ち始めていることに\n気がついた。"
+      ],
+      "text": "座牢の娘はふと、\n叔父の歩みと他の家族の歩みとが、\n屋敷の中で別の調子を持ち始めていることに\n気がついた。",
+      "pages_en": [
+        "The girl noticed, then,\nthat the uncle's step\nand the steps of the rest of the family\nhad begun to keep different time."
+      ],
+      "text_en": "The girl noticed, then,\nthat the uncle's step\nand the steps of the rest of the family\nhad begun to keep different time."
     },
     {
       "no": 10,
-      "text": "祭壇の前から去ってゆく兄の背中もまた、その調子のどれにも属していないのであった。",
-      "img": "assets/images/chapter_05/IMG-056.webp"
+      "img": "assets/images/chapter_05/IMG-056.webp",
+      "pages": [
+        "祭壇の前から去ってゆく兄の背中もまた、\nその調子のどれにも\n属していないのであった。"
+      ],
+      "text": "祭壇の前から去ってゆく兄の背中もまた、\nその調子のどれにも\n属していないのであった。",
+      "pages_en": [
+        "And the back of the elder brother,\nleaving the altar behind,\nbelonged to none of those\nrhythms either."
+      ],
+      "text_en": "And the back of the elder brother,\nleaving the altar behind,\nbelonged to none of those\nrhythms either."
     }
   ]
 }

@@ -1,36 +1,91 @@
 {
-  "title": "第3章 ─ 商人の影",
+  "title": "第四章 ─ 商人の影",
   "folder": "chapter_03",
   "taps": [
     {
       "no": 1,
-      "text": "昼下がりであった。屋敷の正面の玄関で、女中が振袖の商人をひとり、座敷へと迎え入れる声を上げた。",
-      "img": "assets/images/chapter_03/IMG-032.webp"
+      "img": "assets/images/chapter_03/IMG-032.webp",
+      "pages": [
+        "昼下がりであった。\n屋敷の正面の玄関で、\n女中が振袖の商人をひとり、\n座敷へと迎え入れる声を上げた。"
+      ],
+      "text": "昼下がりであった。\n屋敷の正面の玄関で、\n女中が振袖の商人をひとり、\n座敷へと迎え入れる声を上げた。",
+      "pages_en": [
+        "It was afternoon.\nAt the front entrance of the manor,\na maid called out as she welcomed\na merchant in a bright kimono."
+      ],
+      "text_en": "It was afternoon.\nAt the front entrance of the manor,\na maid called out as she welcomed\na merchant in a bright kimono."
     },
     {
       "no": 2,
-      "text": "商人は通いの行商人であり、東京の景物を頻りに語る男であった。座敷では、父が床柱に背を預けて、商人の広げる反物を眺めている。\n「東京の女子は皆、振袖を着て、夜店を歩いておりますのじゃ」\n三味の音、夜店の灯、人の波 ── 商人の語る東京の景は、どれも父にとっては縁遠い色をしている。\n父は反物の縁を指で撫で、低く一言だけ返した。\n「常の反物でよい」\n商人は二、三、世辞を残し、座敷を辞して玄関へと戻っていく。",
-      "img": "assets/images/chapter_03/IMG-033.webp"
+      "img": "assets/images/chapter_03/IMG-033.webp",
+      "pages": [
+        "商人は通いの行商人であり、\n東京の景物を頻りに語る男であった。\n座敷では、父が床柱に背を預けて、\n商人の広げる反物を眺めている。",
+        "「東京の女子は皆、振袖を着て、\n夜店を歩いておりますのじゃ」\n三味の音、夜店の灯、人の波 ──",
+        "商人の語る東京の景は、\nどれも父にとっては縁遠い色をしている。\n父は反物の縁を指で撫で、一言だけ返した。\n「常の反物でよい」",
+        "商人は二、三、世辞を残し、\n座敷を辞して玄関へと戻っていく。"
+      ],
+      "text": "商人は通いの行商人であり、\n東京の景物を頻りに語る男であった。\n座敷では、父が床柱に背を預けて、\n商人の広げる反物を眺めている。\n「東京の女子は皆、振袖を着て、\n夜店を歩いておりますのじゃ」\n三味の音、夜店の灯、人の波 ──\n商人の語る東京の景は、\nどれも父にとっては縁遠い色をしている。\n父は反物の縁を指で撫で、一言だけ返した。\n「常の反物でよい」\n商人は二、三、世辞を残し、\n座敷を辞して玄関へと戻っていく。",
+      "pages_en": [
+        "The merchant was a traveling peddler,\nfull of talk of Tokyo's amusements.\nIn the parlor, the father leaned\nagainst the alcove post, watching.",
+        "\"The women of Tokyo, all of them,\nwear such robes as this,\nand stroll among the night stalls,\"\nsaid the merchant.",
+        "The scenes he spoke of ─\nthe shamisen, the stall lanterns,\nthe waves of people ─\nwere all colors distant from the father.",
+        "The father traced the fabric's edge\nwith his finger,\nand replied with one line only:\n\"The usual cloth will suffice.\"",
+        "The merchant left flatteries, one or two,\nand withdrew from the parlor\ntoward the entrance."
+      ],
+      "text_en": "The merchant was a traveling peddler,\nfull of talk of Tokyo's amusements.\nIn the parlor, the father leaned\nagainst the alcove post, watching.\n\"The women of Tokyo, all of them,\nwear such robes as this,\nand stroll among the night stalls,\"\nsaid the merchant.\nThe scenes he spoke of ─\nthe shamisen, the stall lanterns,\nthe waves of people ─\nwere all colors distant from the father.\nThe father traced the fabric's edge\nwith his finger,\nand replied with one line only:\n\"The usual cloth will suffice.\"\nThe merchant left flatteries, one or two,\nand withdrew from the parlor\ntoward the entrance."
     },
     {
       "no": 3,
-      "text": "廊下を商人とすれ違うようにして、若い男がひとり、書物を抱えて屋敷の奥へと歩いて行った。数月前から屋敷の手伝いに入っている書生である。",
-      "img": "assets/images/chapter_03/IMG-034.webp"
+      "img": "assets/images/chapter_03/IMG-034.webp",
+      "pages": [
+        "廊下を商人とすれ違うようにして、\n若い男がひとり、書物を抱えて\n屋敷の奥へと歩いて行った。数月前から\n屋敷の手伝いに入っている書生である。"
+      ],
+      "text": "廊下を商人とすれ違うようにして、\n若い男がひとり、書物を抱えて\n屋敷の奥へと歩いて行った。数月前から\n屋敷の手伝いに入っている書生である。",
+      "pages_en": [
+        "As the merchant left,\na young man walked past him,\nbooks in his arms,\ntoward the depths of the manor.",
+        "He was a student\nwho had joined the household\nsome months prior\nto assist with its affairs."
+      ],
+      "text_en": "As the merchant left,\na young man walked past him,\nbooks in his arms,\ntoward the depths of the manor.\nHe was a student\nwho had joined the household\nsome months prior\nto assist with its affairs."
     },
     {
       "no": 4,
-      "text": "廊下のさらに奥では、叔父が再び姿を見せ、書生の背をじっと見送っていた。叔父はこの家にあって、客のある折には決して座敷へ顔を出さぬ人であるらしい。\n座敷を辞した父は、廊下で叔父と一瞬だけ目を合わせる。叔父は何も言わず、すっと顔をそむけて、奥座敷の方へと立ち去った。",
-      "img": "assets/images/chapter_03/IMG-035.webp"
+      "img": "assets/images/chapter_03/IMG-035.webp",
+      "pages": [
+        "廊下のさらに奥では、叔父が再び姿を見せ、\n書生の背をじっと見送っていた。\n叔父は、客のある折には決して\n座敷へ顔を出さぬ人であるらしい。",
+        "座敷を辞した父は、\n廊下で叔父と一瞬だけ目を合わせる。\n叔父は何も言わず、すっと顔をそむけて、\n奥座敷の方へと立ち去った。"
+      ],
+      "text": "廊下のさらに奥では、叔父が再び姿を見せ、\n書生の背をじっと見送っていた。\n叔父は、客のある折には決して\n座敷へ顔を出さぬ人であるらしい。\n座敷を辞した父は、\n廊下で叔父と一瞬だけ目を合わせる。\n叔父は何も言わず、すっと顔をそむけて、\n奥座敷の方へと立ち去った。",
+      "pages_en": [
+        "Farther down the hall,\nthe uncle appeared once more\nand watched the student's back\nwith a fixed gaze.",
+        "When guests came, it seemed,\nthe uncle never showed his face\nin the parlor.\nThe father, leaving the room,",
+        "met the uncle's eye for one instant.\nThe uncle said nothing,\nturned his face away,\nand departed toward the inner parlor."
+      ],
+      "text_en": "Farther down the hall,\nthe uncle appeared once more\nand watched the student's back\nwith a fixed gaze.\nWhen guests came, it seemed,\nthe uncle never showed his face\nin the parlor.\nThe father, leaving the room,\nmet the uncle's eye for one instant.\nThe uncle said nothing,\nturned his face away,\nand departed toward the inner parlor."
     },
     {
       "no": 5,
-      "text": "北面の座牢では、娘が高窓の下に立っていた。高窓の格子の隙からは、商人の去る車輪の音だけが、塀越しにわずかに届く。",
-      "img": "assets/images/chapter_03/IMG-036.webp"
+      "img": "assets/images/chapter_03/IMG-036.webp",
+      "pages": [
+        "座牢では、娘が高窓の下に立っていた。\n高窓の格子の隙からは、商人の去る車輪の\n音だけが、塀越しにわずかに届く。"
+      ],
+      "text": "座牢では、娘が高窓の下に立っていた。\n高窓の格子の隙からは、商人の去る車輪の\n音だけが、塀越しにわずかに届く。",
+      "pages_en": [
+        "In the Cell, the girl stood\nbeneath the high window.\nThrough the lattice she caught only\nthe wheels of the merchant's cart",
+        "carrying away beyond the wall."
+      ],
+      "text_en": "In the Cell, the girl stood\nbeneath the high window.\nThrough the lattice she caught only\nthe wheels of the merchant's cart\ncarrying away beyond the wall."
     },
     {
       "no": 6,
-      "text": "娘の掌の中では、桐の小箱から取り出した螺鈿の貝殻が、淡く色を放つ。光の縁は、いま塀の外を渡るはずの春の陽射しと、同じ色をしているのであった。",
-      "img": "assets/images/chapter_03/IMG-037.webp"
+      "img": "assets/images/chapter_03/IMG-037.webp",
+      "pages": [
+        "娘の掌の中では、桐の小箱から取り出した\n螺鈿の貝殻が、淡く色を放つ。\n光の縁は、いま塀の外を渡るはずの\n春の陽射しと同じ色をしているのであった。"
+      ],
+      "text": "娘の掌の中では、桐の小箱から取り出した\n螺鈿の貝殻が、淡く色を放つ。\n光の縁は、いま塀の外を渡るはずの\n春の陽射しと同じ色をしているのであった。",
+      "pages_en": [
+        "In her palm, the mother-of-pearl shell,\ndrawn from the paulownia box,\nglowed faintly.\nThe edge of that light bore the same hue",
+        "as the spring sunlight\nnow crossing beyond the wall."
+      ],
+      "text_en": "In her palm, the mother-of-pearl shell,\ndrawn from the paulownia box,\nglowed faintly.\nThe edge of that light bore the same hue\nas the spring sunlight\nnow crossing beyond the wall."
     }
   ]
 }

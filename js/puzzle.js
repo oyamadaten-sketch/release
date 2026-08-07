@@ -1,5 +1,15 @@
 // 親指隠シと座牢のムスメ ─ パズル・エンジン v3（バグ修正＋メタ表現除去）
 const PuzzleGame = (function() {
+// ★i18n: 現在言語に応じて駒ラベルを選択（labelEn 未定義なら label にフォールバック）
+function getPieceLabel(def, isDaughter, isLocked) {
+  const lang = (document.body && document.body.classList.contains('lang-en')) ? 'en' : 'ja';
+  if (isDaughter && !isLocked) {
+    return lang === 'en' ? 'Daughter' : 'ムスメ';
+  }
+  if (lang === 'en' && def.labelEn) return def.labelEn;
+  return def.label;
+}
+
   'use strict';
 
   let state = {
@@ -105,11 +115,14 @@ const PuzzleGame = (function() {
 
     // 座牢ラベル（娘の初期位置 = top-right）
     let zaroLabel = board.querySelector('.puz-zaro-label');
+    const zaroText = (window.I18n && I18n.loaded) ? I18n.t('puzzle.zaro') : '座牢';
     if (!zaroLabel) {
       zaroLabel = document.createElement('div');
       zaroLabel.className = 'puz-zaro-label';
-      zaroLabel.textContent = '座牢';
+      zaroLabel.textContent = zaroText;
       board.appendChild(zaroLabel);
+    } else {
+      zaroLabel.textContent = zaroText;
     }
     zaroLabel.style.left = (4 * state.cellSize) + 'px';
     zaroLabel.style.top  = '0px';
@@ -192,20 +205,34 @@ const PuzzleGame = (function() {
         } else {
           el.style.background = def.bg;
         }
-        // LID 駒のみ縦書き3段タイトル、それ以外は通常ラベル
+        // LID 駒のみタイトル装飾。日本語=縦書き3段、英語=横書き2行
         if (p.type === 'LID') {
+          const isEn = document.body.classList.contains('lang-en');
           const lt = document.createElement('div');
-          lt.className = 'lid-title';
-          lt.innerHTML =
-            '<div class="lid-title-col">親指隠シと</div>' +
-            '<div class="lid-title-col">座牢の</div>' +
-            '<div class="lid-title-col accent">ムスメ</div>';
+          lt.className = 'lid-title' + (isEn ? ' lid-title-en' : '');
+          if (isEn) {
+            lt.innerHTML =
+              '<div class="lid-title-row">Yubikakushi:</div>' +
+              '<div class="lid-title-row accent">The Cell Daughter</div>';
+          } else {
+            lt.innerHTML =
+              '<div class="lid-title-col">親指隠シと</div>' +
+              '<div class="lid-title-col">座牢の</div>' +
+              '<div class="lid-title-col accent">ムスメ</div>';
+          }
           el.appendChild(lt);
         } else {
           const label = document.createElement('span');
           label.className = 'puz-piece-label';
-          label.textContent = (p.type === 'DAUGHTER' && state.gameState !== 'locked') ? 'ムスメ' : def.label;
-          label.style.fontSize = def.size + 'px';
+          label.textContent = getPieceLabel(def, p.type === 'DAUGHTER', state.gameState === 'locked');
+          // ★英語モードでは横に広がる長単語(Daughter等)向けにフォント縮小
+          const isEnLabel = document.body.classList.contains('lang-en');
+          let fontSizePx = def.size;
+          if (isEnLabel) {
+            if (p.type === 'DAUGHTER') fontSizePx = Math.floor(def.size * 0.58);  // 26→15
+            else if (def.size >= 20) fontSizePx = Math.floor(def.size * 0.75);
+          }
+          label.style.fontSize = fontSizePx + 'px';
           // shape 駒の場合、ラベル位置を決定（labelPos 優先 → shape 重心）
           if (def.shape) {
             let cx, cy;
@@ -239,9 +266,36 @@ const PuzzleGame = (function() {
         el.addEventListener('pointercancel', () => { state.dragInfo = null; });
         board.appendChild(el);
       } else {
+        // 既存要素のラベルも言語/状態変化に追従して更新
         const label = el.querySelector('.puz-piece-label');
-        if (label && p.type === 'DAUGHTER') {
-          label.textContent = state.gameState === 'locked' ? '娘' : 'ムスメ';
+        if (label && p.type !== 'LID') {
+          label.textContent = getPieceLabel(def, p.type === 'DAUGHTER', state.gameState === 'locked');
+          // ★英語モードでは大駒（Daughter等）のフォントを縮小
+          const isEnLbl = document.body.classList.contains('lang-en');
+          let fs = def.size;
+          if (isEnLbl) {
+            if (p.type === 'DAUGHTER') fs = Math.floor(def.size * 0.58);
+            else if (def.size >= 20) fs = Math.floor(def.size * 0.75);
+          }
+          label.style.fontSize = fs + 'px';
+        }
+        // LID駒の縦書き/横書きも言語切替に追従
+        if (p.type === 'LID') {
+          const isEn = document.body.classList.contains('lang-en');
+          const lt = el.querySelector('.lid-title');
+          if (lt) {
+            lt.className = 'lid-title' + (isEn ? ' lid-title-en' : '');
+            if (isEn) {
+              lt.innerHTML =
+                '<div class="lid-title-row">Yubikakushi:</div>' +
+                '<div class="lid-title-row accent">The Cell Daughter</div>';
+            } else {
+              lt.innerHTML =
+                '<div class="lid-title-col">親指隠シと</div>' +
+                '<div class="lid-title-col">座牢の</div>' +
+                '<div class="lid-title-col accent">ムスメ</div>';
+            }
+          }
         }
       }
       if (def.shape) {
@@ -285,7 +339,10 @@ const PuzzleGame = (function() {
     });
 
     const cnt = $('puz-count');
-    if (cnt) cnt.textContent = state.moveCount + ' 手';
+    if (cnt) {
+      const tpl = (window.I18n && I18n.loaded) ? I18n.t('puzzle.moveCountTemplate', {n: state.moveCount}) : null;
+      cnt.textContent = tpl || (state.moveCount + ' 手');
+    }
   }
 
   function onPointerDown(e, pid) {
@@ -319,7 +376,7 @@ const PuzzleGame = (function() {
         state.pieces = state.pieces.filter(p => p.id !== piece.id);
         state.gameState = 'playing';
         // ★LID除去後の共通ヒント（各ステージ startHint はオミット、v20260712bc〜）
-        $('puz-hint').textContent = '娘を中央下の玄関へ';
+        $('puz-hint').textContent = (window.I18n && I18n.loaded) ? I18n.t('puzzle.hintNoLid') : '娘を中央下の玄関へ';
         renderBoard();
       }, 700);
       return;
@@ -355,15 +412,18 @@ const PuzzleGame = (function() {
     } else if (valid.length === 0) {
       shake();
     } else {
-      flash('ドラッグで方向を指定');
+      flash((window.I18n && I18n.loaded) ? I18n.t('puzzle.hintChooseDirection') : '動かしたい方向へ引かれよ');
     }
   }
 
   function executeMove(piece, dx, dy) {
     state.pieces = state.pieces.map(p => p.id === piece.id ? { ...p, x: p.x + dx, y: p.y + dy } : p);
     state.moveCount++;
-    // ★Stage 24 火事ギミック：20手ごとに引火＋燃え広がり
-    if (state.moveCount > 0 && state.moveCount % 20 === 0) {
+    // ★駒スライドSE（SE-01/02/03 ランダム再生）
+    if (window.GameAudio) GameAudio.playPieceSe();
+    // ★Stage 24 火事ギミック：20手ごとに引火＋燃え広がり（S24 のみ発火）
+    const hasFlame = state.pieces.some(p => p.type === 'FLAME');
+    if (hasFlame && state.moveCount > 0 && state.moveCount % 20 === 0) {
       processFireTick();
     }
     renderBoard();
@@ -487,6 +547,8 @@ const PuzzleGame = (function() {
   //   ★引火セルは「火源に接した特定マス」を選ぶ（ターゲット全体からランダムではない）
   //     複数の火源に接する場合は、その候補マスからランダムで1マスだけ引火
   function processFireTick() {
+    // ★炎伝播SE（S24 引火時）
+    if (window.GameAudio) GameAudio.playSe('SE-06');
     // ★snapshot：tick開始時点の burnedCells を保存
     const snapshot = state.pieces.map(p => ({
       id: p.id,
@@ -590,7 +652,14 @@ const PuzzleGame = (function() {
       // タイトル（ステージごとに段階変化、未定義なら序盤標準）
       const titleEl = overlay.querySelector('.puz-clear-title');
       if (titleEl) {
-        titleEl.textContent = state.stage.clearTitle || '─ そっと、外へ ─';
+        const hasI18n = window.I18n && I18n.loaded;
+        // ステージの clearTitle を i18n キーとしてマッピング（同一値が23個 → clearDefault、'─ 門ヲ越エル ─' → clearFinal）
+        let titleText = state.stage.clearTitle || (hasI18n ? I18n.t('puzzle.clearDefault') : '─ そっと、外へ ─');
+        if (hasI18n) {
+          if (titleText === '─ そっと、外へ ─') titleText = I18n.t('puzzle.clearDefault');
+          else if (titleText === '─ 門ヲ越エル ─') titleText = I18n.t('puzzle.clearFinal');
+        }
+        titleEl.textContent = titleText;
       }
       // 本文：物語テイスト文言はオミット（v20260712bg〜、CSS 側で display:none）
       // 代わりに、章の最初の ADV イラストをモノクロ背景として表示する
@@ -617,10 +686,20 @@ const PuzzleGame = (function() {
         console.log('[showClearOverlay] chapterTrigger unavailable, chIdx=' + chIdx + ', SCENARIOS_V8 loaded=' + !!window.SCENARIOS_V8);
       }
       // 手数表記（ステージごとに段階変化）
-      const unit = state.stage.countUnit || '手で外を望めり';
+      // ★i18n 優先：ステージ側の日本語ハードコード値は最終ステージ判定にのみ使用
+      const hasI18nU = window.I18n && I18n.loaded;
+      const isFinalUnit = state.stage.countUnit === '手で外へ辿リ着ケリ';
+      let unit;
+      if (hasI18nU) {
+        unit = isFinalUnit ? I18n.t('puzzle.countUnitFinal') : I18n.t('puzzle.countUnit');
+      } else {
+        unit = state.stage.countUnit || '手で外を望めり';
+      }
       // ★手数だけ span で囲み、数字を大きく金色で強調（v20260712bf〜）
       $('puz-clear-count').innerHTML = '── <span class="count-num">' + state.moveCount + '</span> ' + unit + ' ──';
       overlay.classList.add('visible');
+      // ★リザルト画面BGM（BGM-07）へクロスフェード。次章ADV開始時に BGM-01 へ切替（startScenario）
+      if (window.GameAudio) GameAudio.playBgm('BGM-07');
     }
   }
 
@@ -634,6 +713,8 @@ const PuzzleGame = (function() {
 
     // 演出要素が無い場合は即時オーバーレイ表示（フォールバック）
     if (!layer || !doorL || !doorR || !light || !board || !state.stage) {
+      // フォールバック時は即時SE
+      if (window.GameAudio) GameAudio.playSe('SE-04');
       showClearOverlay();
       return;
     }
@@ -667,7 +748,11 @@ const PuzzleGame = (function() {
       layer.classList.add('visible');
 
       // 4. スライド開始（500ms後、フェードインが落ち着いてから）
-      setTimeout(() => layer.classList.add('opening'), 600);
+      setTimeout(() => {
+        layer.classList.add('opening');
+        // ★扉開SE：実際の扉スライド開始と同期
+        if (window.GameAudio) GameAudio.playSe('SE-04');
+      }, 600);
 
       // 5. 白光放射（スライドほぼ完了の1.2秒後）
       setTimeout(() => layer.classList.add('flash'), 1700);
@@ -690,6 +775,8 @@ const PuzzleGame = (function() {
 
     // フォールバック：演出要素が無ければ即オーバーレイ表示
     if (!layer || !doorL || !doorR || !board || !overlay) {
+      // フォールバック時は即時SE
+      if (window.GameAudio) GameAudio.playSe('SE-05');
       if (overlay) overlay.classList.add('visible');
       return;
     }
@@ -718,6 +805,8 @@ const PuzzleGame = (function() {
     setTimeout(() => {
       doorL.style.left = '0px';
       doorR.style.left = halfW + 'px';
+      // ★扉閉SE：実際の扉スライドイン開始と同期
+      if (window.GameAudio) GameAudio.playSe('SE-05');
     }, 100);
 
     // 4. 衝突時ショック：盤面をシェイク＋暗転（500ms 後）
@@ -876,11 +965,13 @@ const PuzzleGame = (function() {
       };
     }
 
-    $('puz-stage-label').textContent = state.stage.label;
-    $('puz-stage-sub').textContent = state.stage.sub;  // CSS で非表示、保険で値は入れる
+    const hasI18n_start = window.I18n && I18n.loaded;
+    const isEn_start = document.body.classList.contains('lang-en');
+    $('puz-stage-label').textContent = (isEn_start && state.stage.labelEn) ? state.stage.labelEn : state.stage.label;
+    $('puz-stage-sub').textContent = (isEn_start && state.stage.subEn) ? state.stage.subEn : (state.stage.sub || '');
     // ★全ステージ共通ヒント：LID あり時（各ステージ startHint はオミット、v20260712bc〜）
-    $('puz-hint').textContent = '左上の駒を外し、娘を中央下へ';
-    $('puz-count').textContent = '0 手';
+    $('puz-hint').textContent = hasI18n_start ? I18n.t('puzzle.hintWithLid') : '左上の駒を外し、娘を中央下へ';
+    $('puz-count').textContent = hasI18n_start ? I18n.t('puzzle.moveCountTemplate', {n: 0}) : '0 手';
 
     const clear = $('puz-clear');
     if (clear) clear.classList.remove('visible');
@@ -968,10 +1059,15 @@ const PuzzleGame = (function() {
       };
     }
 
-    $('puz-stage-label').textContent = state.stage.label;
-    $('puz-stage-sub').textContent = (state.stage.sub || '') + ' (続きから)';
-    $('puz-hint').textContent = '中断した続きから';
-    $('puz-count').textContent = state.moveCount + ' 手';
+    const hasI18n_res = window.I18n && I18n.loaded;
+    const isEn_res = document.body.classList.contains('lang-en');
+    const cLabel = (isEn_res && state.stage.labelEn) ? state.stage.labelEn : state.stage.label;
+    const cSub = (isEn_res && state.stage.subEn) ? state.stage.subEn : (state.stage.sub || '');
+    const cSuffix = hasI18n_res ? I18n.t('puzzle.continueSuffix') : ' (続きから)';
+    $('puz-stage-label').textContent = cLabel;
+    $('puz-stage-sub').textContent = cSub + cSuffix;
+    $('puz-hint').textContent = hasI18n_res ? I18n.t('puzzle.hintContinue') : '中断した続きから';
+    $('puz-count').textContent = hasI18n_res ? I18n.t('puzzle.moveCountTemplate', {n: state.moveCount}) : (state.moveCount + ' 手');
 
     const clear = $('puz-clear');
     if (clear) clear.classList.remove('visible');

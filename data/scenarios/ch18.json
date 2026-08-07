@@ -1,46 +1,135 @@
 {
-  "title": "第17章 ─ 紅き廊下と祭壇の前",
+  "title": "第十八章 ─ 紅き廊下と祭壇の前",
   "folder": "chapter_17",
   "taps": [
     {
       "no": 1,
-      "text": "数日が過ぎた夜、屋敷の南面の座敷では、父が祖父の前で深く頭を下げていた。",
-      "img": "assets/images/chapter_17/IMG-120.webp"
+      "img": "assets/images/chapter_17/IMG-120.webp",
+      "pages": [
+        "数日が過ぎた夜、奥座敷では、\n父が祖父の前で深く頭を下げていた。"
+      ],
+      "text": "数日が過ぎた夜、奥座敷では、\n父が祖父の前で深く頭を下げていた。",
+      "pages_en": [
+        "A few days on, in the inner parlor,\nthe father bowed deeply\nbefore Grandfather."
+      ],
+      "text_en": "A few days on, in the inner parlor,\nthe father bowed deeply\nbefore Grandfather."
     },
     {
       "no": 2,
-      "text": "父がようやく、祖父の眼力を曇らせるほどの、大きな商談をひとつ成し遂げた日であった。\n祖父はその夜にかぎって、煙管を吹かさなかった。\nけれども、屋敷の中の歯車は、その日を境にいっそう乱れてゆく。\n父は、祖父の眼が緩んだのを見計らって、その夜から自暴自棄に酒を呷り始めた。父にとって、いま酒は、唯一許された逃げ道であった。",
-      "img": "assets/images/chapter_17/IMG-121.webp"
+      "img": "assets/images/chapter_17/IMG-120.webp",
+      "pages": [
+        "父がようやく、\n祖父の眼力を曇らせるほどの、\n大きな商談をひとつ成し遂げたのであった。"
+      ],
+      "text": "父がようやく、\n祖父の眼力を曇らせるほどの、\n大きな商談をひとつ成し遂げたのであった。",
+      "pages_en": [
+        "The father had at last brought off\na great transaction ─\none large enough\nto dim even Grandfather's eyes."
+      ],
+      "text_en": "The father had at last brought off\na great transaction ─\none large enough\nto dim even Grandfather's eyes."
     },
     {
       "no": 3,
-      "text": "廊下の彼方では、女中の衣擦れの音が祖父の寝所より細く漏れる。祖父の眼の緩みは、この屋敷の他の所作にも、すぐに伝染していった。\n別の廊下の奥では、叔母と書生が、低く言葉を絡め合っていた。",
-      "img": "assets/images/chapter_17/IMG-122.webp"
+      "img": "assets/images/chapter_17/IMG-121.webp",
+      "pages": [
+        "けれども、屋敷の中の歯車は、\nその日を境にいっそう乱れてゆく。\n父に対する祖父の期待が膨らむほどに、\n父は自暴自棄に酒を呷る。",
+        "父にとって、酒だけが、\n唯一許された逃げ道であった。"
+      ],
+      "text": "けれども、屋敷の中の歯車は、\nその日を境にいっそう乱れてゆく。\n父に対する祖父の期待が膨らむほどに、\n父は自暴自棄に酒を呷る。\n父にとって、酒だけが、\n唯一許された逃げ道であった。",
+      "pages_en": [
+        "Yet from that day, the gears within\nthe manor slid further out of true.\nAs Grandfather's hopes for his son grew,\nso the father drank the more",
+        "in wild abandon.\nDrink, for him,\nhad become the only path\nof escape left open."
+      ],
+      "text_en": "Yet from that day, the gears within\nthe manor slid further out of true.\nAs Grandfather's hopes for his son grew,\nso the father drank the more\nin wild abandon.\nDrink, for him,\nhad become the only path\nof escape left open."
     },
     {
       "no": 4,
-      "text": "幼き弟妹は、これらの兆しを遠くに察しつつ、布団の中で身を震わせている。\nそんな夜、母は、座牢の前まで来てしばし立ち止まった。",
-      "img": "assets/images/chapter_17/IMG-123.webp"
+      "img": "assets/images/chapter_17/IMG-122.webp",
+      "pages": [
+        "廊下の彼方では、女中の衣擦れの音が、\n祖父の寝所より細く漏れる。\n祖父の眼の緩みは、屋敷の他の所作にも、\nじわりじわりと伝染していった。",
+        "別の廊下の奥では、叔母と書生が、\n互いを見つめ合い、体を絡め合っていた。"
+      ],
+      "text": "廊下の彼方では、女中の衣擦れの音が、\n祖父の寝所より細く漏れる。\n祖父の眼の緩みは、屋敷の他の所作にも、\nじわりじわりと伝染していった。\n別の廊下の奥では、叔母と書生が、\n互いを見つめ合い、体を絡め合っていた。",
+      "pages_en": [
+        "From the far end of the hall,\nthe rustle of a maid's kimono\nleaked thinly from Grandfather's room.\nGrandfather's slackening of vigilance",
+        "seeped, drop by drop,\ninto the manor's other acts.\nDown another hallway,\nthe aunt and the student",
+        "gazed into each other's eyes\nand tangled their bodies together."
+      ],
+      "text_en": "From the far end of the hall,\nthe rustle of a maid's kimono\nleaked thinly from Grandfather's room.\nGrandfather's slackening of vigilance\nseeped, drop by drop,\ninto the manor's other acts.\nDown another hallway,\nthe aunt and the student\ngazed into each other's eyes\nand tangled their bodies together."
     },
     {
       "no": 5,
-      "text": "娘は格子に身を寄せ、母を見上げる。「弟妹を父様の側に、寝かせてあげては」\n母は目を伏せて応えた。「あの方は、いまは私には触れさせて下さらぬ」\n母の声は低く、乾いていた。\n同じ夜、屋敷の祭壇の前には、兄が長く座している。",
-      "img": "assets/images/chapter_17/IMG-124.webp"
+      "img": "assets/images/chapter_17/IMG-123.webp",
+      "pages": [
+        "幼き弟妹は、異変の兆しを僅かに察し、\n布団の中で身を震わせている。\nそんな夜、母は座牢を訪れ、格子の前で\nしばし立ち止まった。"
+      ],
+      "text": "幼き弟妹は、異変の兆しを僅かに察し、\n布団の中で身を震わせている。\nそんな夜、母は座牢を訪れ、格子の前で\nしばし立ち止まった。",
+      "pages_en": [
+        "The younger siblings, sensing something,\ntrembled beneath their quilts.\nOn such a night, the mother came\nto the Cell and paused before the lattice."
+      ],
+      "text_en": "The younger siblings, sensing something,\ntrembled beneath their quilts.\nOn such a night, the mother came\nto the Cell and paused before the lattice."
     },
     {
       "no": 6,
-      "text": "父の酒杯の音、女中の衣擦れ、叔母の囁き── それらすべてを背に、兄の背だけは燈明の灯をひたすら見つめて動かない。\n兄の口元からは、誰にも届かない独語が、微かに、確かに漏れている。",
-      "img": "assets/images/chapter_17/IMG-125.webp"
+      "img": "assets/images/chapter_17/IMG-124.webp",
+      "pages": [
+        "娘は格子に身を寄せ、母を見上げる。\n「弟妹を父様の側に、寝かせてあげては」\n母は目を伏せて応えた。「あの方は、\n私が傍にいることも拒まれておられる」と。"
+      ],
+      "text": "娘は格子に身を寄せ、母を見上げる。\n「弟妹を父様の側に、寝かせてあげては」\n母は目を伏せて応えた。「あの方は、\n私が傍にいることも拒まれておられる」と。",
+      "pages_en": [
+        "The girl leaned to the bars and looked up.\n\"Might the young ones sleep\nby Father's side?\"\nThe mother, eyes lowered, replied:",
+        "\"He rejects even my presence\nat his side.\""
+      ],
+      "text_en": "The girl leaned to the bars and looked up.\n\"Might the young ones sleep\nby Father's side?\"\nThe mother, eyes lowered, replied:\n\"He rejects even my presence\nat his side.\""
     },
     {
       "no": 7,
-      "text": "娘が格子越しに伸ばした指を、母がそっと握り返した。母の指は冷たく、その冷たさは廊下の冷えとは別のものを宿す。",
-      "img": "assets/images/chapter_17/IMG-126.webp"
+      "img": "assets/images/chapter_17/IMG-125.webp",
+      "pages": [
+        "同じ夜、屋敷の祭壇の前では、\n呪言を呟く兄が座していた。"
+      ],
+      "text": "同じ夜、屋敷の祭壇の前では、\n呪言を呟く兄が座していた。",
+      "pages_en": [
+        "That same night, before the altar,\nthe elder brother sat,\nmurmuring incantations."
+      ],
+      "text_en": "That same night, before the altar,\nthe elder brother sat,\nmurmuring incantations."
     },
     {
       "no": 8,
-      "text": "冷たさの中には、長く隠されてきた何ものかが、息を潜めていたのであった。",
-      "img": "assets/images/chapter_17/IMG-127.webp"
+      "img": "assets/images/chapter_17/IMG-125.webp",
+      "pages": [
+        "父の酒杯の音、女中の衣擦れ、\n叔母の火照った囁き、そのすべてを\n祓うように、兄は真っすぐに\n祭壇を見つめていた。",
+        "兄の口元からは、\n誰にも届かない独語が、\n微かに――だが、確かに漏れている。"
+      ],
+      "text": "父の酒杯の音、女中の衣擦れ、\n叔母の火照った囁き、そのすべてを\n祓うように、兄は真っすぐに\n祭壇を見つめていた。\n兄の口元からは、\n誰にも届かない独語が、\n微かに――だが、確かに漏れている。",
+      "pages_en": [
+        "The father's cup, the maid's rustle,\nthe aunt's heated whisper ─\nas though to purge all these,\nthe brother gazed straight at the altar.",
+        "From his lips,\na private speech, meant for no one,\nescaped ─ faint, but certain."
+      ],
+      "text_en": "The father's cup, the maid's rustle,\nthe aunt's heated whisper ─\nas though to purge all these,\nthe brother gazed straight at the altar.\nFrom his lips,\na private speech, meant for no one,\nescaped ─ faint, but certain."
+    },
+    {
+      "no": 9,
+      "img": "assets/images/chapter_17/IMG-126.webp",
+      "pages": [
+        "娘が格子越しに伸ばした指を、\n母がそっと握り返した。\n母の指は冷たく、その冷たさは\n廊下の冷えとは別のものを宿していた。"
+      ],
+      "text": "娘が格子越しに伸ばした指を、\n母がそっと握り返した。\n母の指は冷たく、その冷たさは\n廊下の冷えとは別のものを宿していた。",
+      "pages_en": [
+        "Through the lattice\nthe girl's finger reached out,\nand the mother returned its touch.\nHer fingers were cold,",
+        "and that cold held something different\nfrom the chill of the hall."
+      ],
+      "text_en": "Through the lattice\nthe girl's finger reached out,\nand the mother returned its touch.\nHer fingers were cold,\nand that cold held something different\nfrom the chill of the hall."
+    },
+    {
+      "no": 10,
+      "img": "assets/images/chapter_17/IMG-127.webp",
+      "pages": [
+        "冷たさの中には、長く隠されてきた\n何ものかが、息を潜めていたのであった。"
+      ],
+      "text": "冷たさの中には、長く隠されてきた\n何ものかが、息を潜めていたのであった。",
+      "pages_en": [
+        "Within that cold,\nsomething long hidden\nhad drawn its breath in silence."
+      ],
+      "text_en": "Within that cold,\nsomething long hidden\nhad drawn its breath in silence."
     }
   ]
 }

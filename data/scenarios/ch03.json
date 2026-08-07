@@ -1,46 +1,112 @@
 {
-  "title": "第2章 ─ 廊下の声と書斎の対峙",
+  "title": "第三章 ─ 廊下の声と書斎の対峙",
   "folder": "chapter_02",
   "taps": [
     {
       "no": 1,
-      "text": "初めて座牢を抜け出したあの夜以来、娘は折を見て、夜ごと格子戸の錠をひそかに開けるようになっていた。",
-      "img": "assets/images/chapter_02/IMG-024.webp"
+      "img": "assets/images/chapter_02/IMG-024.webp",
+      "pages": [
+        "初めて座牢を抜け出したあの夜以来、\n娘は折を見て、夜ごと格子戸の錠を\nひそかに開けるようになっていた。"
+      ],
+      "text": "初めて座牢を抜け出したあの夜以来、\n娘は折を見て、夜ごと格子戸の錠を\nひそかに開けるようになっていた。",
+      "pages_en": [
+        "Since her first escape from the Cell,\nthe girl had come, at intervals,\nto unlock the lattice\nquietly in the dead of night."
+      ],
+      "text_en": "Since her first escape from the Cell,\nthe girl had come, at intervals,\nto unlock the lattice\nquietly in the dead of night."
     },
     {
       "no": 2,
-      "text": "されど願いはついぞ叶わず、決まってもう一歩というところで、屋敷の者の手に取り押さえられて来たのである。",
-      "img": "assets/images/chapter_02/IMG-025.webp"
+      "img": "assets/images/chapter_02/IMG-025.webp",
+      "pages": [
+        "されど願いはついぞ叶わず、決まって\nもう一歩というところで、屋敷の者の手に\n取り押さえられて来たのである。"
+      ],
+      "text": "されど願いはついぞ叶わず、決まって\nもう一歩というところで、屋敷の者の手に\n取り押さえられて来たのである。",
+      "pages_en": [
+        "Yet her wish was never granted.\nAlways, at one step short,\nsomeone of the house would seize her\nand return her to the Cell."
+      ],
+      "text_en": "Yet her wish was never granted.\nAlways, at one step short,\nsomeone of the house would seize her\nand return her to the Cell."
     },
     {
       "no": 3,
-      "text": "そんなある夜、屋敷の南面にある祖父の書斎で、煙管の音が短く跳ねた。",
-      "img": "assets/images/chapter_02/IMG-026.webp"
+      "img": "assets/images/chapter_02/IMG-026.webp",
+      "pages": [
+        "そんなある夜、祖父の書斎で、\n煙管の音が短く跳ねた。"
+      ],
+      "text": "そんなある夜、祖父の書斎で、\n煙管の音が短く跳ねた。",
+      "pages_en": [
+        "On one such night, from the study,\ncame the short crack of a pipe."
+      ],
+      "text_en": "On one such night, from the study,\ncame the short crack of a pipe."
     },
     {
       "no": 4,
-      "text": "祖父は煙管を畳に突き、父を畳の縁に座らせて、低く詰問している。\n「あの娘の出立ちは、お前が見張りを緩めておるためじゃ」\n「家督を継ぐ身が、夜半にひとつの娘の動きすら捌けぬとは、何たることぞ」\n父は応えを返さなかった。畳に置いた両の手が、震えぬよう力を入れているのが、襖の影越しにも分かる。\n「……面目次第もござりませぬ。お父様の御諭し、肝に銘じまする」── 父はようやくそれだけを絞り出す。声は、咽の奥で湿っていた。",
-      "img": "assets/images/chapter_02/IMG-027.webp"
+      "img": "assets/images/chapter_02/IMG-027.webp",
+      "pages": [
+        "祖父は父を畳の縁に座らせて、\n低く詰問している。\n「娘が抜け出そうとするのは、\nお前が見張りを緩めておるためじゃ」",
+        "「家督を継ぐ身が、夜半にひとりの娘の\n動きすら捌けぬとは、何たることぞ」\n父は応えを返さなかった。",
+        "畳に置いた両の手が、\n震えぬよう力を入れているのが、\n襖の影越しにも分かる。",
+        "「……面目次第もござりませぬ。\nお父様の御諭し、肝に銘じまする」\n父はようやくそれだけを絞り出す。\n声は、咽の奥で湿っていた。"
+      ],
+      "text": "祖父は父を畳の縁に座らせて、\n低く詰問している。\n「娘が抜け出そうとするのは、\nお前が見張りを緩めておるためじゃ」\n「家督を継ぐ身が、夜半にひとりの娘の\n動きすら捌けぬとは、何たることぞ」\n父は応えを返さなかった。\n畳に置いた両の手が、\n震えぬよう力を入れているのが、\n襖の影越しにも分かる。\n「……面目次第もござりませぬ。\nお父様の御諭し、肝に銘じまする」\n父はようやくそれだけを絞り出す。\n声は、咽の奥で湿っていた。",
+      "pages_en": [
+        "Grandfather had seated the father\nat the edge of the tatami,\nand was pressing him low.\n\"She tries to slip out because",
+        "your guard is slack.\nA man meant to inherit this house,\nunable to master the movements\nof one girl in the night ─ what is this?\"",
+        "The father gave no reply.\nHis hands, pressed to the tatami,\nstrove not to tremble ─\nvisible even through the shadow of the door.",
+        "\"…I have no words to defend myself.\nI shall take Father's instruction\ndeep into my heart.\"\nHis voice came damp from his throat."
+      ],
+      "text_en": "Grandfather had seated the father\nat the edge of the tatami,\nand was pressing him low.\n\"She tries to slip out because\nyour guard is slack.\nA man meant to inherit this house,\nunable to master the movements\nof one girl in the night ─ what is this?\"\nThe father gave no reply.\nHis hands, pressed to the tatami,\nstrove not to tremble ─\nvisible even through the shadow of the door.\n\"…I have no words to defend myself.\nI shall take Father's instruction\ndeep into my heart.\"\nHis voice came damp from his throat."
     },
     {
       "no": 5,
-      "text": "廊下のさらに奥では、叔父が立ち止まり、書斎の方を一度だけ見たあと、襖の蔭にすっと身を引いた。\n祖父の煙管の音だけが、屋敷の闇をしばらく渡っていく。",
-      "img": "assets/images/chapter_02/IMG-028.webp"
+      "img": "assets/images/chapter_02/IMG-028.webp",
+      "pages": [
+        "廊下のさらに奥では、叔父が立ち止まり、\n書斎の方を一度だけ見たあと、\n襖の蔭にすっと身を引いた。",
+        "祖父の煙管の音だけが、\n屋敷の闇をしばらく渡っていく。"
+      ],
+      "text": "廊下のさらに奥では、叔父が立ち止まり、\n書斎の方を一度だけ見たあと、\n襖の蔭にすっと身を引いた。\n祖父の煙管の音だけが、\n屋敷の闇をしばらく渡っていく。",
+      "pages_en": [
+        "Farther down the hall, the uncle paused.\nHe cast one glance toward the study,\nthen quietly withdrew\nbehind the sliding door.",
+        "Only the sound of Grandfather's pipe\ncarried through the darkness of the house."
+      ],
+      "text_en": "Farther down the hall, the uncle paused.\nHe cast one glance toward the study,\nthen quietly withdrew\nbehind the sliding door.\nOnly the sound of Grandfather's pipe\ncarried through the darkness of the house."
     },
     {
       "no": 6,
-      "text": "夜更け、母は父の寝間に酒杯をひとつ忍ばせて、廊下を歩いた。父は寝所の障子に背を向け、酒杯を黙って受け取る。",
-      "img": "assets/images/chapter_02/IMG-029.webp"
+      "img": "assets/images/chapter_02/IMG-029.webp",
+      "pages": [
+        "夜更け、母は父の寝間に\n酒杯をひとつ忍ばせて、廊下を歩いた。\n父は寝所の障子に背を向け、\n酒杯を黙って受け取る。"
+      ],
+      "text": "夜更け、母は父の寝間に\n酒杯をひとつ忍ばせて、廊下を歩いた。\n父は寝所の障子に背を向け、\n酒杯を黙って受け取る。",
+      "pages_en": [
+        "Deep in the night, the mother\ncarried a small cup of sake\ndown the hall to her husband's chamber.\nHe took it without turning to face her."
+      ],
+      "text_en": "Deep in the night, the mother\ncarried a small cup of sake\ndown the hall to her husband's chamber.\nHe took it without turning to face her."
     },
     {
       "no": 7,
-      "text": "母の指が、ほんの一瞬、父の指に触れた。父はその指を、振り解きもせず、握り返しもしなかった。",
-      "img": "assets/images/chapter_02/IMG-030.webp"
+      "img": "assets/images/chapter_02/IMG-030.webp",
+      "pages": [
+        "母の指がほんの一瞬、父の指に触れた。\n父はその指を、振り解きもせず、\n握り返しもしなかった。"
+      ],
+      "text": "母の指がほんの一瞬、父の指に触れた。\n父はその指を、振り解きもせず、\n握り返しもしなかった。",
+      "pages_en": [
+        "Her fingers, for a moment,\ntouched his.\nHe neither shook them away\nnor closed his own around them."
+      ],
+      "text_en": "Her fingers, for a moment,\ntouched his.\nHe neither shook them away\nnor closed his own around them."
     },
     {
       "no": 8,
-      "text": "北面の座牢では、娘が桐の小箱を膝に置き、螺鈿の貝殻をそっと撫でている。幼き日、叔父より授かったものであった。月光が高窓の格子をくぐり、貝殻の縁を淡く光らせていた。",
-      "img": "assets/images/chapter_02/IMG-031.webp"
+      "img": "assets/images/chapter_02/IMG-031.webp",
+      "pages": [
+        "座牢では、娘が桐の小箱を膝に置き、\n螺鈿の貝殻をそっと撫でている。\n幼き日、叔父より授かったものであった。",
+        "月光が高窓の格子をくぐり、\n貝殻の縁を淡く光らせていた。"
+      ],
+      "text": "座牢では、娘が桐の小箱を膝に置き、\n螺鈿の貝殻をそっと撫でている。\n幼き日、叔父より授かったものであった。\n月光が高窓の格子をくぐり、\n貝殻の縁を淡く光らせていた。",
+      "pages_en": [
+        "In the Cell, the girl held a paulownia box\nupon her lap\nand stroked, softly,\nthe mother-of-pearl shell within.",
+        "It had been given her by the uncle,\nin her childhood days.\nMoonlight through the high lattice\nlit the shell's edge pale."
+      ],
+      "text_en": "In the Cell, the girl held a paulownia box\nupon her lap\nand stroked, softly,\nthe mother-of-pearl shell within.\nIt had been given her by the uncle,\nin her childhood days.\nMoonlight through the high lattice\nlit the shell's edge pale."
     }
   ]
 }

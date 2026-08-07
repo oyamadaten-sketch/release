@@ -1,46 +1,108 @@
 {
-  "title": "第6章 ─ 障子越しの問い",
+  "title": "第七章 ─ 障子越しの問い",
   "folder": "chapter_06",
   "taps": [
     {
       "no": 1,
-      "text": "数日が過ぎた。夜更けの座牢の障子に、ひとつの影が静かに映る。",
-      "img": "assets/images/chapter_06/IMG-057.webp"
+      "img": "assets/images/chapter_06/IMG-057.webp",
+      "pages": [
+        "数日が過ぎた。\n夜更けの座牢に、ひとつの影が静かに映る。"
+      ],
+      "text": "数日が過ぎた。\n夜更けの座牢に、ひとつの影が静かに映る。",
+      "pages_en": [
+        "Several days had passed.\nDeep in the night at the Cell,\na single shadow quietly fell\nupon the paper of the door."
+      ],
+      "text_en": "Several days had passed.\nDeep in the night at the Cell,\na single shadow quietly fell\nupon the paper of the door."
     },
     {
       "no": 2,
-      "text": "障子の向こうの人物は、灯ひとつを携えたまま、しばらく身じろぎを見せない。\nやがて、低く抑えた声が、障子越しに座牢の中へと届いた。\n「書生にござります」",
-      "img": "assets/images/chapter_06/IMG-058.webp"
+      "img": "assets/images/chapter_06/IMG-058.webp",
+      "pages": [
+        "障子の向こうの人物は、灯を携えたまま、\nしばらく身じろぎを見せない。\nやがて、低く抑えた声が、\n障子越しに座牢の中へと届いた。",
+        "「書生にござります」"
+      ],
+      "text": "障子の向こうの人物は、灯を携えたまま、\nしばらく身じろぎを見せない。\nやがて、低く抑えた声が、\n障子越しに座牢の中へと届いた。\n「書生にござります」",
+      "pages_en": [
+        "The figure beyond the door\nheld a lantern, and for a long while\ndid not move.\nAt last a low voice, held down,",
+        "carried through the door\ninto the Cell:\n\"It is the student.\""
+      ],
+      "text_en": "The figure beyond the door\nheld a lantern, and for a long while\ndid not move.\nAt last a low voice, held down,\ncarried through the door\ninto the Cell:\n\"It is the student.\""
     },
     {
       "no": 3,
-      "text": "座牢の娘は、布団の上で身を起こす。先夜の三和土で娘の動きを写し取った、あの若い男の声であった。\n「お前様の試みを、私はもう三度、見ましてござります」\n障子越しの声は、なおも続いた。\n「何故、外を望まれるのですか」",
-      "img": "assets/images/chapter_06/IMG-059.webp"
+      "img": "assets/images/chapter_06/IMG-059.webp",
+      "pages": [
+        "座牢の娘は、布団の上で身を起こす。\n先夜、娘の姿を眼で写し取った、\nあの若い男の声であった。",
+        "「お前様の試みを、私はもう三度、\n見ましてござります」\n障子越しの声は、なおも続いた。\n「何故、外を望まれるのですか」"
+      ],
+      "text": "座牢の娘は、布団の上で身を起こす。\n先夜、娘の姿を眼で写し取った、\nあの若い男の声であった。\n「お前様の試みを、私はもう三度、\n見ましてござります」\n障子越しの声は、なおも続いた。\n「何故、外を望まれるのですか」",
+      "pages_en": [
+        "Within, the girl rose from her bedding.\nIt was the voice of the young man\nwhose eyes had traced her form\non that earlier night.",
+        "\"I have watched your attempts\nthree times now,\" the voice continued.\n\"Why do you seek the outside?\""
+      ],
+      "text_en": "Within, the girl rose from her bedding.\nIt was the voice of the young man\nwhose eyes had traced her form\non that earlier night.\n\"I have watched your attempts\nthree times now,\" the voice continued.\n\"Why do you seek the outside?\""
     },
     {
       "no": 4,
-      "text": "座牢の娘は、しばし沈黙を返す。やがて、声をひとつ絞り出した。\n「ここ以外の空の色を、見たいのでござります」\n障子の影は、ゆっくりと頷いた。",
-      "img": "assets/images/chapter_06/IMG-060.webp"
+      "img": "assets/images/chapter_06/IMG-060.webp",
+      "pages": [
+        "座牢の娘は、しばし沈黙を返す。\nやがて、声をひとつ絞り出した。\n「別の空の色を見たいのでござります」\n障子の影は、ゆっくりと頷いた。"
+      ],
+      "text": "座牢の娘は、しばし沈黙を返す。\nやがて、声をひとつ絞り出した。\n「別の空の色を見たいのでござります」\n障子の影は、ゆっくりと頷いた。",
+      "pages_en": [
+        "The girl gave silence, at first.\nThen at last she pressed out a voice:\n\"To see the color of another sky.\"\nThe shadow of the door slowly nodded."
+      ],
+      "text_en": "The girl gave silence, at first.\nThen at last she pressed out a voice:\n\"To see the color of another sky.\"\nThe shadow of the door slowly nodded."
     },
     {
       "no": 5,
-      "text": "「座牢の錠は、私が日中のうちに油を差しておきまする。番犬には、薬を仕込みまする。今度の月の昏き夜に、行きまする」",
-      "img": "assets/images/chapter_06/IMG-061.webp"
+      "img": "assets/images/chapter_06/IMG-061.webp",
+      "pages": [
+        "「座牢の錠は、私が日中のうちに\n細工をしておきまする。\n番犬には、薬を仕込みましょう。\n今度の月の昏き夜に、私と共に……」"
+      ],
+      "text": "「座牢の錠は、私が日中のうちに\n細工をしておきまする。\n番犬には、薬を仕込みましょう。\n今度の月の昏き夜に、私と共に……」",
+      "pages_en": [
+        "\"I shall tamper with the lock\nduring the daylight hours,\nand drug the watchdog.\nOn the next moonless night, with me…\""
+      ],
+      "text_en": "\"I shall tamper with the lock\nduring the daylight hours,\nand drug the watchdog.\nOn the next moonless night, with me…\""
     },
     {
       "no": 6,
-      "text": "同じ夜更け、屋敷の南面の座敷では、父がひとり酒杯を傾けていた。盃の縁に映る父の顔は、平生よりも一層、青ざめている。",
-      "img": "assets/images/chapter_06/IMG-062.webp"
+      "img": "assets/images/chapter_06/IMG-062.webp",
+      "pages": [
+        "同じ夜更け、静けさに包まれた座敷では、\n父がひとり酒杯を傾けていた。\n盃の縁に映る父の顔は、平生よりも一層、\n青ざめている。"
+      ],
+      "text": "同じ夜更け、静けさに包まれた座敷では、\n父がひとり酒杯を傾けていた。\n盃の縁に映る父の顔は、平生よりも一層、\n青ざめている。",
+      "pages_en": [
+        "That same night, in the parlor,\nthe father sat alone,\ntilting a sake cup.\nHis reflection in its rim",
+        "was paler than usual."
+      ],
+      "text_en": "That same night, in the parlor,\nthe father sat alone,\ntilting a sake cup.\nHis reflection in its rim\nwas paler than usual."
     },
     {
       "no": 7,
-      "text": "障子の彼方より書生の声が遠く流れてくるのを、父は確かに聞いていた。父は盃の縁を口に当てたまま、何も言わなかった。",
-      "img": "assets/images/chapter_06/IMG-063.webp"
+      "img": "assets/images/chapter_06/IMG-063.webp",
+      "pages": [
+        "障子の向こうより――、\n書生の声が遠く流れてくるのを、\n父は確かに聞いていた。だが、\n父は盃の口に当てたまま何も言わなかった。"
+      ],
+      "text": "障子の向こうより――、\n書生の声が遠く流れてくるのを、\n父は確かに聞いていた。だが、\n父は盃の口に当てたまま何も言わなかった。",
+      "pages_en": [
+        "From beyond the door,\nthe distant voice of the student\ncertainly reached the father.\nYet he held the cup at his lips,",
+        "and said nothing."
+      ],
+      "text_en": "From beyond the door,\nthe distant voice of the student\ncertainly reached the father.\nYet he held the cup at his lips,\nand said nothing."
     },
     {
       "no": 8,
-      "text": "座牢に残された娘の胸の奥には、いまだかつてない低き音が、ひとつ鳴っていたのであった。",
-      "img": "assets/images/chapter_06/IMG-064.webp"
+      "img": "assets/images/chapter_06/IMG-064.webp",
+      "pages": [
+        "座牢に残された娘の胸の奥には、\nいまだかつてない低き音が、\nひとつ鳴っていたのであった。"
+      ],
+      "text": "座牢に残された娘の胸の奥には、\nいまだかつてない低き音が、\nひとつ鳴っていたのであった。",
+      "pages_en": [
+        "Within the Cell, in the girl's chest,\na low tone she had never known before\nrang out, distinct."
+      ],
+      "text_en": "Within the Cell, in the girl's chest,\na low tone she had never known before\nrang out, distinct."
     }
   ]
 }

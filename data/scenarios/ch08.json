@@ -1,31 +1,105 @@
 {
-  "title": "第7章 ─ 共謀の夜",
+  "title": "第八章 ─ 共謀の夜",
   "folder": "chapter_07",
   "taps": [
     {
       "no": 1,
-      "text": "月の昏き夜が、ついに来た。屋敷の上空は厚き雲に覆われ、星の影すら見えない。\n書生の言葉どおり、屋敷の犬は薬の効いた餌を腹に収め、犬小屋の中で深く眠っている。",
-      "img": "assets/images/chapter_07/IMG-065.webp"
+      "img": "assets/images/chapter_07/IMG-065.webp",
+      "pages": [
+        "月の昏き夜が、ついに来た。\n屋敷の上空は厚き雲に覆われ、\n星の影すら見えない。",
+        "書生の言葉どおり、\n屋敷の犬は薬の効いた餌を腹に収め、\n犬小屋の中で深く眠っている。"
+      ],
+      "text": "月の昏き夜が、ついに来た。\n屋敷の上空は厚き雲に覆われ、\n星の影すら見えない。\n書生の言葉どおり、\n屋敷の犬は薬の効いた餌を腹に収め、\n犬小屋の中で深く眠っている。",
+      "pages_en": [
+        "At last, the moonless night came.\nThe sky above the manor\nlay under thick cloud;\nnot even starlight showed.",
+        "As the student had promised,\nthe manor's watchdog had taken\nfood laced with drug,\nand slept deeply in its kennel."
+      ],
+      "text_en": "At last, the moonless night came.\nThe sky above the manor\nlay under thick cloud;\nnot even starlight showed.\nAs the student had promised,\nthe manor's watchdog had taken\nfood laced with drug,\nand slept deeply in its kennel."
     },
     {
       "no": 2,
-      "text": "座牢の錠は、書生の手で予め解かれていた。格子戸の蝶番にも、ひそかに油が差してある。",
-      "img": "assets/images/chapter_07/IMG-066.webp"
+      "img": "assets/images/chapter_07/IMG-066.webp",
+      "pages": [
+        "座牢の錠は、書生の手で予め解かれていた。\n格子戸の蝶番にも、\nひそかに油が差してある。"
+      ],
+      "text": "座牢の錠は、書生の手で予め解かれていた。\n格子戸の蝶番にも、\nひそかに油が差してある。",
+      "pages_en": [
+        "The lock of the Cell,\nsecretly undone by the student's hand,\nyielded easily.\nOn the door's hinges, oil had been set."
+      ],
+      "text_en": "The lock of the Cell,\nsecretly undone by the student's hand,\nyielded easily.\nOn the door's hinges, oil had been set."
     },
     {
       "no": 3,
-      "text": "娘は寝間着の上に紫紺の羽織を重ね、廊下の闇へと身を滑らせる。書生は廊下の角で、灯を持たずに娘を待っていた。",
-      "img": "assets/images/chapter_07/IMG-067.webp"
+      "img": "assets/images/chapter_07/IMG-067.webp",
+      "pages": [
+        "娘は紫紺の羽織を手に取ると、\n廊下の闇へと身を滑らせる。\n書生は廊下の角で、\n灯を持たずに娘を待っていた。"
+      ],
+      "text": "娘は紫紺の羽織を手に取ると、\n廊下の闇へと身を滑らせる。\n書生は廊下の角で、\n灯を持たずに娘を待っていた。",
+      "pages_en": [
+        "The girl took up her deep-violet haori\nand slid into the corridor's darkness.\nThe student waited at the corner\nwithout a lantern."
+      ],
+      "text_en": "The girl took up her deep-violet haori\nand slid into the corridor's darkness.\nThe student waited at the corner\nwithout a lantern."
     },
     {
       "no": 4,
-      "text": "二人は庭の砂利を抜け、籬の隙の方角へと向かう。庭の砂利は、二人の足元をやわらかく沈ませた。\n夜霧が、庭の植え込みの足元から、立ち昇り始める。\nそのとき、娘の裾に、ひとつの影がぴたりと寄り添ってきた。\n屋敷の老猫であった。なぜか、娘の後をついて来ている。\n二人と一匹で籬の隙を抜けようとした、その刹那── 霧の向こうから、提灯の灯がふたつ、ぼうと浮かんで近づいてきた。\n提灯を掲げているのは、番頭であった。番頭の後ろには、父が、肩を強張らせたまま立っている。\n父の頬には、酒の余りの赤みがうっすらと残っていた。けれどもその眼は、家の主としての怒りを湛えるべく、無理に見開かれているのであった。\n番頭の手が、娘の腕に届くより一瞬早く、書生の手が、娘の腕を強く掴んだ。",
-      "img": "assets/images/chapter_07/IMG-068.webp"
+      "img": "assets/images/chapter_00_intro/IMG-012.webp",
+      "pages": [
+        "二人は庭の砂利を抜け、\n籬の隙の方角へと向かう。庭の砂利は、\n二人の足元をやわらかく沈ませた。\nだが、その時――、",
+        "娘の裾に、ひとつの影がぴたりと\n寄り添ってきた。\n屋敷の老猫であった。\nなぜか、娘の後をついて来ている。",
+        "二人と一匹で籬の隙を抜けようとした、\n刹那──。\n霧の向こうから、提灯の灯がふたつ、\nぼうと浮かんで近づいてきた。"
+      ],
+      "text": "二人は庭の砂利を抜け、\n籬の隙の方角へと向かう。庭の砂利は、\n二人の足元をやわらかく沈ませた。\nだが、その時――、\n娘の裾に、ひとつの影がぴたりと\n寄り添ってきた。\n屋敷の老猫であった。\nなぜか、娘の後をついて来ている。\n二人と一匹で籬の隙を抜けようとした、\n刹那──。\n霧の向こうから、提灯の灯がふたつ、\nぼうと浮かんで近づいてきた。",
+      "pages_en": [
+        "The two of them passed the garden's gravel\ntoward the gap in the fence.\nThe gravel gave softly beneath their feet.\nBut in that moment ─",
+        "a shadow drew close\nto the girl's hem.\nIt was the old cat of the manor.\nFor reasons unknown, it followed her.",
+        "The two of them, and one cat,\nreached the gap in the fence,\nand in that very instant ─\ntwo lantern lights loomed through the mist."
+      ],
+      "text_en": "The two of them passed the garden's gravel\ntoward the gap in the fence.\nThe gravel gave softly beneath their feet.\nBut in that moment ─\na shadow drew close\nto the girl's hem.\nIt was the old cat of the manor.\nFor reasons unknown, it followed her.\nThe two of them, and one cat,\nreached the gap in the fence,\nand in that very instant ─\ntwo lantern lights loomed through the mist."
     },
     {
       "no": 5,
-      "text": "「行きませぬ」── 書生の唇が、震えながら言葉を絞り出す。\n「お祖父様にお仕えする身が、何の真似じゃ」── 父はそう、声を絞り出した。声は、咽の奥でやはり湿っている。\n番頭の手は書生の指をひと振りで娘の腕から解き、続けて足元にまとわりつく老猫を、無造作に蹴り上げた。猫は短く鳴き、霧の中へと転がっていく。\n二人は番頭の手によって、再び屋敷の中へと連れ戻された。\n霧の中には、ただ、老猫の最後の鳴き声の余韻だけが、長く長く尾を引いていたのであった。",
-      "img": "assets/images/chapter_07/IMG-069.webp"
+      "img": "assets/images/chapter_07/IMG-068.webp",
+      "pages": [
+        "提灯を掲げているのは、番頭であった。\n番頭の後ろには、父の姿があり、\n肩を強張らせたまま立っていた。",
+        "父の頬には、酒の余りの赤みが\nうっすらと残っていた。\n「娘様、どうかこちらへ」\n野太い番頭の声が駆け抜け、",
+        "筋骨隆々の手が、\n娘の腕に届くより一瞬早く、\n書生の手が、娘の腕を強く掴んだ。"
+      ],
+      "text": "提灯を掲げているのは、番頭であった。\n番頭の後ろには、父の姿があり、\n肩を強張らせたまま立っていた。\n父の頬には、酒の余りの赤みが\nうっすらと残っていた。\n「娘様、どうかこちらへ」\n野太い番頭の声が駆け抜け、\n筋骨隆々の手が、\n娘の腕に届くより一瞬早く、\n書生の手が、娘の腕を強く掴んだ。",
+      "pages_en": [
+        "The lantern was raised by the head clerk.\nBehind him stood the father,\nshoulders tightened,\nunmoving in the mist.",
+        "A faint flush of sake\nstill lingered on the father's cheeks.\n\"Young mistress, come this way,\"\nthe clerk called out, thick and low.",
+        "Yet a heartbeat before that hand\ncould reach the girl's arm,\nthe student's hand seized\nher wrist and held her fast."
+      ],
+      "text_en": "The lantern was raised by the head clerk.\nBehind him stood the father,\nshoulders tightened,\nunmoving in the mist.\nA faint flush of sake\nstill lingered on the father's cheeks.\n\"Young mistress, come this way,\"\nthe clerk called out, thick and low.\nYet a heartbeat before that hand\ncould reach the girl's arm,\nthe student's hand seized\nher wrist and held her fast."
+    },
+    {
+      "no": 6,
+      "img": "assets/images/chapter_07/IMG-069.webp",
+      "pages": [
+        "「行きましょう」──。\n 書生が、震えながら言葉を絞り出すが、\n「お祖父様にお仕えする身が何の真似じゃ」\n 父の鋭い声が、書生の動きをとめた。",
+        "番頭の手は書生の指を\nひと振りで娘の腕から解いた。\n続けて足元にまとわりつく老猫を、\n無造作に蹴り上げた。",
+        "猫は短く鳴き、霧の中へと転がっていく。\n二人は番頭の手によって、\n再び屋敷の中へと連れ戻されたのであった。"
+      ],
+      "text": "「行きましょう」──。\n 書生が、震えながら言葉を絞り出すが、\n「お祖父様にお仕えする身が何の真似じゃ」\n 父の鋭い声が、書生の動きをとめた。\n番頭の手は書生の指を\nひと振りで娘の腕から解いた。\n続けて足元にまとわりつく老猫を、\n無造作に蹴り上げた。\n猫は短く鳴き、霧の中へと転がっていく。\n二人は番頭の手によって、\n再び屋敷の中へと連れ戻されたのであった。",
+      "pages_en": [
+        "\"Let us go,\" said the student,\nsqueezing the words through his trembling.\n\"You who serve my father ─\nwhat play is this?\"",
+        "The father's sharp voice\nfroze the student where he stood.\nThe clerk's hand tore the student's fingers\nfrom the girl in a single stroke.",
+        "Then he kicked, without a glance,\nthe old cat clinging to his feet.\nThe cat cried out once, briefly,\nand tumbled into the mist.",
+        "The two of them\nwere led back into the manor\nby the head clerk's hand."
+      ],
+      "text_en": "\"Let us go,\" said the student,\nsqueezing the words through his trembling.\n\"You who serve my father ─\nwhat play is this?\"\nThe father's sharp voice\nfroze the student where he stood.\nThe clerk's hand tore the student's fingers\nfrom the girl in a single stroke.\nThen he kicked, without a glance,\nthe old cat clinging to his feet.\nThe cat cried out once, briefly,\nand tumbled into the mist.\nThe two of them\nwere led back into the manor\nby the head clerk's hand."
+    },
+    {
+      "no": 7,
+      "img": "assets/images/chapter_00_intro/IMG-012.webp",
+      "pages": [
+        "霧の中には、ただ――、\n老猫の最後の鳴き声の余韻だけが、\n長く長く尾を引いていたのであった。"
+      ],
+      "text": "霧の中には、ただ――、\n老猫の最後の鳴き声の余韻だけが、\n長く長く尾を引いていたのであった。",
+      "pages_en": [
+        "In the mist,\nonly the echo of the old cat's last cry\ntrailed on and on,\nlong into the night."
+      ],
+      "text_en": "In the mist,\nonly the echo of the old cat's last cry\ntrailed on and on,\nlong into the night."
     }
   ]
 }

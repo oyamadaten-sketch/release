@@ -1,31 +1,74 @@
 {
-  "title": "第14章 ─ 煙管の音",
+  "title": "第十五章 ─ 煙管の音",
   "folder": "chapter_14",
   "taps": [
     {
       "no": 1,
-      "text": "翌朝、屋敷の南面の祖父の書斎では、煙管を叩く短い音が、いくたびも畳の上に響いていた。",
-      "img": "assets/images/chapter_14/IMG-106.webp"
+      "img": "assets/images/chapter_14/IMG-106.webp",
+      "pages": [
+        "翌朝、屋敷の南面の祖父の書斎では、\n煙管を叩く短い音が、いくたびも畳の上に\n響いていた。"
+      ],
+      "text": "翌朝、屋敷の南面の祖父の書斎では、\n煙管を叩く短い音が、いくたびも畳の上に\n響いていた。",
+      "pages_en": [
+        "The next morning, in the south study,\nthe short crack of a pipe struck the tatami\nagain and again."
+      ],
+      "text_en": "The next morning, in the south study,\nthe short crack of a pipe struck the tatami\nagain and again."
     },
     {
       "no": 2,
-      "text": "祖父の前には、叔父が膝を畳に折って控えている。叔父はその朝、祖父に呼びつけられた身であった。\n「お前様、近頃、蔵に頻りに出入りしておるそうじゃな」\n祖父の声は、常の朝より一段、低く沈んでいる。\n「お前様も、その血が騒ぐようになったというわけか……。ま、せいぜい気をつけられよ」\n叔父の応えは、震えてしか出てこなかった。\n「な、何のことやら、御祖父様、私は──」\n祖父はもう何も言わず、煙管の灰を、火桶の縁に長く落とした。",
-      "img": "assets/images/chapter_14/IMG-107.webp"
+      "img": "assets/images/chapter_14/IMG-107.webp",
+      "pages": [
+        "祖父の前では叔父が膝をついて控えていた。\n叔父を呼び出した祖父は静かに口を開いた。\n「お前様、近頃、蔵に頻りに出入りしておる\nそうじゃな」",
+        "祖父の声に怒気はないが、冷たく鋭かった。\n「お前様も、その血が騒ぐように\nなったというわけか……。\nま、せいぜい気をつけられよ」",
+        "叔父の応えは、震えてしか出てこなかった。\n「な、何のことやら、御祖父様、私は……」\n祖父はもう何も言わず、煙管の先端を、\n火桶の縁に軽く叩きつけた。"
+      ],
+      "text": "祖父の前では叔父が膝をついて控えていた。\n叔父を呼び出した祖父は静かに口を開いた。\n「お前様、近頃、蔵に頻りに出入りしておる\nそうじゃな」\n祖父の声に怒気はないが、冷たく鋭かった。\n「お前様も、その血が騒ぐように\nなったというわけか……。\nま、せいぜい気をつけられよ」\n叔父の応えは、震えてしか出てこなかった。\n「な、何のことやら、御祖父様、私は……」\n祖父はもう何も言わず、煙管の先端を、\n火桶の縁に軽く叩きつけた。",
+      "pages_en": [
+        "Before Grandfather,\nthe uncle knelt low.\nHaving summoned him, Grandfather\nspoke without rising.",
+        "\"You have been visiting the storehouse\nquite often of late.\"\nThere was no anger in his voice ─\nonly cold and sharp intent.",
+        "\"So you, too, have begun to feel\nthe stirring of your blood…\nTake care.\"\nThe uncle's reply came only in tremors.",
+        "\"W-what can you mean?\nGrandfather, I…\"\nGrandfather said nothing more,\nand tapped his pipe on the brazier's rim."
+      ],
+      "text_en": "Before Grandfather,\nthe uncle knelt low.\nHaving summoned him, Grandfather\nspoke without rising.\n\"You have been visiting the storehouse\nquite often of late.\"\nThere was no anger in his voice ─\nonly cold and sharp intent.\n\"So you, too, have begun to feel\nthe stirring of your blood…\nTake care.\"\nThe uncle's reply came only in tremors.\n\"W-what can you mean?\nGrandfather, I…\"\nGrandfather said nothing more,\nand tapped his pipe on the brazier's rim."
     },
     {
       "no": 3,
-      "text": "やがて、襖の音が立ち、叔父の姿が書斎を出てゆく。叔父は廊下を奥へと進むが、座牢の前で、急にその場にうずくまった。",
-      "img": "assets/images/chapter_14/IMG-108.webp"
+      "img": "assets/images/chapter_14/IMG-108.webp",
+      "pages": [
+        "書斎を出た叔父は、何事もなかったように、\nいつもの調子で廊下を歩んだ。しかし、\n不意に全身の力が抜け落ち、叔父はとうとう\n座牢の前で崩れ落ちた。"
+      ],
+      "text": "書斎を出た叔父は、何事もなかったように、\nいつもの調子で廊下を歩んだ。しかし、\n不意に全身の力が抜け落ち、叔父はとうとう\n座牢の前で崩れ落ちた。",
+      "pages_en": [
+        "Leaving the study, the uncle walked the hall\nas though nothing had passed.\nBut without warning\nall strength drained from him,",
+        "and he collapsed at last\nbefore the Cell."
+      ],
+      "text_en": "Leaving the study, the uncle walked the hall\nas though nothing had passed.\nBut without warning\nall strength drained from him,\nand he collapsed at last\nbefore the Cell."
     },
     {
       "no": 4,
-      "text": "廊下の畳に膝を折ったままの叔父の背は、肩のあたりがわずかに震えている。\n座牢の中の娘は、ふと、格子の隙間から指をそっと伸ばした。",
-      "img": "assets/images/chapter_14/IMG-109.webp"
+      "img": "assets/images/chapter_14/IMG-109.webp",
+      "pages": [
+        "叔父の背は、肩のあたりが震えている。\n座牢の中の娘は、ふと、\n格子の隙間から指をそっと伸ばした。"
+      ],
+      "text": "叔父の背は、肩のあたりが震えている。\n座牢の中の娘は、ふと、\n格子の隙間から指をそっと伸ばした。",
+      "pages_en": [
+        "His shoulders shook.\nIn the Cell, the girl\nquietly reached her finger\nthrough the lattice."
+      ],
+      "text_en": "His shoulders shook.\nIn the Cell, the girl\nquietly reached her finger\nthrough the lattice."
     },
     {
       "no": 5,
-      "text": "けれども、その指は叔父の影には届かなかった。ただ廊下の冷えた空気だけを、しかと握りしめたのであった。空気の冷たさは、母の指の冷たさとも、また違うものを宿していたのであった。",
-      "img": "assets/images/chapter_14/IMG-110.webp"
+      "img": "assets/images/chapter_14/IMG-110.webp",
+      "pages": [
+        "けれども、その指は叔父の影には\n届かなかった。ただ廊下の冷えた空気に、\n触れただけであった。",
+        "空気の冷たさは、母の指の冷たさとも、\nまた違うものを宿していたのであった。"
+      ],
+      "text": "けれども、その指は叔父の影には\n届かなかった。ただ廊下の冷えた空気に、\n触れただけであった。\n空気の冷たさは、母の指の冷たさとも、\nまた違うものを宿していたのであった。",
+      "pages_en": [
+        "But her finger did not reach him.\nIt met only the cold air\nof the corridor.",
+        "That cold\nheld a substance different\nfrom the cold of her mother's fingers."
+      ],
+      "text_en": "But her finger did not reach him.\nIt met only the cold air\nof the corridor.\nThat cold\nheld a substance different\nfrom the cold of her mother's fingers."
     }
   ]
 }

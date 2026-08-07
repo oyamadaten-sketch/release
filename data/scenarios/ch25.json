@@ -4,18 +4,49 @@
   "taps": [
     {
       "no": 1,
-      "text": "数月の後、ある街の片隅で、新聞紙が風にひらりと舞っていた。\n古き商家、業火に包まれて、家系の絶ゆ。\n火元、確かならず。生存者、一名。\nその一名の行方を、知る者は誰もいない。\nそれから、さらに数年の後。",
-      "img": "assets/images/chapter_finale/IMG-163.webp"
+      "img": "assets/images/chapter_finale/IMG-163.webp",
+      "pages": [
+        "数月の後、ある街の片隅で、\n新聞紙が風にひらりと舞っていた。\n古き商家、業火に包まれて、\n家系の絶ゆ。火元、確かならず。",
+        "生存者、一名。\nその一名の行方を、知る者は誰もいない。\nそれから、さらに数年の後。"
+      ],
+      "text": "数月の後、ある街の片隅で、\n新聞紙が風にひらりと舞っていた。\n古き商家、業火に包まれて、\n家系の絶ゆ。火元、確かならず。\n生存者、一名。\nその一名の行方を、知る者は誰もいない。\nそれから、さらに数年の後。",
+      "pages_en": [
+        "Some months later, in a corner of a town,\na sheet of newspaper danced in the wind.\n\"An old merchant house\nswallowed by hellfire, its line ended.\"",
+        "\"The origin of the flame remains unclear.\nSurvivor: one.\"\nWhere that one had gone\nno one knew. And then,",
+        "several more years passed."
+      ],
+      "text_en": "Some months later, in a corner of a town,\na sheet of newspaper danced in the wind.\n\"An old merchant house\nswallowed by hellfire, its line ended.\"\n\"The origin of the flame remains unclear.\nSurvivor: one.\"\nWhere that one had gone\nno one knew. And then,\nseveral more years passed."
     },
     {
       "no": 2,
-      "text": "街道のかたわら、白壁の屋敷の門前で、ひとりの女が、ふと足を止めた。\n紫紺の羽織を肩に着た、女である。\n屋敷の門には、籠目模様の格子戸が、しんと立てかけられていた。\nその奥の座敷の障子には、年若き娘の影が、ふっと映っている。\n紫紺の女は、格子戸の隙間にそっと口を寄せる。\n「外を、御覧なされ」\n「ここ以外の空の色は、青き、青き、まことに青きものにござります」\n女の口の端には、微かな笑みが浮かんでいる。",
-      "img": "assets/images/chapter_finale/IMG-164.webp"
+      "img": "assets/images/chapter_finale/IMG-164.webp",
+      "pages": [
+        "街道のかたわら、白壁の屋敷の門前で、\nひとりの女が、ふと足を止めた。\n紫紺の羽織を肩に着た、女である。",
+        "屋敷の門には、籠目模様の格子戸が、\nしんと立てかけられていた。\nその奥の座敷の障子には、\n年若き娘の影が、ふっと映っている。",
+        "紫紺の女は、格子戸の隙間に\nそっと口を寄せる。\n「外を、御覧なされ」と。",
+        "「ここ以外の空の色は、青き、青き、\nまことに青きものにござります」\n女の口の端には、微かな笑みが\n浮かんでいる。"
+      ],
+      "text": "街道のかたわら、白壁の屋敷の門前で、\nひとりの女が、ふと足を止めた。\n紫紺の羽織を肩に着た、女である。\n屋敷の門には、籠目模様の格子戸が、\nしんと立てかけられていた。\nその奥の座敷の障子には、\n年若き娘の影が、ふっと映っている。\n紫紺の女は、格子戸の隙間に\nそっと口を寄せる。\n「外を、御覧なされ」と。\n「ここ以外の空の色は、青き、青き、\nまことに青きものにござります」\n女の口の端には、微かな笑みが\n浮かんでいる。",
+      "pages_en": [
+        "Beside a country road,\nat the gate of a white-walled manor,\na woman paused her step.\nShe wore a deep-violet haori.",
+        "The manor gate held\na latticed door of kagome pattern,\nstanding still.\nBeyond it, on the paper of a chamber,",
+        "the shadow of a young girl\nquietly appeared.\nThe woman in violet\nleaned her lips to a crack of the lattice,",
+        "and whispered:\n\"Look outside.\"\n\"The color of the sky elsewhere\nis blue ─ blue,",
+        "a truer blue than you may know.\"\nA faint smile\nlingered at the corner of her lips."
+      ],
+      "text_en": "Beside a country road,\nat the gate of a white-walled manor,\na woman paused her step.\nShe wore a deep-violet haori.\nThe manor gate held\na latticed door of kagome pattern,\nstanding still.\nBeyond it, on the paper of a chamber,\nthe shadow of a young girl\nquietly appeared.\nThe woman in violet\nleaned her lips to a crack of the lattice,\nand whispered:\n\"Look outside.\"\n\"The color of the sky elsewhere\nis blue ─ blue,\na truer blue than you may know.\"\nA faint smile\nlingered at the corner of her lips."
     },
     {
       "no": 3,
-      "text": "螺鈿の貝殻が、女の懐で月光のように淡く光っていた。その光は、籠目の格子戸の隙より、奥座敷の年若き娘の障子の上にも、ひとすじ伸びていたのであった。",
-      "img": "assets/images/chapter_finale/IMG-165.webp"
+      "img": "assets/images/chapter_finale/IMG-165.webp",
+      "pages": [
+        "螺鈿の貝殻が、女の懐で月光のように\n淡く光っていた……。"
+      ],
+      "text": "螺鈿の貝殻が、女の懐で月光のように\n淡く光っていた……。",
+      "pages_en": [
+        "The mother-of-pearl shell\nglowed pale in the woman's bosom,\nlike moonlight…"
+      ],
+      "text_en": "The mother-of-pearl shell\nglowed pale in the woman's bosom,\nlike moonlight…"
     }
   ]
 }

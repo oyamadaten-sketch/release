@@ -14,11 +14,38 @@
 <title>親指隠シと座牢のムスメ ─ v1.3（第1パズル実装）</title>
 <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="lang-ja">
 <div id="phone-frame">
 
   <!-- ① ロゴ画面 -->
   <div id="logo-screen" class="screen active">
+    <!-- 右上：言語トグル + 音量設定 -->
+    <div class="logo-settings">
+      <div class="lang-toggle" id="lang-toggle" role="group" aria-label="Language">
+        <button class="lang-opt active" data-lang="ja" id="btn-lang-ja">日本語</button>
+        <button class="lang-opt" data-lang="en" id="btn-lang-en">English</button>
+      </div>
+      <button id="btn-audio-settings" class="audio-icon-btn" title="Audio Settings" aria-label="Audio">
+        <span id="audio-icon">🔊</span>
+      </button>
+    </div>
+    <!-- 音量設定パネル（トグルで開閉） -->
+    <div id="audio-panel" class="audio-panel">
+      <div class="audio-panel-title">Audio</div>
+      <div class="audio-row">
+        <label class="audio-label">BGM</label>
+        <input type="range" min="0" max="100" value="50" id="slider-bgm" class="audio-slider">
+        <span class="audio-value" id="slider-bgm-val">50</span>
+      </div>
+      <div class="audio-row">
+        <label class="audio-label">SE</label>
+        <input type="range" min="0" max="100" value="70" id="slider-se" class="audio-slider">
+        <span class="audio-value" id="slider-se-val">70</span>
+      </div>
+      <label class="audio-mute">
+        <input type="checkbox" id="chk-mute"> Mute
+      </label>
+    </div>
     <div class="by">A&nbsp;&nbsp;G A M E&nbsp;&nbsp;B Y</div>
     <div class="logo">Bocchi-Bochi-Games</div>
     <div class="bar"><div id="logo-bar" style="width:0%"></div></div>
@@ -66,6 +93,7 @@
           <button class="btn" id="btn-continue" style="display:none;" data-i18n="titleMenu.continue">続きから</button>
           <button class="btn" id="btn-start" data-i18n="titleMenu.gameStart">ゲーム開始</button>
           <button class="btn" id="btn-select" data-i18n="titleMenu.chapterSelect">章選択</button>
+          <button class="btn btn-howto" id="btn-howto" data-i18n="titleMenu.howToPlay">遊戯方法</button>
         </div>
       </div>
     </div>
@@ -112,6 +140,52 @@
         <button data-jumpch="9">C9</button>
         <button data-jumpch="10">C10</button>
       </div>
+    </div>
+  </div>
+
+  <!-- 遊び方 / How to Play -->
+  <div id="howto-screen" class="screen">
+    <div class="howto-header">
+      <button class="back" id="btn-howto-back" data-i18n="buttons.back">← 戻る</button>
+      <div class="howto-title" data-i18n="titleMenu.howToPlay">遊戯方法</div>
+      <div style="width:60px;"></div>
+    </div>
+    <div class="howto-scroll">
+      <!-- 盤面スクショ -->
+      <div class="howto-section howto-section-image">
+        <div class="howto-section-heading" data-i18n="howto.gameplayHeading">■ 遊戯の要領</div>
+        <div class="howto-board-img">
+          <img id="howto-board-img" src="assets/images/tutorial/board_ja.webp" alt="Board example">
+        </div>
+        <div class="howto-desc" data-i18n-html="howto.gameplayDesc">
+          左上の「蓋」の駒をまず外し、<br>
+          娘の駒を中央下の「玄関」まで導かねばならぬ。<br>
+          駒は一手ずつ、隣り合う空き升へ<br>
+          滑らせて動かす。 他の駒が玄関を塞がぬよう、<br>
+          順序と経路を思案して動かされたし。
+        </div>
+      </div>
+
+      <!-- 操作方法 -->
+      <div class="howto-section">
+        <div class="howto-section-heading" data-i18n="howto.controlsHeading">■ 操作の作法</div>
+        <div class="howto-desc" data-i18n-html="howto.controlsDesc">
+          駒に触れ、動かしたい方向へ引かれよ。<br>
+          「↻ 初期配置に戻す」で盤面を戻し、<br>
+          「← 中断」で表題へ戻れば、<br>
+          続きから再開できる。
+        </div>
+      </div>
+
+      <!-- ピース一覧 -->
+      <div class="howto-section">
+        <div class="howto-section-heading" data-i18n="howto.piecesHeading">■ 登場する駒</div>
+        <table class="howto-piece-table" id="howto-piece-table">
+          <!-- thead / tbody を JS で言語別に動的生成 -->
+        </table>
+      </div>
+
+      <div class="howto-footer-spacer"></div>
     </div>
   </div>
 
@@ -175,11 +249,11 @@
     </div>
     <!-- ゲームオーバー（Stage 24 火事ギミック：娘が全マス引火時） -->
     <div id="puz-gameover">
-      <div class="puz-gameover-title">─ 脱 出 失 敗 ─</div>
-      <div class="puz-gameover-text">館ハ焔ニ包マレ、<br/>娘ノ脱出ハ叶ワザリキ。</div>
+      <div class="puz-gameover-title" data-i18n="gameOver.title">─ 脱 出 失 敗 ─</div>
+      <div class="puz-gameover-text" id="puz-gameover-text" data-i18n-html="gameOver.text">館ハ焔ニ包マレ、<br/>娘ノ脱出ハ叶ワザリキ。</div>
       <div class="puz-gameover-buttons">
-        <button id="btn-puz-retry">再ビ、試ミル</button>
-        <button id="btn-puz-title-back">物語ノ始マリヘ</button>
+        <button id="btn-puz-retry" data-i18n="gameOver.retry">再ビ、試ミル</button>
+        <button id="btn-puz-title-back" data-i18n="gameOver.titleBack">物語ノ始マリヘ</button>
       </div>
     </div>
   </div>
@@ -189,11 +263,7 @@
     <div class="end-title" data-i18n="credits.end">完</div>
     <div class="credits">
       <div class="role" data-i18n="credits.sectionScreenplay">脚本・構成・演出</div>
-      <div class="name">Bocchi-Bochi-Games</div>
-      <div class="role" data-i18n="credits.sectionVisualStyle">影絵ビジュアル</div>
-      <div class="name">v3.4 規格</div>
-      <div class="role" data-i18n="credits.sectionMusic">音楽・効果音</div>
-      <div class="name" data-i18n="dev.toBeAdded">─（追加予定）─</div>
+      <div class="name" data-i18n="credits.creator">小山田 天</div>
       <div class="role" data-i18n="titleMenu.specialThanks">スペシャルサンクス</div>
       <div class="name" data-i18n="credits.sectionPlayer">プレイヤーの皆さま</div>
     </div>
@@ -204,13 +274,15 @@
 </div>
 <div id="err-banner"></div>
 
-<script src="data/scenarios_all.js?v=20260712bj"></script>
-<script src="data/puzzles.js?v=20260712bj"></script>
-<script src="js/engine/text.js?v=20260712bj"></script>
-<script src="js/engine/save.js?v=20260712bj"></script>
-<script src="js/engine/loader.js?v=20260712bj"></script>
-<script src="js/engine/i18n.js?v=20260712bj"></script>
-<script src="js/puzzle.js?v=20260712bj"></script>
-<script src="js/main.js?v=20260712bj"></script>
+<script src="data/scenarios_all.js?v=20260712ck"></script>
+<script src="data/puzzles.js?v=20260712ck"></script>
+<script src="data/i18n/all.js?v=20260712ck"></script>
+<script src="js/engine/text.js?v=20260712ck"></script>
+<script src="js/engine/save.js?v=20260712ck"></script>
+<script src="js/engine/loader.js?v=20260712ck"></script>
+<script src="js/engine/i18n.js?v=20260712ck"></script>
+<script src="js/engine/audio.js?v=20260712ck"></script>
+<script src="js/puzzle.js?v=20260712ck"></script>
+<script src="js/main.js?v=20260712ck"></script>
 </body>
 </html>

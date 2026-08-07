@@ -67,12 +67,12 @@
   // data-i18n 属性のDOMを一括更新
   function applyToDOM(root) {
     root = root || document;
+    // data-i18n: textContent で置換（安全・XSS防止）
     const nodes = root.querySelectorAll('[data-i18n]');
     for (const el of nodes) {
       const key = el.dataset.i18n;
       if (!key) continue;
       const text = t(key);
-      // input.placeholder / img.alt など属性別置換
       if (el.tagName === 'INPUT' && (el.type === 'text' || el.type === 'search')) {
         el.placeholder = text;
       } else if (el.tagName === 'IMG') {
@@ -81,15 +81,32 @@
         el.textContent = text;
       }
     }
+    // data-i18n-html: innerHTML で置換（<br> 等のインラインHTMLを許可）
+    const htmlNodes = root.querySelectorAll('[data-i18n-html]');
+    for (const el of htmlNodes) {
+      const key = el.dataset.i18nHtml;
+      if (!key) continue;
+      el.innerHTML = t(key);
+    }
   }
 
-  // ロケールJSONを fetch
+  // ロケール読み込み：window.I18N_DATA が優先（file:// 環境で fetch がCORSブロックされるため）
   async function loadLocale(locale) {
-    const url = 'data/i18n/' + locale + '.json';
-    const resp = await fetch(url);
-    if (!resp.ok) throw new Error('i18n fetch failed: ' + locale);
-    const json = await resp.json();
-    return flatten(json);
+    // ★埋め込みデータがあればそれを使用（file:// でも動作）
+    if (window.I18N_DATA && window.I18N_DATA[locale]) {
+      return flatten(window.I18N_DATA[locale]);
+    }
+    // フォールバック：HTTPサーバー環境では従来通り fetch
+    try {
+      const url = 'data/i18n/' + locale + '.json';
+      const resp = await fetch(url);
+      if (!resp.ok) throw new Error('i18n fetch failed: ' + locale);
+      const json = await resp.json();
+      return flatten(json);
+    } catch (e) {
+      console.error('[i18n] loadLocale failed for ' + locale + ':', e);
+      throw e;
+    }
   }
 
   // 初期化：デフォルトlocaleを読込 + fallbackを別途保持
@@ -111,6 +128,7 @@
         state.fallback = state.data;
       }
       state.loaded = true;
+      applyBodyLangClass(locale);
       applyToDOM();
       console.log('[i18n] loaded locale:', locale);
     } catch (e) {
@@ -127,7 +145,17 @@
     localStorage.setItem(STORAGE_KEY, locale);
     state.data = await loadLocale(locale);
     state.current = locale;
+    applyBodyLangClass(locale);
     applyToDOM();
+  }
+
+  // ★body に lang-ja / lang-en クラスを付与（CSSでの言語別スタイル切替用）
+  function applyBodyLangClass(locale) {
+    if (!document.body) return;
+    SUPPORTED.forEach(function(l) {
+      document.body.classList.remove('lang-' + l);
+    });
+    document.body.classList.add('lang-' + locale);
   }
 
   global.I18n = {

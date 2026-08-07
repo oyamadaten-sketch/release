@@ -1,21 +1,49 @@
 {
-  "title": "第13章 ─ 障子越しの視線",
+  "title": "第十四章 ─ 障子越しの視線",
   "folder": "chapter_13",
   "taps": [
     {
       "no": 1,
-      "text": "夜更けの座牢の障子に、ひとつの影が静かに映った。\n障子の向こうに立つ人物は、叔父であった。\n叔父は座牢の障子の前で、長く長く、その場に佇んでいる。\nただ、佇むのみであった。一言の言葉も発さなかった。\n障子の向こうの叔父の眼には、ふと、幼き日のことが過ぎる。気まぐれに贈った小さき土産を、娘はいまも、ああして大切にしてくれている。",
-      "img": "assets/images/chapter_13/IMG-103.webp"
+      "img": "assets/images/chapter_13/IMG-103.webp",
+      "pages": [
+        "夜更けの座牢の障子に、\nひとつの影が静かに映った。\n障子の向こうに立つ人物は、\n叔父であった。",
+        "叔父は座牢の障子の前で、\n長く長く、その場に佇んでいる。\nただ、佇むのみで、\n一言の言葉も発さなかった。",
+        "障子の向こうの叔父の眼には、\nふと、幼き日のことが過ぎる。\n気まぐれに贈った土産を、娘はいまも、\n大切にしてくれている。"
+      ],
+      "text": "夜更けの座牢の障子に、\nひとつの影が静かに映った。\n障子の向こうに立つ人物は、\n叔父であった。\n叔父は座牢の障子の前で、\n長く長く、その場に佇んでいる。\nただ、佇むのみで、\n一言の言葉も発さなかった。\n障子の向こうの叔父の眼には、\nふと、幼き日のことが過ぎる。\n気まぐれに贈った土産を、娘はいまも、\n大切にしてくれている。",
+      "pages_en": [
+        "Late that night, on the Cell's paper door,\na shadow silently appeared.\nThe figure beyond the door\nwas the uncle.",
+        "He stood there long,\nbefore the paper of the Cell.\nHe merely stood ─\nno word passed his lips.",
+        "In the uncle's eyes,\na childhood day flickered by.\nA gift given once, on a whim,\nthe girl still held dear."
+      ],
+      "text_en": "Late that night, on the Cell's paper door,\na shadow silently appeared.\nThe figure beyond the door\nwas the uncle.\nHe stood there long,\nbefore the paper of the Cell.\nHe merely stood ─\nno word passed his lips.\nIn the uncle's eyes,\na childhood day flickered by.\nA gift given once, on a whim,\nthe girl still held dear."
     },
     {
       "no": 2,
-      "text": "座牢の中の娘は、桐の小箱を膝の上に置き、螺鈿の貝殻をそっと撫でていた。",
-      "img": "assets/images/chapter_13/IMG-104.webp"
+      "img": "assets/images/chapter_13/IMG-104.webp",
+      "pages": [
+        "座牢の中の娘は、\n桐の小箱を膝の上に置き、\n螺鈿の貝殻をそっと撫でていた。"
+      ],
+      "text": "座牢の中の娘は、\n桐の小箱を膝の上に置き、\n螺鈿の貝殻をそっと撫でていた。",
+      "pages_en": [
+        "Within the Cell,\nthe girl set the paulownia box\nupon her lap\nand softly stroked the mother-of-pearl shell."
+      ],
+      "text_en": "Within the Cell,\nthe girl set the paulownia box\nupon her lap\nand softly stroked the mother-of-pearl shell."
     },
     {
       "no": 3,
-      "text": "やがて、何の言葉も交わされぬままに、叔父の影は静かに消えてゆく。\n影が去ったあとの障子には、月光がひとすじ、斜めに残された。\n娘はその光をなぞるように指を伸ばし、貝殻にそっと触れる。\n貝殻の縁は、月光と同じ温度をしていたのであった。",
-      "img": "assets/images/chapter_13/IMG-105.webp"
+      "img": "assets/images/chapter_13/IMG-105.webp",
+      "pages": [
+        "やがて、何の言葉も交わさぬままに、\n叔父の影は静かに消えてゆく。\n影が去ったあとの座牢には、\n月光がひとすじ、斜めに差し込んでいた。",
+        "娘はその光をなぞるように指を伸ばし、\n貝殻にそっと触れる。\n貝殻の縁は、月光と同じ温度を\nしていたのであった。"
+      ],
+      "text": "やがて、何の言葉も交わさぬままに、\n叔父の影は静かに消えてゆく。\n影が去ったあとの座牢には、\n月光がひとすじ、斜めに差し込んでいた。\n娘はその光をなぞるように指を伸ばし、\n貝殻にそっと触れる。\n貝殻の縁は、月光と同じ温度を\nしていたのであった。",
+      "pages_en": [
+        "Before long, without a single word,\nthe uncle's shadow quietly withdrew.\nAfter he was gone,\na single stripe of moonlight",
+        "fell slanting into the Cell.\nAs though tracing the light,\nshe reached her finger\nand touched the shell.",
+        "The edge of the shell\nheld the same warmth\nas the moonlight itself."
+      ],
+      "text_en": "Before long, without a single word,\nthe uncle's shadow quietly withdrew.\nAfter he was gone,\na single stripe of moonlight\nfell slanting into the Cell.\nAs though tracing the light,\nshe reached her finger\nand touched the shell.\nThe edge of the shell\nheld the same warmth\nas the moonlight itself."
     }
   ]
 }

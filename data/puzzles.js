@@ -12,207 +12,207 @@
 
 const PUZZLE_PIECE_DEFS = {
   // ロック駒（左上、最初にタップで外す）── Ver15の LOGO に相当、ゲーム題字を載せる
-  LID:      { w: 2, h: 2, label: '親指隠シと座牢のムスメ', role: 'starter', bg: '#5c3a21', fg: '#eecfa1', size: 9 },
+  LID:      { w: 2, h: 2, label: '親指隠シと座牢のムスメ', labelEn: 'Yubikakushi', role: 'starter', bg: '#5c3a21', fg: '#eecfa1', size: 9 },
   // 手形：動かない固定駒（1×1）── 血まみれの手形マーク、他駒の動線を塞ぐ
   //   role: 'fixed' で canMove()/onPointerDown() が拒否
   //   視覚：CSS .role-fixed.handprint で SVG 手形 + 深紅背景
-  HANDPRINT:{ w: 1, h: 1, label: '手形', role: 'fixed',   bg: '#4a0e0e', fg: '#ffcccc', size: 11 },
+  HANDPRINT:{ w: 1, h: 1, label: '手形', labelEn: 'Print', role: 'fixed',   bg: '#4a0e0e', fg: '#ffcccc', size: 11 },
   // 動けなくなった祖母：Stage 21 専用の固定駒（1×1）── 病に伏し、次章で亡くなる
   //   role: 'fixed' で HANDPRINT と同じく動けない
   //   視覚：祖母基調色（灰青）＋右下隅に黒い滲み（病を表す）、CSS .gmother-sick-piece で描画
-  GMOTHER_SICK:{ w: 1, h: 1, label: '祖母', role: 'fixed', bg: '#cfd8dc', fg: '#263238', size: 11 },
+  GMOTHER_SICK:{ w: 1, h: 1, label: '祖母', labelEn: 'Nana', role: 'fixed', bg: '#cfd8dc', fg: '#263238', size: 11 },
   // 祭壇：Stage 22 専用の固定駒（2×1横）── 祖母の葬儀で家中央に据えられる
   //   role: 'fixed' で HANDPRINT / GMOTHER_SICK と同じく動けない
   //   視覚：暗い漆黒の木肌 + 中央位牌 + 両脇の蝋燭 + 香炉、CSS .altar-piece で SVG 描画
-  ALTAR:    { w: 2, h: 1, label: '祭壇', role: 'fixed', bg: '#1a0f08', fg: '#f5deb3', size: 10 },
+  ALTAR:    { w: 2, h: 1, label: '祭壇', labelEn: 'Altar', role: 'fixed', bg: '#1a0f08', fg: '#f5deb3', size: 10 },
   // 炎：Stage 24 専用（1×1）── 最終ステージ「館の火事」で家を焼き尽くす焔
   //   role: 'block' で移動可能。10手ごとに隣接ピースをランダム引火（puzzle.js processFireTick で処理）
   //   視覚：多層 radial gradient（黄→橙→赤→焦）+ SVG 炎シルエット + flicker アニメーション、CSS .flame-piece で描画
-  FLAME:    { w: 1, h: 1, label: '炎', role: 'block', bg: '#dc143c', fg: '#ffffff', size: 12 },
+  FLAME:    { w: 1, h: 1, label: '炎', labelEn: 'Fire', role: 'block', bg: '#dc143c', fg: '#ffffff', size: 12 },
   // 娘（ゴール駒）
-  DAUGHTER: { w: 2, h: 2, label: '娘',   role: 'target',  bg: '#fff3e0', fg: '#3e2723', size: 26 },
+  DAUGHTER: { w: 2, h: 2, label: '娘', labelEn: 'Girl',   role: 'target',  bg: '#fff3e0', fg: '#3e2723', size: 26 },
   // 父母（縦長1×2、ベージュ）
-  FATHER:   { w: 1, h: 2, label: '父',   role: 'block',   bg: '#d7ccc8', fg: '#3e2723', size: 18 },
-  MOTHER:   { w: 1, h: 2, label: '母',   role: 'block',   bg: '#d7ccc8', fg: '#3e2723', size: 18 },
+  FATHER:   { w: 1, h: 2, label: '父', labelEn: 'Dad',   role: 'block',   bg: '#d7ccc8', fg: '#3e2723', size: 18 },
+  MOTHER:   { w: 1, h: 2, label: '母', labelEn: 'Mom',   role: 'block',   bg: '#d7ccc8', fg: '#3e2723', size: 18 },
   // 母：1×1縮小（第弐夜〜 力の縮小）
-  MOTHER_S: { w: 1, h: 1, label: '母',   role: 'pawn',    bg: '#d7ccc8', fg: '#3e2723', size: 11 },
+  MOTHER_S: { w: 1, h: 1, label: '母', labelEn: 'Mom',   role: 'pawn',    bg: '#d7ccc8', fg: '#3e2723', size: 11 },
   // 母：横長2×1（Stage11〜 燈下の影で母が横に伸びる ─ 家中央下段の広がり）
-  MOTHER_H: { w: 2, h: 1, label: '母',   role: 'block',   bg: '#d7ccc8', fg: '#3e2723', size: 14 },
-  MOTHER_JB:{ w: 2, h: 2, shape: [[1,1],[0,1]], labelPos: [1, 0.5], label: '母', role: 'block', bg: '#d7ccc8', fg: '#3e2723', size: 15 },  // L字3マス：上段横2＋下段右1（Stage23〜 母が父の枕元へ寄り添う）
-  MOTHER_L: { w: 3, h: 1, label: '母', role: 'block', bg: '#d7ccc8', fg: '#3e2723', size: 14 },  // 母 横長 3×1（Stage24〜 母が家中を横一列に守るように）
+  MOTHER_H: { w: 2, h: 1, label: '母', labelEn: 'Mom',   role: 'block',   bg: '#d7ccc8', fg: '#3e2723', size: 14 },
+  MOTHER_JB:{ w: 2, h: 2, shape: [[1,1],[0,1]], labelPos: [1, 0.5], label: '母', labelEn: 'Mom', role: 'block', bg: '#d7ccc8', fg: '#3e2723', size: 15 },  // L字3マス：上段横2＋下段右1（Stage23〜 母が父の枕元へ寄り添う）
+  MOTHER_L: { w: 3, h: 1, label: '母', labelEn: 'Mom', role: 'block', bg: '#d7ccc8', fg: '#3e2723', size: 14 },  // 母 横長 3×1（Stage24〜 母が家中を横一列に守るように）
   // 祖父母（横長2×1、灰青）
-  GFATHER:  { w: 2, h: 1, label: '祖父', role: 'block',   bg: '#cfd8dc', fg: '#37474f', size: 14 },
-  GMOTHER:  { w: 2, h: 1, label: '祖母', role: 'block',   bg: '#cfd8dc', fg: '#37474f', size: 14 },
+  GFATHER:  { w: 2, h: 1, label: '祖父', labelEn: 'Papa', role: 'block',   bg: '#cfd8dc', fg: '#37474f', size: 14 },
+  GMOTHER:  { w: 2, h: 1, label: '祖母', labelEn: 'Nana', role: 'block',   bg: '#cfd8dc', fg: '#37474f', size: 14 },
   // 叔父母（横長2×1、桃色）
-  UNCLE:    { w: 2, h: 1, label: '叔父', role: 'block',   bg: '#ffccbc', fg: '#3e2723', size: 14 },
-  AUNT:     { w: 2, h: 1, label: '叔母', role: 'block',   bg: '#ffccbc', fg: '#3e2723', size: 14 },
+  UNCLE:    { w: 2, h: 1, label: '叔父', labelEn: 'Uncle', role: 'block',   bg: '#ffccbc', fg: '#3e2723', size: 14 },
+  AUNT:     { w: 2, h: 1, label: '叔母', labelEn: 'Aunt', role: 'block',   bg: '#ffccbc', fg: '#3e2723', size: 14 },
   // 番頭（横長2×1、薄茶）
-  CLERK:    { w: 2, h: 1, label: '番頭', role: 'block',   bg: '#bcaaa4', fg: '#3e2723', size: 14 },
+  CLERK:    { w: 2, h: 1, label: '番頭', labelEn: 'Clerk', role: 'block',   bg: '#bcaaa4', fg: '#3e2723', size: 14 },
   // 使用人（1×1）
-  MAID:     { w: 1, h: 1, label: '女中', role: 'pawn',    bg: '#dce775', fg: '#33691e', size: 11 },
+  MAID:     { w: 1, h: 1, label: '女中', labelEn: 'Maid', role: 'pawn',    bg: '#dce775', fg: '#33691e', size: 11 },
   // 女中：縦長1×2（第肆夜〜 女中の存在感が縦に伸びる）
-  MAID_L:   { w: 1, h: 2, label: '女中', role: 'block',   bg: '#c0ca33', fg: '#33691e', size: 12 },
+  MAID_L:   { w: 1, h: 2, label: '女中', labelEn: 'Maid', role: 'block',   bg: '#c0ca33', fg: '#33691e', size: 12 },
   // 祖母：縮小1×1（第肆夜〜 力を失う）
-  GMOTHER_S:{ w: 1, h: 1, label: '祖母', role: 'pawn',    bg: '#cfd8dc', fg: '#37474f', size: 11 },
-  PRODIGAL: { w: 1, h: 1, label: '兄',   role: 'pawn',    bg: '#ce93d8', fg: '#4a148c', size: 12 },
-  STUDENT:  { w: 1, h: 1, label: '書生', role: 'pawn',    bg: '#f5f5f5', fg: '#212121', size: 11 },
-  APPRENTICE:{ w:1, h: 1, label: '丁稚', role: 'pawn',    bg: '#e0e0e0', fg: '#424242', size: 11 },
+  GMOTHER_S:{ w: 1, h: 1, label: '祖母', labelEn: 'Nana', role: 'pawn',    bg: '#cfd8dc', fg: '#37474f', size: 11 },
+  PRODIGAL: { w: 1, h: 1, label: '兄', labelEn: 'Bro E.',   role: 'pawn',    bg: '#ce93d8', fg: '#4a148c', size: 12 },
+  STUDENT:  { w: 1, h: 1, label: '書生', labelEn: 'Pupil', role: 'pawn',    bg: '#f5f5f5', fg: '#212121', size: 11 },
+  APPRENTICE:{ w:1, h: 1, label: '丁稚', labelEn: 'Boy', role: 'pawn',    bg: '#e0e0e0', fg: '#424242', size: 11 },
   // 弟妹（1×1）
-  SISTER:   { w: 1, h: 1, label: '妹',   role: 'pawn',    bg: '#ffab91', fg: '#3e2723', size: 12 },
+  SISTER:   { w: 1, h: 1, label: '妹', labelEn: 'Sis',   role: 'pawn',    bg: '#ffab91', fg: '#3e2723', size: 12 },
   // 妹：縦長1×2（Stage13〜 妹の存在感が縦に伸びる）
-  SISTER_L: { w: 1, h: 2, label: '妹',   role: 'block',   bg: '#ffab91', fg: '#3e2723', size: 14 },
-  SISTER_H: { w: 2, h: 1, label: '妹',   role: 'block',   bg: '#ffab91', fg: '#3e2723', size: 14 },  // 妹 横2マス（Stage15〜 姉妹並座）
-  BROTHER:  { w: 1, h: 1, label: '弟',   role: 'pawn',    bg: '#90caf9', fg: '#0d47a1', size: 12 },
-  BROTHER_H:{ w: 2, h: 1, label: '弟',   role: 'block',   bg: '#90caf9', fg: '#0d47a1', size: 14 },  // 弟 横2マス（Stage19〜 姉妹（妹）と並座して外を望む）
-  BROTHER_V:{ w: 1, h: 2, label: '弟',   role: 'block',   bg: '#90caf9', fg: '#0d47a1', size: 14 },  // 弟 縦2マス（Stage21〜 祖母の枕元で立ち尽くす）
+  SISTER_L: { w: 1, h: 2, label: '妹', labelEn: 'Sis',   role: 'block',   bg: '#ffab91', fg: '#3e2723', size: 14 },
+  SISTER_H: { w: 2, h: 1, label: '妹', labelEn: 'Sis',   role: 'block',   bg: '#ffab91', fg: '#3e2723', size: 14 },  // 妹 横2マス（Stage15〜 姉妹並座）
+  BROTHER:  { w: 1, h: 1, label: '弟', labelEn: 'Bro',   role: 'pawn',    bg: '#90caf9', fg: '#0d47a1', size: 12 },
+  BROTHER_H:{ w: 2, h: 1, label: '弟', labelEn: 'Bro',   role: 'block',   bg: '#90caf9', fg: '#0d47a1', size: 14 },  // 弟 横2マス（Stage19〜 姉妹（妹）と並座して外を望む）
+  BROTHER_V:{ w: 1, h: 2, label: '弟', labelEn: 'Bro',   role: 'block',   bg: '#90caf9', fg: '#0d47a1', size: 14 },  // 弟 縦2マス（Stage21〜 祖母の枕元で立ち尽くす）
   // 動物（1×1、濃茶）
-  CAT:      { w: 1, h: 1, label: '猫',   role: 'pawn',    bg: '#795548', fg: '#efebe9', size: 12 },
-  DOG:      { w: 1, h: 1, label: '犬',   role: 'pawn',    bg: '#795548', fg: '#efebe9', size: 12 },
-  PUPPY:    { w: 1, h: 1, label: '子犬', role: 'pawn',    bg: '#a0704d', fg: '#efebe9', size: 11 },  // 子犬 ─ 犬系統だが明るい焦茶（Stage19〜想定）
+  CAT:      { w: 1, h: 1, label: '猫', labelEn: 'Cat',   role: 'pawn',    bg: '#795548', fg: '#efebe9', size: 12 },
+  DOG:      { w: 1, h: 1, label: '犬', labelEn: 'Dog',   role: 'pawn',    bg: '#795548', fg: '#efebe9', size: 12 },
+  PUPPY:    { w: 1, h: 1, label: '子犬', labelEn: 'Pup', role: 'pawn',    bg: '#a0704d', fg: '#efebe9', size: 11 },  // 子犬 ─ 犬系統だが明るい焦茶（Stage19〜想定）
   // === 拡張駒（Stage 2 以降で登場）===
   // 父：縦長1×3（家督の重み）
-  FATHER_L: { w: 1, h: 3, label: '父',   role: 'block',   bg: '#bcaaa4', fg: '#3e2723', size: 18 },
+  FATHER_L: { w: 1, h: 3, label: '父', labelEn: 'Dad',   role: 'block',   bg: '#bcaaa4', fg: '#3e2723', size: 18 },
   // 父：T字（縦3＋中段左突き出し／4マス）Stage11〜 燈下で影が広がり中央の圧が横にも及ぶ
   //   shape: [[0,1],[1,1],[0,1]] = 上下は右のみ / 中段両方
   //   labelPos: 中段中央（十字の中心）
-  FATHER_T: { w: 2, h: 3, shape: [[0,1],[1,1],[0,1]], labelPos: [1.5, 1.5], label: '父', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },
+  FATHER_T: { w: 2, h: 3, shape: [[0,1],[1,1],[0,1]], labelPos: [1.5, 1.5], label: '父', labelEn: 'Dad', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },
   // 父：T字左向き（縦3左＋中段右／4マス）Stage13〜 家督が左に傾き中段が右へ広がる
   //   shape: [[1,0],[1,1],[1,0]] = 上下は左のみ / 中段両方
   //   labelPos: 中段中央（十字の中心）
-  FATHER_TL: { w: 2, h: 3, shape: [[1,0],[1,1],[1,0]], labelPos: [0.5, 1.5], label: '父', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },
+  FATHER_TL: { w: 2, h: 3, shape: [[1,0],[1,1],[1,0]], labelPos: [0.5, 1.5], label: '父', labelEn: 'Dad', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },
   // 父：L字（縦3＋右下1／4マス）Stage12〜 蔵に潜む父の影
   //   shape: [[1,0],[1,0],[1,1]] = 縦3列左+最下段右
   //   labelPos: 中央（縦の中心）
-  FATHER_JL: { w: 2, h: 3, shape: [[1,0],[1,0],[1,1]], labelPos: [0.5, 1.5], label: '父', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },
-  FATHER_JR: { w: 2, h: 3, shape: [[0,1],[0,1],[1,1]], labelPos: [1.5, 1.5], label: '父', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },  // FATHER_JL の左右反転（右尾根＋下段2マス）
+  FATHER_JL: { w: 2, h: 3, shape: [[1,0],[1,0],[1,1]], labelPos: [0.5, 1.5], label: '父', labelEn: 'Dad', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },
+  FATHER_JR: { w: 2, h: 3, shape: [[0,1],[0,1],[1,1]], labelPos: [1.5, 1.5], label: '父', labelEn: 'Dad', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },  // FATHER_JL の左右反転（右尾根＋下段2マス）
   // 父：L字大（縦2左＋下段横3／4マス）Stage13〜 父が下段に大きく広がる
   //   shape: [[1,0,0],[1,1,1]] = 上段左のみ / 下段全部
   //   labelPos: 下段中央
-  FATHER_LW: { w: 3, h: 2, shape: [[1,0,0],[1,1,1]], labelPos: [1.5, 1.5], label: '父', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },
-  FATHER_L5: { w: 3, h: 2, shape: [[0,1,1],[1,1,1]], labelPos: [1.5, 1.5], label: '父', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },  // 5マス：右上2マス＋下段3マス（Stage 13再再更新）
-  FATHER_TW: { w: 3, h: 2, shape: [[1,1,1],[0,1,0]], labelPos: [1.5, 0.5], label: '父', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },  // T字トップワイド 4マス：上段横3＋中央下1（Stage15〜）
-  FATHER_Z:  { w: 3, h: 2, shape: [[0,1,1],[1,1,0]], labelPos: [1.5, 1.0], label: '父', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },  // Z字 4マス：上段右2＋下段左2（Stage16〜 家督の階段状の圧）
-  FATHER_TB: { w: 3, h: 2, shape: [[0,1,0],[1,1,1]], labelPos: [1.5, 1.5], label: '父', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },  // T字ボトムワイド 4マス：中央上1＋下段横3（Stage17〜 FATHER_TW上下反転）
-  FATHER_L3: { w: 2, h: 2, shape: [[1,1],[1,0]], labelPos: [1, 0.5], label: '父', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 15 },  // L字3マス：上段横2＋下段左1（Stage17_3〜 家督の力が縮む）
-  FATHER_Z5: { w: 3, h: 3, shape: [[0,1,1],[0,1,0],[1,1,0]], labelPos: [1.5, 1.5], label: '父', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },  // Z字/ジグザグ 5マス w=3 h=3：血筋が斜めに落ちる（Stage18〜）
-  FATHER_LT: { w: 3, h: 2, shape: [[1,1,1],[1,0,0]], labelPos: [1.5, 0.5], label: '父', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },  // L字トップワイド 4マス：上段横3＋下段左1（Stage19〜 家督の重心が上段へ）
-  FATHER_U:  { w: 3, h: 2, shape: [[1,1,1],[1,0,1]], labelPos: [1.5, 0.5], label: '父', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },  // U字/アーチ 5マス：上段横3＋左右下1（Stage20〜 家督が娘・女中を左右から挟む）
-  FATHER_H4: { w: 4, h: 1, label: '父', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },  // 横長4×1：家督が家中横一列に伸びる（Stage21〜 祖母危篤の一列陣）
-  FATHER_LL: { w: 2, h: 2, label: '父', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 20 },  // 大駒2×2 solid：家督の圧が塊となる（Stage22〜 葬儀の後、父の存在感が結晶化）
-  FATHER_L3B:{ w: 2, h: 2, shape: [[1,0],[1,1]], labelPos: [1, 1.5], label: '父', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 15 },  // L字3マス：上段左1＋下段横2（Stage23〜 家督の重みが下段に沈む）
+  FATHER_LW: { w: 3, h: 2, shape: [[1,0,0],[1,1,1]], labelPos: [1.5, 1.5], label: '父', labelEn: 'Dad', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },
+  FATHER_L5: { w: 3, h: 2, shape: [[0,1,1],[1,1,1]], labelPos: [1.5, 1.5], label: '父', labelEn: 'Dad', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },  // 5マス：右上2マス＋下段3マス（Stage 13再再更新）
+  FATHER_TW: { w: 3, h: 2, shape: [[1,1,1],[0,1,0]], labelPos: [1.5, 0.5], label: '父', labelEn: 'Dad', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },  // T字トップワイド 4マス：上段横3＋中央下1（Stage15〜）
+  FATHER_Z:  { w: 3, h: 2, shape: [[0,1,1],[1,1,0]], labelPos: [1.5, 1.0], label: '父', labelEn: 'Dad', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },  // Z字 4マス：上段右2＋下段左2（Stage16〜 家督の階段状の圧）
+  FATHER_TB: { w: 3, h: 2, shape: [[0,1,0],[1,1,1]], labelPos: [1.5, 1.5], label: '父', labelEn: 'Dad', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },  // T字ボトムワイド 4マス：中央上1＋下段横3（Stage17〜 FATHER_TW上下反転）
+  FATHER_L3: { w: 2, h: 2, shape: [[1,1],[1,0]], labelPos: [1, 0.5], label: '父', labelEn: 'Dad', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 15 },  // L字3マス：上段横2＋下段左1（Stage17_3〜 家督の力が縮む）
+  FATHER_Z5: { w: 3, h: 3, shape: [[0,1,1],[0,1,0],[1,1,0]], labelPos: [1.5, 1.5], label: '父', labelEn: 'Dad', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },  // Z字/ジグザグ 5マス w=3 h=3：血筋が斜めに落ちる（Stage18〜）
+  FATHER_LT: { w: 3, h: 2, shape: [[1,1,1],[1,0,0]], labelPos: [1.5, 0.5], label: '父', labelEn: 'Dad', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },  // L字トップワイド 4マス：上段横3＋下段左1（Stage19〜 家督の重心が上段へ）
+  FATHER_U:  { w: 3, h: 2, shape: [[1,1,1],[1,0,1]], labelPos: [1.5, 0.5], label: '父', labelEn: 'Dad', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },  // U字/アーチ 5マス：上段横3＋左右下1（Stage20〜 家督が娘・女中を左右から挟む）
+  FATHER_H4: { w: 4, h: 1, label: '父', labelEn: 'Dad', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 18 },  // 横長4×1：家督が家中横一列に伸びる（Stage21〜 祖母危篤の一列陣）
+  FATHER_LL: { w: 2, h: 2, label: '父', labelEn: 'Dad', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 20 },  // 大駒2×2 solid：家督の圧が塊となる（Stage22〜 葬儀の後、父の存在感が結晶化）
+  FATHER_L3B:{ w: 2, h: 2, shape: [[1,0],[1,1]], labelPos: [1, 1.5], label: '父', labelEn: 'Dad', role: 'block', bg: '#bcaaa4', fg: '#3e2723', size: 15 },  // L字3マス：上段左1＋下段横2（Stage23〜 家督の重みが下段に沈む）
   // 番頭：横長3×1（下層を塞ぐ監視）
-  CLERK_L:  { w: 3, h: 1, label: '番頭', role: 'block',   bg: '#a1887f', fg: '#3e2723', size: 14 },
+  CLERK_L:  { w: 3, h: 1, label: '番頭', labelEn: 'Clerk', role: 'block',   bg: '#a1887f', fg: '#3e2723', size: 14 },
   // 番頭：大駒2×2（第参夜〜 監視の力が増大）
-  CLERK_LL: { w: 2, h: 2, label: '番頭', role: 'block',   bg: '#a1887f', fg: '#3e2723', size: 16 },
+  CLERK_LL: { w: 2, h: 2, label: '番頭', labelEn: 'Clerk', role: 'block',   bg: '#a1887f', fg: '#3e2723', size: 16 },
   // 番頭：超大駒3×2（第参夜〜 監視の眼が家中に、下層を塞ぐ）
-  CLERK_LLL:{ w: 3, h: 2, label: '番頭', role: 'block',   bg: '#8d6e63', fg: '#3e2723', size: 18 },
+  CLERK_LLL:{ w: 3, h: 2, label: '番頭', labelEn: 'Clerk', role: 'block',   bg: '#8d6e63', fg: '#3e2723', size: 18 },
   // 番頭：逆L字（Γ型 / 縦2＋横1突き出し / 3マス）第肆夜〜 歪みながら力を得た監視
   //   shape: [[0,1],[1,1]] → 右上のみ / 下段両方
-  CLERK_JL: { w: 2, h: 2, shape: [[0,1],[1,1]], labelPos: [1, 1.5], label: '番頭', role: 'block', bg: '#a1887f', fg: '#3e2723', size: 15 },
+  CLERK_JL: { w: 2, h: 2, shape: [[0,1],[1,1]], labelPos: [1, 1.5], label: '番頭', labelEn: 'Clerk', role: 'block', bg: '#a1887f', fg: '#3e2723', size: 15 },
   // 番頭：L字（上段左のみ＋下段両方）Stage12〜 監視の眼が左下に伸長
   //   shape: [[1,0],[1,1]] = 上段左のみ / 下段両方
   //   labelPos: 下段中央
-  CLERK_JR: { w: 2, h: 2, shape: [[1,0],[1,1]], labelPos: [1, 1.5], label: '番頭', role: 'block', bg: '#a1887f', fg: '#3e2723', size: 15 },
-  CLERK_JB: { w: 2, h: 2, shape: [[1,1],[0,1]], labelPos: [1, 0.5], label: '番頭', role: 'block', bg: '#a1887f', fg: '#3e2723', size: 15 },  // 番頭 逆L字（穴=左下、AUNT_JBと同形）
-  CLERK_JT: { w: 2, h: 2, shape: [[1,1],[1,0]], labelPos: [1, 0.5], label: '番頭', role: 'block', bg: '#a1887f', fg: '#3e2723', size: 15 },  // 番頭 L字3マス：上段横2＋下段左1（Stage24〜 家業の腕が最後に伸長）
-  CLERK_V:  { w: 1, h: 3, label: '番頭', role: 'block',   bg: '#a1887f', fg: '#3e2723', size: 12 },  // 番頭 縦長1×3（Stage18〜 監視の柱）
+  CLERK_JR: { w: 2, h: 2, shape: [[1,0],[1,1]], labelPos: [1, 1.5], label: '番頭', labelEn: 'Clerk', role: 'block', bg: '#a1887f', fg: '#3e2723', size: 15 },
+  CLERK_JB: { w: 2, h: 2, shape: [[1,1],[0,1]], labelPos: [1, 0.5], label: '番頭', labelEn: 'Clerk', role: 'block', bg: '#a1887f', fg: '#3e2723', size: 15 },  // 番頭 逆L字（穴=左下、AUNT_JBと同形）
+  CLERK_JT: { w: 2, h: 2, shape: [[1,1],[1,0]], labelPos: [1, 0.5], label: '番頭', labelEn: 'Clerk', role: 'block', bg: '#a1887f', fg: '#3e2723', size: 15 },  // 番頭 L字3マス：上段横2＋下段左1（Stage24〜 家業の腕が最後に伸長）
+  CLERK_V:  { w: 1, h: 3, label: '番頭', labelEn: 'Clerk', role: 'block',   bg: '#a1887f', fg: '#3e2723', size: 12 },  // 番頭 縦長1×3（Stage18〜 監視の柱）
   // 叔母：縮小1×1（番頭_横長3×1の隣に押し込まれた）
-  AUNT_S:   { w: 1, h: 1, label: '叔母', role: 'pawn',    bg: '#ffccbc', fg: '#3e2723', size: 12 },
+  AUNT_S:   { w: 1, h: 1, label: '叔母', labelEn: 'Aunt', role: 'pawn',    bg: '#ffccbc', fg: '#3e2723', size: 12 },
   // 叔父：縮小1×1（父の縦長化で家族の圧が偏り、叔父の存在感が減じた）
-  UNCLE_S:  { w: 1, h: 1, label: '叔父', role: 'pawn',    bg: '#ffccbc', fg: '#3e2723', size: 11 },
-  UNCLE_JR: { w: 2, h: 2, shape: [[1,0],[1,1]], labelPos: [1, 1.5], label: '叔父', role: 'block', bg: '#ffccbc', fg: '#3e2723', size: 15 },  // 叔父 L字（穴=右上、Stage16〜）
+  UNCLE_S:  { w: 1, h: 1, label: '叔父', labelEn: 'Uncle', role: 'pawn',    bg: '#ffccbc', fg: '#3e2723', size: 11 },
+  UNCLE_JR: { w: 2, h: 2, shape: [[1,0],[1,1]], labelPos: [1, 1.5], label: '叔父', labelEn: 'Uncle', role: 'block', bg: '#ffccbc', fg: '#3e2723', size: 15 },  // 叔父 L字（穴=右上、Stage16〜）
   // 客人：商人来訪時に登場（1×1、薄青で外部者を表現）
-  MERCHANT: { w: 1, h: 1, label: '客人', role: 'pawn',    bg: '#c5cae9', fg: '#1a237e', size: 11 },
+  MERCHANT: { w: 1, h: 1, label: '客人', labelEn: 'Guest', role: 'pawn',    bg: '#c5cae9', fg: '#1a237e', size: 11 },
   // 客人：縦長1×2（Stage4〜 じっと座る商人）
-  MERCHANT_L: { w: 1, h: 2, label: '客人', role: 'block',   bg: '#9fa8da', fg: '#1a237e', size: 13 },
+  MERCHANT_L: { w: 1, h: 2, label: '客人', labelEn: 'Guest', role: 'block',   bg: '#9fa8da', fg: '#1a237e', size: 13 },
   // 祖父：縦長1×2（Stage5〜 客人観察下で身構える家長）
-  GFATHER_L:  { w: 1, h: 2, label: '祖父', role: 'block',   bg: '#b0bec5', fg: '#263238', size: 14 },
+  GFATHER_L:  { w: 1, h: 2, label: '祖父', labelEn: 'Papa', role: 'block',   bg: '#b0bec5', fg: '#263238', size: 14 },
   // 祖母：大駒2×2（Stage5〜 家中央で存在感増）
-  GMOTHER_L:  { w: 2, h: 2, label: '祖母', role: 'block',   bg: '#b0bec5', fg: '#263238', size: 14 },
+  GMOTHER_L:  { w: 2, h: 2, label: '祖母', labelEn: 'Nana', role: 'block',   bg: '#b0bec5', fg: '#263238', size: 14 },
   // 書生：縦長1×2（Stage5〜 客人観察下で身構える）
-  STUDENT_L:  { w: 1, h: 2, label: '書生', role: 'block',   bg: '#bdbdbd', fg: '#212121', size: 12 },
+  STUDENT_L:  { w: 1, h: 2, label: '書生', labelEn: 'Pupil', role: 'block',   bg: '#bdbdbd', fg: '#212121', size: 12 },
   // 客人：さらに縦長1×3（Stage5〜 長く座り続ける）
-  MERCHANT_LL:{ w: 1, h: 3, label: '客人', role: 'block',   bg: '#7986cb', fg: '#ffffff', size: 13 },
-  MERCHANT_H: { w: 2, h: 1, label: '客人', role: 'block',   bg: '#c5cae9', fg: '#1a237e', size: 14 },  // 客人 横長 2×1（Stage24〜 弔いの後の客人が横並び）
+  MERCHANT_LL:{ w: 1, h: 3, label: '客人', labelEn: 'Guest', role: 'block',   bg: '#7986cb', fg: '#ffffff', size: 13 },
+  MERCHANT_H: { w: 2, h: 1, label: '客人', labelEn: 'Guest', role: 'block',   bg: '#c5cae9', fg: '#1a237e', size: 14 },  // 客人 横長 2×1（Stage24〜 弔いの後の客人が横並び）
   // 女中：縦長1×3（Stage5〜 客人の眼のもと、中央に長く座り続ける）
-  MAID_LL:   { w: 1, h: 3, label: '女中', role: 'block',   bg: '#afb42b', fg: '#33691e', size: 14 },
-  MAID_JT:   { w: 2, h: 2, shape: [[0,1],[1,1]], labelPos: [1, 1.5], label: '女中', role: 'block', bg: '#c0ca33', fg: '#33691e', size: 15 },  // L字3マス：上段右1＋下段横2（Stage23〜 女中が右下角に沈む）
+  MAID_LL:   { w: 1, h: 3, label: '女中', labelEn: 'Maid', role: 'block',   bg: '#afb42b', fg: '#33691e', size: 14 },
+  MAID_JT:   { w: 2, h: 2, shape: [[0,1],[1,1]], labelPos: [1, 1.5], label: '女中', labelEn: 'Maid', role: 'block', bg: '#c0ca33', fg: '#33691e', size: 15 },  // L字3マス：上段右1＋下段横2（Stage23〜 女中が右下角に沈む）
   // 祖父：大駒2×2（Stage5案:未使用 ─ 家督の重み最大化）
-  GFATHER_LL:{ w: 2, h: 2, label: '祖父', role: 'block',   bg: '#b0bec5', fg: '#263238', size: 18 },
+  GFATHER_LL:{ w: 2, h: 2, label: '祖父', labelEn: 'Papa', role: 'block',   bg: '#b0bec5', fg: '#263238', size: 18 },
   // 祖父：L字3マス（Stage5〜 客人の眼下、家督が歪みながら圧を広げる）
   //   shape: [[1,1],[1,0]] = 上段両方 / 下段左のみ
   //   labelPos: 上段中央（横2マス幅の中心）
-  GFATHER_JL:{ w: 2, h: 2, shape: [[1,1],[1,0]], labelPos: [1, 0.5], label: '祖父', role: 'block', bg: '#b0bec5', fg: '#263238', size: 15 },
+  GFATHER_JL:{ w: 2, h: 2, shape: [[1,1],[1,0]], labelPos: [1, 0.5], label: '祖父', labelEn: 'Papa', role: 'block', bg: '#b0bec5', fg: '#263238', size: 15 },
   // 祖父：L字（Γ反転／下段両方＋上段左のみ）Stage10〜 家督が下段に沈む
   //   shape: [[1,0],[1,1]] = 上段左のみ / 下段両方
   //   labelPos: 下段中央
-  GFATHER_JR:{ w: 2, h: 2, shape: [[1,0],[1,1]], labelPos: [1, 1.5], label: '祖父', role: 'block', bg: '#b0bec5', fg: '#263238', size: 15 },
-  GFATHER_U: { w: 3, h: 2, shape: [[1,1,1],[1,0,1]], labelPos: [1.5, 0.5], label: '祖父', role: 'block', bg: '#b0bec5', fg: '#263238', size: 15 },  // 祖父 U字/アーチ 5マス（上段横3＋左右の柱、中央下は穴。Stage17〜）
-  GFATHER_LT:{ w: 3, h: 2, shape: [[1,1,1],[1,0,0]], labelPos: [1.5, 0.5], label: '祖父', role: 'block', bg: '#b0bec5', fg: '#263238', size: 15 },  // L字トップワイド 4マス：上段横3＋下段左1（Stage18〜 家督の圧が上段に）
-  GFATHER_LU:{ w: 2, h: 3, shape: [[1,1],[1,0],[1,0]], labelPos: [0.5, 1.5], label: '祖父', role: 'block', bg: '#b0bec5', fg: '#263238', size: 15 },  // L字縦・上部フック 4マス（Stage18_2〜 家督の頭部が右に、柱が左下へ）
-  GFATHER_LR:{ w: 3, h: 2, shape: [[0,0,1],[1,1,1]], labelPos: [1.5, 1.5], label: '祖父', role: 'block', bg: '#b0bec5', fg: '#263238', size: 15 },  // L字下段横3＋右上1 4マス（Stage19〜 家督の重心が下段に、右肩が立つ）
-  GFATHER_NU:{ w: 3, h: 2, shape: [[1,0,1],[1,1,1]], labelPos: [1.5, 1.5], label: '祖父', role: 'block', bg: '#b0bec5', fg: '#263238', size: 15 },  // 逆U/n字/アーチ下向き 5マス：上段左右＋下段横3（Stage20〜 家督が娘の目標地点を包囲、中央上に穴）
-  GFATHER_V4:{ w: 1, h: 4, label: '祖父', role: 'block', bg: '#b0bec5', fg: '#263238', size: 14 },  // 縦長 1×4（Stage23〜 家督の柱が家中の縦軸に据わる）
-  GFATHER_H4:{ w: 4, h: 1, label: '祖父', role: 'block', bg: '#b0bec5', fg: '#263238', size: 18 },  // 横長4×1：家督が家中横一列に横たわる（Stage21〜 祖母危篤の一列陣）
+  GFATHER_JR:{ w: 2, h: 2, shape: [[1,0],[1,1]], labelPos: [1, 1.5], label: '祖父', labelEn: 'Papa', role: 'block', bg: '#b0bec5', fg: '#263238', size: 15 },
+  GFATHER_U: { w: 3, h: 2, shape: [[1,1,1],[1,0,1]], labelPos: [1.5, 0.5], label: '祖父', labelEn: 'Papa', role: 'block', bg: '#b0bec5', fg: '#263238', size: 15 },  // 祖父 U字/アーチ 5マス（上段横3＋左右の柱、中央下は穴。Stage17〜）
+  GFATHER_LT:{ w: 3, h: 2, shape: [[1,1,1],[1,0,0]], labelPos: [1.5, 0.5], label: '祖父', labelEn: 'Papa', role: 'block', bg: '#b0bec5', fg: '#263238', size: 15 },  // L字トップワイド 4マス：上段横3＋下段左1（Stage18〜 家督の圧が上段に）
+  GFATHER_LU:{ w: 2, h: 3, shape: [[1,1],[1,0],[1,0]], labelPos: [0.5, 1.5], label: '祖父', labelEn: 'Papa', role: 'block', bg: '#b0bec5', fg: '#263238', size: 15 },  // L字縦・上部フック 4マス（Stage18_2〜 家督の頭部が右に、柱が左下へ）
+  GFATHER_LR:{ w: 3, h: 2, shape: [[0,0,1],[1,1,1]], labelPos: [1.5, 1.5], label: '祖父', labelEn: 'Papa', role: 'block', bg: '#b0bec5', fg: '#263238', size: 15 },  // L字下段横3＋右上1 4マス（Stage19〜 家督の重心が下段に、右肩が立つ）
+  GFATHER_NU:{ w: 3, h: 2, shape: [[1,0,1],[1,1,1]], labelPos: [1.5, 1.5], label: '祖父', labelEn: 'Papa', role: 'block', bg: '#b0bec5', fg: '#263238', size: 15 },  // 逆U/n字/アーチ下向き 5マス：上段左右＋下段横3（Stage20〜 家督が娘の目標地点を包囲、中央上に穴）
+  GFATHER_V4:{ w: 1, h: 4, label: '祖父', labelEn: 'Papa', role: 'block', bg: '#b0bec5', fg: '#263238', size: 14 },  // 縦長 1×4（Stage23〜 家督の柱が家中の縦軸に据わる）
+  GFATHER_H4:{ w: 4, h: 1, label: '祖父', labelEn: 'Papa', role: 'block', bg: '#b0bec5', fg: '#263238', size: 18 },  // 横長4×1：家督が家中横一列に横たわる（Stage21〜 祖母危篤の一列陣）
   // 叔母：大駒2×2（Stage5〜 母代わりの存在感が家中央下に広がる）
-  AUNT_LL:   { w: 2, h: 2, label: '叔母', role: 'block',   bg: '#ff8a65', fg: '#3e2723', size: 18 },
+  AUNT_LL:   { w: 2, h: 2, label: '叔母', labelEn: 'Aunt', role: 'block',   bg: '#ff8a65', fg: '#3e2723', size: 18 },
   // 叔母：L字（下段両方＋上段左のみ）Stage10〜 母代わりが下段左に沈む
   //   shape: [[1,0],[1,1]] = 上段左のみ / 下段両方
   //   labelPos: 下段中央
-  AUNT_JR:   { w: 2, h: 2, shape: [[1,0],[1,1]], labelPos: [1, 1.5], label: '叔母', role: 'block', bg: '#ffccbc', fg: '#3e2723', size: 15 },
+  AUNT_JR:   { w: 2, h: 2, shape: [[1,0],[1,1]], labelPos: [1, 1.5], label: '叔母', labelEn: 'Aunt', role: 'block', bg: '#ffccbc', fg: '#3e2723', size: 15 },
   // 叔母：Γ字（上段両方＋下段左のみ）Stage11〜 母代わりの叔母が上段に広がる
   //   shape: [[1,1],[1,0]] = 上段両方 / 下段左のみ
   //   labelPos: 上段中央
-  AUNT_JL:   { w: 2, h: 2, shape: [[1,1],[1,0]], labelPos: [1, 0.5], label: '叔母', role: 'block', bg: '#ffccbc', fg: '#3e2723', size: 15 },
+  AUNT_JL:   { w: 2, h: 2, shape: [[1,1],[1,0]], labelPos: [1, 0.5], label: '叔母', labelEn: 'Aunt', role: 'block', bg: '#ffccbc', fg: '#3e2723', size: 15 },
   // 叔母：逆Γ字（上段両方＋下段右のみ）Stage12〜 母代わりが右下に集束
   //   shape: [[1,1],[0,1]] = 上段両方 / 下段右のみ
   //   labelPos: 上段中央
-  AUNT_JB:   { w: 2, h: 2, shape: [[1,1],[0,1]], labelPos: [1, 0.5], label: '叔母', role: 'block', bg: '#ffccbc', fg: '#3e2723', size: 15 },
+  AUNT_JB:   { w: 2, h: 2, shape: [[1,1],[0,1]], labelPos: [1, 0.5], label: '叔母', labelEn: 'Aunt', role: 'block', bg: '#ffccbc', fg: '#3e2723', size: 15 },
   // 叔母：L字左上欠け（上段右のみ＋下段両方）Stage13〜 母代わりが右上から下段に沈む
   //   shape: [[0,1],[1,1]] = 上段右のみ / 下段両方
   //   labelPos: 下段中央
-  AUNT_JT:   { w: 2, h: 2, shape: [[0,1],[1,1]], labelPos: [1, 1.5], label: '叔母', role: 'block', bg: '#ffccbc', fg: '#3e2723', size: 15 },
-  AUNT_JR3:  { w: 2, h: 3, shape: [[0,1],[0,1],[1,1]], labelPos: [1.5, 1.5], label: '叔母', role: 'block', bg: '#ffccbc', fg: '#3e2723', size: 15 },  // 叔母 J字大 4マス（縦2＋下段2、Stage19〜 母代わりの叔母が柱状に伸びて下段へ）
-  AUNT_V4:   { w: 1, h: 4, label: '叔母', role: 'block', bg: '#ffccbc', fg: '#3e2723', size: 14 },  // 叔母 縦長 1×4（Stage20〜 母代わりが家中の右柱として長く座す）
-  AUNT_V3:   { w: 1, h: 3, label: '叔母', role: 'block', bg: '#ffccbc', fg: '#3e2723', size: 13 },  // 叔母 縦長 1×3（Stage20_2〜 右柱がやや縮み、下段に丁稚が入る）
-  AUNT_L:    { w: 3, h: 1, label: '叔母', role: 'block', bg: '#ffccbc', fg: '#3e2723', size: 14 },  // 叔母 横長 3×1（Stage23〜 母代わりが家中横一列に張る）
+  AUNT_JT:   { w: 2, h: 2, shape: [[0,1],[1,1]], labelPos: [1, 1.5], label: '叔母', labelEn: 'Aunt', role: 'block', bg: '#ffccbc', fg: '#3e2723', size: 15 },
+  AUNT_JR3:  { w: 2, h: 3, shape: [[0,1],[0,1],[1,1]], labelPos: [1.5, 1.5], label: '叔母', labelEn: 'Aunt', role: 'block', bg: '#ffccbc', fg: '#3e2723', size: 15 },  // 叔母 J字大 4マス（縦2＋下段2、Stage19〜 母代わりの叔母が柱状に伸びて下段へ）
+  AUNT_V4:   { w: 1, h: 4, label: '叔母', labelEn: 'Aunt', role: 'block', bg: '#ffccbc', fg: '#3e2723', size: 14 },  // 叔母 縦長 1×4（Stage20〜 母代わりが家中の右柱として長く座す）
+  AUNT_V3:   { w: 1, h: 3, label: '叔母', labelEn: 'Aunt', role: 'block', bg: '#ffccbc', fg: '#3e2723', size: 13 },  // 叔母 縦長 1×3（Stage20_2〜 右柱がやや縮み、下段に丁稚が入る）
+  AUNT_L:    { w: 3, h: 1, label: '叔母', labelEn: 'Aunt', role: 'block', bg: '#ffccbc', fg: '#3e2723', size: 14 },  // 叔母 横長 3×1（Stage23〜 母代わりが家中横一列に張る）
   // 番頭：Γ字大（Stage5〜 監視が家中に張り巡らされる 5マス／妹が右上の空きに入る）
   //   shape: [[0,1],[1,1],[1,1]] = 右上のみ / 下段2行両方
   //   labelPos: [1, 2] = 中段中央（横2マス幅の中心）
-  CLERK_JLL: { w: 2, h: 3, shape: [[0,1],[1,1],[1,1]], labelPos: [1, 2], label: '番頭', role: 'block', bg: '#8d6e63', fg: '#3e2723', size: 18 },
+  CLERK_JLL: { w: 2, h: 3, shape: [[0,1],[1,1],[1,1]], labelPos: [1, 2], label: '番頭', labelEn: 'Clerk', role: 'block', bg: '#8d6e63', fg: '#3e2723', size: 18 },
   // 兄：横長2×1（Stage6〜 祭壇の影で兄が力を得て伸長）
-  PRODIGAL_L:{ w: 2, h: 1, label: '兄',   role: 'block',   bg: '#ce93d8', fg: '#4a148c', size: 14 },
+  PRODIGAL_L:{ w: 2, h: 1, label: '兄', labelEn: 'Bro E.',   role: 'block',   bg: '#ce93d8', fg: '#4a148c', size: 14 },
   // 兄：縦長1×2（Stage8〜 共謀の夜で縦の圧が増す）
-  PRODIGAL_V:{ w: 1, h: 2, label: '兄',   role: 'block',   bg: '#ce93d8', fg: '#4a148c', size: 14 },
-  PRODIGAL_LL:{ w: 1, h: 3, label: '兄',   role: 'block',   bg: '#ce93d8', fg: '#4a148c', size: 13 },  // 兄 縦長1×3（Stage23〜 兄の影が家中に長く伸びる）
+  PRODIGAL_V:{ w: 1, h: 2, label: '兄', labelEn: 'Bro E.',   role: 'block',   bg: '#ce93d8', fg: '#4a148c', size: 14 },
+  PRODIGAL_LL:{ w: 1, h: 3, label: '兄', labelEn: 'Bro E.',   role: 'block',   bg: '#ce93d8', fg: '#4a148c', size: 13 },  // 兄 縦長1×3（Stage23〜 兄の影が家中に長く伸びる）
   // 書生：横長2×1（Stage7〜 障子越しの問いを受けて書生が2マス幅で存在感を放つ）
   //   ★新規駒定義ルール適用：明るい白系bg + 暗い黒系fg
-  STUDENT_H: { w: 2, h: 1, label: '書生', role: 'block', bg: '#f5f5f5', fg: '#212121', size: 14 },
-  STUDENT_JL:{ w: 2, h: 2, shape: [[1,1],[1,0]], labelPos: [1, 0.5], label: '書生', role: 'block', bg: '#f5f5f5', fg: '#212121', size: 15 },  // 書生 L字3マス：上段横2＋下段左1（Stage23〜 書生が縁側に膝をつく）
-  STUDENT_JT:{ w: 2, h: 2, shape: [[0,1],[1,1]], labelPos: [1, 1.5], label: '書生', role: 'block', bg: '#f5f5f5', fg: '#212121', size: 15 },  // 書生 L字3マス：上段右1＋下段横2（Stage24〜 書生が座牢を救わんと走り出す）
+  STUDENT_H: { w: 2, h: 1, label: '書生', labelEn: 'Pupil', role: 'block', bg: '#f5f5f5', fg: '#212121', size: 14 },
+  STUDENT_JL:{ w: 2, h: 2, shape: [[1,1],[1,0]], labelPos: [1, 0.5], label: '書生', labelEn: 'Pupil', role: 'block', bg: '#f5f5f5', fg: '#212121', size: 15 },  // 書生 L字3マス：上段横2＋下段左1（Stage23〜 書生が縁側に膝をつく）
+  STUDENT_JT:{ w: 2, h: 2, shape: [[0,1],[1,1]], labelPos: [1, 1.5], label: '書生', labelEn: 'Pupil', role: 'block', bg: '#f5f5f5', fg: '#212121', size: 15 },  // 書生 L字3マス：上段右1＋下段横2（Stage24〜 書生が座牢を救わんと走り出す）
   // 下女：女中見習い（1×1、明るい黄色）── 女中の下で働く若い奉公人、家中で最も立場が低い
   //   独自色：淡い黄色 bg + 暗いアンバー fg（若さ・従属を表現）
-  SERVANT:   { w: 1, h: 1, label: '下女', role: 'pawn',    bg: '#fff59d', fg: '#f57f17', size: 11 },
+  SERVANT:   { w: 1, h: 1, label: '下女', labelEn: 'Maid', role: 'pawn',    bg: '#fff59d', fg: '#f57f17', size: 11 },
   // 下女：縦長1×2（将来拡張用 ─ 見習いから成長し女中と並ぶ形態）
-  SERVANT_L: { w: 1, h: 2, label: '下女', role: 'block',   bg: '#ffee58', fg: '#f57f17', size: 12 },
+  SERVANT_L: { w: 1, h: 2, label: '下女', labelEn: 'Maid', role: 'block',   bg: '#ffee58', fg: '#f57f17', size: 12 },
   // 手代：番頭補佐（1×1、明るいティール）── 番頭の下で実務を担う中間管理職、江戸～明治の商家役職
   //   独自色：淡いティール bg + 暗いティール fg（番頭系ブラウンとは異なる系統で「補佐」を示す）
-  ASSISTANT: { w: 1, h: 1, label: '手代', role: 'pawn',    bg: '#80cbc4', fg: '#004d40', size: 11 },
+  ASSISTANT: { w: 1, h: 1, label: '手代', labelEn: 'Junior', role: 'pawn',    bg: '#80cbc4', fg: '#004d40', size: 11 },
   // 手代：横長2×1（将来拡張用 ─ 補佐が力を得て番頭に近づく形態）
-  ASSISTANT_H:{ w: 2, h: 1, label: '手代', role: 'block',   bg: '#4db6ac', fg: '#004d40', size: 13 },
+  ASSISTANT_H:{ w: 2, h: 1, label: '手代', labelEn: 'Junior', role: 'block',   bg: '#4db6ac', fg: '#004d40', size: 13 },
   // 医者：老医師（1×1、深い紺色）── 御抱の老医師、Meiji初期の紺の羽織姿
   //   独自色：深い紺 bg + 淡青 fg（威厳・伝統・医の落ち着き）
-  DOCTOR:   { w: 1, h: 1, label: '医者', role: 'pawn',    bg: '#1f3a5f', fg: '#e3f2fd', size: 11 },
+  DOCTOR:   { w: 1, h: 1, label: '医者', labelEn: 'Doc', role: 'pawn',    bg: '#1f3a5f', fg: '#e3f2fd', size: 11 },
   // 医者の助手（1×1、明るい紺）── 医者に随行する若き弟子
   //   医者と同系統だが明度を上げて従属関係を表現
-  DOCTOR_A: { w: 1, h: 1, label: '助手', role: 'pawn',    bg: '#4a6b91', fg: '#e3f2fd', size: 11 }
+  DOCTOR_A: { w: 1, h: 1, label: '助手', labelEn: 'Nurse', role: 'pawn',    bg: '#4a6b91', fg: '#e3f2fd', size: 11 }
 };
 
 const PUZZLE_STAGES = {
   1: {
     chapterTrigger: 1,  // 第一章 (idx=1) 完了時に発火
     // ─ 序盤群（1〜3面）：「ひととき外へ」── 若い娘の好奇心、家族はまだ大切
-    label: '月の昏き夜の踏み出し',
+    label: '月の昏き夜の踏み出し', labelEn: 'A Step into the Moonless Night',
     sub: '夜更けの座牢',
     startHint: '最初の駒を外し、娘を中央下へ',
     clearTitle: '─ そっと、外へ ─',
@@ -243,7 +243,7 @@ const PUZZLE_STAGES = {
   // ─ Stage 2：第3章(idx 4) ADV完了時に発火 ─ 商人去りし宵、書生が中央に現れる
   2: {
     chapterTrigger: 2,
-    label: '座牢の朝',
+    label: '座牢の朝', labelEn: 'Morning in the Cell',
     sub: '商人去りし宵',
     startHint: '父は縦長に厚く居る。書生をうまく避けよ',
     clearTitle: '─ そっと、外へ ─',
@@ -274,7 +274,7 @@ const PUZZLE_STAGES = {
   // ─ Stage 3：第5章(idx 6) ADV完了時に発火 ─ 監視の眼、番頭が3×1で下を塞ぐ
   3: {
     chapterTrigger: 3,
-    label: '廊下の声と書斎の対峙',
+    label: '廊下の声と書斎の対峙', labelEn: 'Voices in the Hall, the Study\'s Confrontation',
     sub: '監視の眼の中',
     startHint: '番頭は横長三列。下層が塞がれている',
     clearTitle: '─ そっと、外へ ─',
@@ -307,7 +307,7 @@ const PUZZLE_STAGES = {
   4: {
     chapterTrigger: 4,
     // ─ Stage 4：第3章末「商人の影」 ── 客人縦長で登場・番頭一時緩和・兄退場
-    label: '商人の影',
+    label: '商人の影', labelEn: 'The Merchant\'s Shadow',
     sub: '商人の影',
     startHint: '客人が縦に座り込む。番頭は応対に走り監視が緩んだ',
     clearTitle: '─ そっと、外へ ─',
@@ -342,7 +342,7 @@ const PUZZLE_STAGES = {
   //   父1×3/女中1×2/番頭Γ字/母1×1/弟1×1/娘2×2/叔母2×1 は Stage 4 継承
   5: {
     chapterTrigger: 5,
-    label: '測る眼',
+    label: '測る眼', labelEn: 'Measuring Eyes',
     sub: '測る眼',
     startHint: '客人の眼が家中を測る。祖父の家督が歪みながら広がった',
     clearTitle: '─ そっと、外へ ─',
@@ -377,7 +377,7 @@ const PUZZLE_STAGES = {
   //   猫 復活（(5,2) 1×1）
   6: {
     chapterTrigger: 6,
-    label: '会釈と祭壇の影',
+    label: '会釈と祭壇の影', labelEn: 'A Bow and the Altar\'s Shadow',
     sub: '会釈と祭壇の影',
     startHint: '兄が伸びた影を見せる。番頭は会釈の裏で佇む',
     clearTitle: '─ そっと、外へ ─',
@@ -413,7 +413,7 @@ const PUZZLE_STAGES = {
   //   ※ 弟(BROTHER) は Stage 7 では不在。妹が(3,1)に移動
   7: {
     chapterTrigger: 7,
-    label: '障子越しの問い',
+    label: '障子越しの問い', labelEn: 'A Question Through the Shoji',
     sub: '障子越しの問い',
     startHint: '障子越しの問いが家中に広がる。番頭は横に長く、書生は左右に伸びる',
     clearTitle: '─ そっと、外へ ─',
@@ -448,7 +448,7 @@ const PUZZLE_STAGES = {
   //   祖父L字 / 父1×3 / 番頭3×1 / 書生2×1横 / 叔母2×1 / 娘2×2 は継承
   8: {
     chapterTrigger: 8,
-    label: '共謀の夜',
+    label: '共謀の夜', labelEn: 'The Night of Conspiracy',
     sub: '共謀の夜',
     startHint: '兄が縦に伸び、女中と客人が二人ずつ。共謀の影が家中に広がる',
     clearTitle: '─ そっと、外へ ─',
@@ -488,7 +488,7 @@ const PUZZLE_STAGES = {
   //     客人 2駒（(2,4) と (4,5)=祖父L字の穴）
   9: {
     chapterTrigger: 9,
-    label: '庭の骸と祭壇の影',
+    label: '庭の骸と祭壇の影', labelEn: 'The Corpse in the Garden, the Altar\'s Shadow',
     sub: '庭の骸と祭壇の影',
     startHint: '庭の骸が家中の駒を並べ替える。祖父はL字で下段中央を占め、客人がその隙間に入る',
     clearTitle: '─ そっと、外へ ─',
@@ -529,7 +529,7 @@ const PUZZLE_STAGES = {
   //     母1×2縦 / 父1×3 / 番頭3×1 / 女中1×2縦 は継承
   10: {
     chapterTrigger: 10,
-    label: '座敷の怒号と蔵の影',
+    label: '座敷の怒号と蔵の影', labelEn: 'The Parlor\'s Roar, the Storehouse\'s Shadow',
     sub: '座敷の怒号と蔵の影',
     startHint: '怒号が座敷を裂く。祖父も叔母もL字で沈み、家族が再編される',
     clearTitle: '─ そっと、外へ ─',
@@ -568,7 +568,7 @@ const PUZZLE_STAGES = {
   //   下女・手代 引き続き登場
   11: {
     chapterTrigger: 11,
-    label: '燈下の影',
+    label: '燈下の影', labelEn: 'Shadow Beneath the Lamp',
     sub: '燈下の影',
     startHint: '父が十字形に伸び、叔母が上段を占める。燈下の影が家中を覆う',
     clearTitle: '─ そっと、外へ ─',
@@ -605,7 +605,7 @@ const PUZZLE_STAGES = {
   //   祖父L字（GFATHER_JR継承）／兄縦1×2／女中縦1×2／書生2×1横／母2×1横 は継承
   12: {
     chapterTrigger: 12,
-    label: '蔵の文字と兄の油',
+    label: '蔵の文字と兄の油', labelEn: 'Letters in the Storehouse, the Brother\'s Oil',
     sub: '蔵の文字と兄の油',
     startHint: '蔵の文字が家族を歪ませる。父・叔母・番頭がそれぞれ形を変える',
     clearTitle: '─ そっと、外へ ─',
@@ -641,7 +641,7 @@ const PUZZLE_STAGES = {
   //   goal y=4（ゴールが下段より1つ上、叔母L字＋父L字大の間を突破する必要）
   13: {
     chapterTrigger: 13,
-    label: '手形の符号',
+    label: '手形の符号', labelEn: 'The Sign of the Handprint',
     sub: '手形の符号',
     startHint: '手形は動かない。父はJ字、番頭は逆L字（左下穴）、叔母はL字（右上穴）',
     clearTitle: '─ そっと、外へ ─',
@@ -686,7 +686,7 @@ const PUZZLE_STAGES = {
   //   父 T字左向き / 兄1×2縦 / 女中1×2縦 / 書生1×2縦 / 母2×1横 / 番頭3×1 / 妹1×2縦 は継承
   14: {
     chapterTrigger: 14,
-    label: '障子越しの視線',
+    label: '障子越しの視線', labelEn: 'A Gaze Through the Shoji',
     sub: '障子越しの視線',
     startHint: '障子越しの視線を感じる。客人が2人、家中に散る',
     clearTitle: '─ そっと、外へ ─',
@@ -726,7 +726,7 @@ const PUZZLE_STAGES = {
   //   客人 × 2 (MERCHANT) ─ 商人の眼が複数箇所から
   15: {
     chapterTrigger: 15,
-    label: '煙管の音',
+    label: '煙管の音', labelEn: 'The Sound of the Kiseru',
     sub: '煙管の音',
     startHint: '父T字上段広がり、妹は姉妹並座、叔父は横並び、客人が2箇所',
     clearTitle: '─ そっと、外へ ─',
@@ -771,7 +771,7 @@ const PUZZLE_STAGES = {
   //   祖父 L字 (GFATHER_JL shape [[1,1],[1,0]]) ─ 家督が上段に張り出す
   16: {
     chapterTrigger: 16,
-    label: '贈り物',
+    label: '贈り物', labelEn: 'The Gift',
     sub: '贈り物',
     startHint: '父はZ字、叔父はL字、犬が上段。祖父の圧が中央から',
     clearTitle: '─ そっと、外へ ─',
@@ -816,7 +816,7 @@ const PUZZLE_STAGES = {
   //   犬 上段(3,0), 客人 (3,1) ─ 玄関先の贈り物客と番犬
   17: {
     chapterTrigger: 17,
-    label: '梁の影',
+    label: '梁の影', labelEn: 'Shadow on the Beam',
     sub: '梁の影',
     startHint: '祖父U字5マス、父T字ボトムワイド、女中と丁稚が縦横に散る',
     clearTitle: '─ そっと、外へ ─',
@@ -860,7 +860,7 @@ const PUZZLE_STAGES = {
   //   叔母 L字 (AUNT_JT shape [[0,1],[1,1]]) ─ 3マス
   18: {
     chapterTrigger: 18,
-    label: '紅き廊下と祭壇の前',
+    label: '紅き廊下と祭壇の前', labelEn: 'The Crimson Hall, Before the Altar',
     sub: '紅き廊下と祭壇の前',
     startHint: '祖父L字上段、父Z字斜め、番頭は縦長の柱、叔母は右上のL字',
     clearTitle: '─ そっと、外へ ─',
@@ -905,7 +905,7 @@ const PUZZLE_STAGES = {
   //   Stage19_2 の変更点：(3,0) 丁稚→子犬 / (4,4) 女中→丁稚 / 女中は 1×3縦→1×2縦 に縮小
   19: {
     chapterTrigger: 19,
-    label: '病床',
+    label: '病床', labelEn: 'Sickbed',
     sub: '病床',
     startHint: '子犬が犬と娘の間に二匹、叔母は柱状に、父と祖父はL字で家中を圧す',
     clearTitle: '─ そっと、外へ ─',
@@ -951,7 +951,7 @@ const PUZZLE_STAGES = {
   //   子犬 2駒継続、娘の下段中央への通り道を家督の U/N 字が挟撃する構図。
   20: {
     chapterTrigger: 20,
-    label: '嫁入りと囁き',
+    label: '嫁入りと囁き', labelEn: 'Marriage and Whispers',
     sub: '嫁入りと囁き',
     startHint: '兄が縦、叔母が縦長4、父はU字で家中を挟み、祖父は下段でアーチを組む',
     clearTitle: '─ そっと、外へ ─',
@@ -997,7 +997,7 @@ const PUZZLE_STAGES = {
   //   子犬 2駒配置継続：(4,6)(5,7) 犬に寄り添う
   21: {
     chapterTrigger: 21,
-    label: '祖母の手',
+    label: '祖母の手', labelEn: 'Grandmother\'s Hand',
     sub: '祖母の手',
     startHint: '祖母(病)は動かない。父・祖父は横一列4マスで家中を塞ぐ',
     clearTitle: '─ そっと、外へ ─',
@@ -1047,7 +1047,7 @@ const PUZZLE_STAGES = {
   //   新規駒定義なし、既存駒のみで構成
   22: {
     chapterTrigger: 22,
-    label: '葬列と発作',
+    label: '葬列と発作', labelEn: 'The Funeral Procession and the Seizure',
     sub: '葬列と発作',
     startHint: '祭壇は動かない。弔問の客6人が祭壇を囲み、父が右下でJ字を組む',
     clearTitle: '─ そっと、外へ ─',
@@ -1094,7 +1094,7 @@ const PUZZLE_STAGES = {
   //   ★父ピースは roleOverride:'fixed' で動かせない（病で人事不省、Stage 24 も同様）
   23: {
     chapterTrigger: 23,
-    label: '詰問と告白',
+    label: '詰問と告白', labelEn: 'Interrogation and Confession',
     sub: '詰問と告白',
     startHint: '医者は下段中央で父を診る。祖父が縦4の柱、母がL字で父の枕元、書生・兄も伸長',
     clearTitle: '─ そっと、外へ ─',
@@ -1142,7 +1142,7 @@ const PUZZLE_STAGES = {
   //   新規駒 4種：STUDENT_JT、CLERK_JT、MERCHANT_H、MOTHER_L
   24: {
     chapterTrigger: 24,
-    label: '業火と門越え',
+    label: '業火と門越え', labelEn: 'Hellfire and the Gate Beyond',
     sub: '業火と門越え',
     startHint: '炎が20手ごとに広がる。娘が全マス燃える前に、下段中央へ辿り着け',
     clearTitle: '─ 門ヲ越エル ─',

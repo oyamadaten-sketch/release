@@ -1,41 +1,99 @@
 {
-  "title": "第11章 ─ 蔵の文字と兄の油",
+  "title": "第十二章 ─ 蔵の文字と兄の油",
   "folder": "chapter_11",
   "taps": [
     {
       "no": 1,
-      "text": "また別の夜、屋敷の北西の蔵に、ひとつの灯が小さく揺れていた。\n蔵の中では、書生が古文書を膝に広げ、その灯の下で文字を一字、和紙に写し取っている。\n傍らには、叔父の影が、覗き込むようにして身を寄せていた。\n写し取られている文字は、「籠」の「目」を編むに似た、奇しき形をしている。\n「これと同じ形を、私はこの屋敷の何処かで、見た覚えがござります」── 書生は和紙の文字を指で撫でながら、低く呟いた。\n「いずこの形と申すか」── 叔父は文字を覗き込みつつ、声を絞り出す。",
-      "img": "assets/images/chapter_11/IMG-091.webp"
+      "img": "assets/images/chapter_11/IMG-091.webp",
+      "pages": [
+        "また別の夜、屋敷の蔵に、\nひとつの灯が小さく揺れていた。\n蔵の中では、書生が古文書を膝に広げ、\n灯の下で文字を、紙に写し取っている。",
+        "傍らには、叔父の影があり、\n叔父は覗き込むように身を寄せていた。\n写し取られている文字は、「籠」の「目」\nを編むに似た、奇しき形をしている。",
+        "「これと同じ形を、この屋敷の何処かで、\n見た覚えがござります」\n書生は和紙の文字を指で撫でながら、\nぼそりと呟いた。",
+        "「いずこの形と申すか？」\n叔父は文字を覗き込みつつ、\n声を絞り出す。"
+      ],
+      "text": "また別の夜、屋敷の蔵に、\nひとつの灯が小さく揺れていた。\n蔵の中では、書生が古文書を膝に広げ、\n灯の下で文字を、紙に写し取っている。\n傍らには、叔父の影があり、\n叔父は覗き込むように身を寄せていた。\n写し取られている文字は、「籠」の「目」\nを編むに似た、奇しき形をしている。\n「これと同じ形を、この屋敷の何処かで、\n見た覚えがござります」\n書生は和紙の文字を指で撫でながら、\nぼそりと呟いた。\n「いずこの形と申すか？」\n叔父は文字を覗き込みつつ、\n声を絞り出す。",
+      "pages_en": [
+        "Another night, in the manor's storehouse,\na single lamp swayed dimly.\nThe student had opened an old text\nupon his knees,",
+        "and beneath the lamp\nwas copying its characters onto paper.\nBeside him stood the uncle's shadow,\nleaning in to peer close.",
+        "The character being written\nresembled a plaited kagome basket ─\na strange form.",
+        "\"I recall having seen this form\nsomewhere else in this manor,\"\nsaid the student, tracing the mark\nwith his finger.",
+        "\"Where would that be?\"\nthe uncle whispered,\npeering into the paper."
+      ],
+      "text_en": "Another night, in the manor's storehouse,\na single lamp swayed dimly.\nThe student had opened an old text\nupon his knees,\nand beneath the lamp\nwas copying its characters onto paper.\nBeside him stood the uncle's shadow,\nleaning in to peer close.\nThe character being written\nresembled a plaited kagome basket ─\na strange form.\n\"I recall having seen this form\nsomewhere else in this manor,\"\nsaid the student, tracing the mark\nwith his finger.\n\"Where would that be?\"\nthe uncle whispered,\npeering into the paper."
     },
     {
       "no": 2,
-      "text": "「北面の座牢の格子。あの籠目の文様こそ、まさにこの形にござります」\n蔵の入口に、もうひとつの影が静かに加わった。\n兄である。手には、油の壺をひとつ携えていた。",
-      "img": "assets/images/chapter_11/IMG-092.webp"
+      "img": "assets/images/chapter_11/IMG-092.webp",
+      "pages": [
+        "「座牢の格子。あの籠目の文様に、\nこの形があったのでござります」\n蔵の入口に、もうひとつの影が\n静かに加わった。兄である。",
+        "手には、油の壺をひとつ携えていた。"
+      ],
+      "text": "「座牢の格子。あの籠目の文様に、\nこの形があったのでござります」\n蔵の入口に、もうひとつの影が\n静かに加わった。兄である。\n手には、油の壺をひとつ携えていた。",
+      "pages_en": [
+        "\"The lattice of the Cell.\nThat kagome pattern ─\nthis form was there.\"\nAt the storehouse door, another shadow",
+        "quietly joined them.\nIt was the elder brother.\nIn his hand,\nhe carried a jar of oil."
+      ],
+      "text_en": "\"The lattice of the Cell.\nThat kagome pattern ─\nthis form was there.\"\nAt the storehouse door, another shadow\nquietly joined them.\nIt was the elder brother.\nIn his hand,\nhe carried a jar of oil."
     },
     {
       "no": 3,
-      "text": "兄は書生にも叔父にも目を合わせず、無言で油壺を蔵の隅に置くと、また静かに去ってゆく。",
-      "img": "assets/images/chapter_11/IMG-093.webp"
+      "img": "assets/images/chapter_11/IMG-093.webp",
+      "pages": [
+        "兄は書生にも叔父にも目を合わせず、\n無言で油壺を蔵の隅に置くと、\nまた静かに去ってゆく。"
+      ],
+      "text": "兄は書生にも叔父にも目を合わせず、\n無言で油壺を蔵の隅に置くと、\nまた静かに去ってゆく。",
+      "pages_en": [
+        "Meeting the eyes of neither,\nthe brother set the jar in the corner\nof the storehouse,\nand quietly went away."
+      ],
+      "text_en": "Meeting the eyes of neither,\nthe brother set the jar in the corner\nof the storehouse,\nand quietly went away."
     },
     {
       "no": 4,
-      "text": "祭壇の燈明を絶やさぬ役目を、兄は夜ごと、屋敷の方々の灯火についても、ひとりで担っていたのである。",
-      "img": "assets/images/chapter_11/IMG-094.webp"
+      "img": "assets/images/chapter_11/IMG-094.webp",
+      "pages": [
+        "祭壇の燈明を絶やさぬ役目を、\n兄は夜ごと、屋敷の方々の灯火についても、\nひとりで担っていたのである。"
+      ],
+      "text": "祭壇の燈明を絶やさぬ役目を、\n兄は夜ごと、屋敷の方々の灯火についても、\nひとりで担っていたのである。",
+      "pages_en": [
+        "The task of keeping the altar's flame,\nand every lamp of the manor,\nfell to the elder brother alone,\nnight after night."
+      ],
+      "text_en": "The task of keeping the altar's flame,\nand every lamp of the manor,\nfell to the elder brother alone,\nnight after night."
     },
     {
       "no": 5,
-      "text": "兄の姿が蔵の闇に消えた後、叔父はゆっくりと立ち上がり、蔵の入口に立った。",
-      "img": "assets/images/chapter_11/IMG-095.webp"
+      "img": "assets/images/chapter_11/IMG-095.webp",
+      "pages": [
+        "兄の姿が蔵の闇に消えた後、\n叔父はゆっくりと立ち上がり、\n蔵の入口に立った。"
+      ],
+      "text": "兄の姿が蔵の闇に消えた後、\n叔父はゆっくりと立ち上がり、\n蔵の入口に立った。",
+      "pages_en": [
+        "When the brother vanished into darkness,\nthe uncle slowly rose\nand stood at the storehouse door."
+      ],
+      "text_en": "When the brother vanished into darkness,\nthe uncle slowly rose\nand stood at the storehouse door."
     },
     {
       "no": 6,
-      "text": "叔父はそのまま、廊下を渡って、座牢の前で足を止める。何ひとつ言葉を発さぬまま、長く、その場を動かずにいる。",
-      "img": "assets/images/chapter_11/IMG-096.webp"
+      "img": "assets/images/chapter_11/IMG-096.webp",
+      "pages": [
+        "叔父はそのまま、廊下を渡って、\n座牢の前で足を止める。\n何ひとつ言葉を発さぬまま、長く、\nその場を動かずにいる。"
+      ],
+      "text": "叔父はそのまま、廊下を渡って、\n座牢の前で足を止める。\n何ひとつ言葉を発さぬまま、長く、\nその場を動かずにいる。",
+      "pages_en": [
+        "He crossed the corridor and stopped\nbefore the Cell.\nWithout uttering a single word,\nhe stood there long, unmoving."
+      ],
+      "text_en": "He crossed the corridor and stopped\nbefore the Cell.\nWithout uttering a single word,\nhe stood there long, unmoving."
     },
     {
       "no": 7,
-      "text": "やがてその影は、ゆっくりと廊下の闇の奥へ解けて行ったのであった。",
-      "img": "assets/images/chapter_11/IMG-097.webp"
+      "img": "assets/images/chapter_11/IMG-097.webp",
+      "pages": [
+        "やがてその影は、\nゆっくりと廊下の闇の奥へ解けて\n行ったのであった。"
+      ],
+      "text": "やがてその影は、\nゆっくりと廊下の闇の奥へ解けて\n行ったのであった。",
+      "pages_en": [
+        "At length, his shadow\ndissolved slowly\ninto the depths of the hall's darkness."
+      ],
+      "text_en": "At length, his shadow\ndissolved slowly\ninto the depths of the hall's darkness."
     }
   ]
 }

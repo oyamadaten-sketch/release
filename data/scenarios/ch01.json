@@ -1,46 +1,113 @@
 {
-  "title": "第零章 ─ 月の昏き夜の踏み出し",
+  "title": "第一章 ─ 月の昏き夜の踏み出し",
   "folder": "chapter_00_intro",
   "taps": [
     {
       "no": 1,
-      "text": "月の昏き夜であった。北山の懐に抱かれた屋敷は、白壁の輪郭だけを淡く闇に滲ませ、ひっそりと沈んでいる。",
-      "img": "assets/images/chapter_00_intro/IMG-005.webp"
+      "img": "assets/images/chapter_00_intro/IMG-005.webp",
+      "pages": [
+        "月の昏き夜であった。\n北山の懐に抱かれた屋敷は、\n白壁の輪郭だけを淡く闇に滲ませ、\nひっそりと沈んでいる。"
+      ],
+      "text": "月の昏き夜であった。\n北山の懐に抱かれた屋敷は、\n白壁の輪郭だけを淡く闇に滲ませ、\nひっそりと沈んでいる。",
+      "pages_en": [
+        "It was a moonless night.\nThe manor cradled by Kitayama\ntraced only the pale outline of its walls\nagainst the darkness."
+      ],
+      "text_en": "It was a moonless night.\nThe manor cradled by Kitayama\ntraced only the pale outline of its walls\nagainst the darkness."
     },
     {
       "no": 2,
-      "text": "母屋の灯はとうに落とされていた。書斎の襖の隙よりも、奥座敷の障子の縁よりも、もはやひとすじの光も漏れてはいない。",
-      "img": "assets/images/chapter_00_intro/IMG-006.webp"
+      "img": "assets/images/chapter_00_intro/IMG-006.webp",
+      "pages": [
+        "母屋の灯はとうに落とされていた。\n書斎の襖の隙よりも、\n奥座敷の障子の縁よりも、\nもはやひとすじの光も漏れてはいない。"
+      ],
+      "text": "母屋の灯はとうに落とされていた。\n書斎の襖の隙よりも、\n奥座敷の障子の縁よりも、\nもはやひとすじの光も漏れてはいない。",
+      "pages_en": [
+        "The lights of the main house were long out.\nNo thread of light leaked\nfrom the study or the inner parlor,\nnot even a single seam."
+      ],
+      "text_en": "The lights of the main house were long out.\nNo thread of light leaked\nfrom the study or the inner parlor,\nnot even a single seam."
     },
     {
       "no": 3,
-      "text": "家長の祖父は、寝所の脇息に頬を預けて、深い眠りに落ちている。床の脇には、火の落ちた火桶が、わずかに灰の白さを留めていた。",
-      "img": "assets/images/chapter_00_intro/IMG-007.webp"
+      "img": "assets/images/chapter_00_intro/IMG-007.webp",
+      "pages": [
+        "家長の祖父は、寝所の脇息に頬を預けて、\n深い眠りに落ちている。\n床の脇には、火の落ちた火桶が、\nわずかに灰の白さを留めていた。"
+      ],
+      "text": "家長の祖父は、寝所の脇息に頬を預けて、\n深い眠りに落ちている。\n床の脇には、火の落ちた火桶が、\nわずかに灰の白さを留めていた。",
+      "pages_en": [
+        "The elder grandfather leaned against\nan armrest by his bed, deep in sleep.\nBeside him, a brazier now cold\nheld only the pallor of ash."
+      ],
+      "text_en": "The elder grandfather leaned against\nan armrest by his bed, deep in sleep.\nBeside him, a brazier now cold\nheld only the pallor of ash."
     },
     {
       "no": 4,
-      "text": "父の寝間では、酒の残り香が枕元の屛風の絹に染み込み、父はその匂いに包まれて鼾を立てている。母はその傍らで、目だけを開き、襖の格子に映る月の影を、長く見つめている。",
-      "img": "assets/images/chapter_00_intro/IMG-008.webp"
+      "img": "assets/images/chapter_00_intro/IMG-008.webp",
+      "pages": [
+        "父の寝間では、酒の残り香が\n枕元の屛風の絹に染み込み、\n父はその匂いに包まれて鼾を立てている。",
+        "母はその傍らで、目だけを開き、\n襖の格子に映る月の影を、\n長く見つめている。"
+      ],
+      "text": "父の寝間では、酒の残り香が\n枕元の屛風の絹に染み込み、\n父はその匂いに包まれて鼾を立てている。\n母はその傍らで、目だけを開き、\n襖の格子に映る月の影を、\n長く見つめている。",
+      "pages_en": [
+        "In the father's bedchamber,\nthe scent of stale sake had seeped\ninto the silk of the folding screen,\nand there he snored, wrapped in it.",
+        "The mother lay at his side,\nher eyes only open,\nlong watching the moonlit shadow\ncast on the lattice of the sliding door."
+      ],
+      "text_en": "In the father's bedchamber,\nthe scent of stale sake had seeped\ninto the silk of the folding screen,\nand there he snored, wrapped in it.\nThe mother lay at his side,\nher eyes only open,\nlong watching the moonlit shadow\ncast on the lattice of the sliding door."
     },
     {
       "no": 5,
-      "text": "屋敷の北の隅、北面の座牢では、ひとりの娘が、闇の中で静かに身を起こした。\n月の光が、座牢の高窓の格子をくぐり、畳の上に細い縞を落としている。娘の頬と肩がその縞に切られ、白く浮かび上がる。十六の輪郭であった。",
-      "img": "assets/images/chapter_00_intro/IMG-009.webp"
+      "img": "assets/images/chapter_00_intro/IMG-009.webp",
+      "pages": [
+        "屋敷の北の隅、北面の座牢では、\nひとりの娘が、静かに身を起こした。\n月の光が、座牢の高窓の格子をくぐり、\n畳の上に細い縞を落としている。",
+        "娘の頬と肩がその縞に切られ、\n白く浮かび上がる。\n十六の輪郭であった。"
+      ],
+      "text": "屋敷の北の隅、北面の座牢では、\nひとりの娘が、静かに身を起こした。\n月の光が、座牢の高窓の格子をくぐり、\n畳の上に細い縞を落としている。\n娘の頬と肩がその縞に切られ、\n白く浮かび上がる。\n十六の輪郭であった。",
+      "pages_en": [
+        "In the northern corner of the manor,\nin the Cell of the north wall,\na girl quietly raised herself up.\nMoonlight through the high window's lattice",
+        "cast thin stripes across the tatami.\nHer cheek and shoulder,\ncut by those stripes,\nrose pale in the light.",
+        "She was sixteen years old."
+      ],
+      "text_en": "In the northern corner of the manor,\nin the Cell of the north wall,\na girl quietly raised herself up.\nMoonlight through the high window's lattice\ncast thin stripes across the tatami.\nHer cheek and shoulder,\ncut by those stripes,\nrose pale in the light.\nShe was sixteen years old."
     },
     {
       "no": 6,
-      "text": "娘は紫紺の羽織を肩に重ね、膝で格子戸の前まで進む。その指は、これまで一度も触れたことのない錠の冷たさに、一瞬すくんでから、ゆっくりとその金具にかけられた。\n錠は古い造作のものであった。日々の差配を任された老番頭が、夕暮れに必ず確かめてゆく錠である。けれども今宵にかぎって、その金具は、娘の指の下で、ゆるりと外れた。",
-      "img": "assets/images/chapter_00_intro/IMG-010.webp"
+      "img": "assets/images/chapter_00_intro/IMG-010.webp",
+      "pages": [
+        "娘は紫紺の羽織を肩に重ね、\n膝で格子戸の前まで進む。その指は、\nこれまで一度も触れたことのない錠の\n冷たさに、一瞬すくんでから、",
+        "ゆっくりとその金具にかけられた。\n錠は古い造作のものであった。\n日々の差配を任された老番頭が、\n夕暮れに必ず確かめてゆく錠である。",
+        "けれども今宵にかぎって、その金具は、\n娘の手の中で、ゆるりと外れた。"
+      ],
+      "text": "娘は紫紺の羽織を肩に重ね、\n膝で格子戸の前まで進む。その指は、\nこれまで一度も触れたことのない錠の\n冷たさに、一瞬すくんでから、\nゆっくりとその金具にかけられた。\n錠は古い造作のものであった。\n日々の差配を任された老番頭が、\n夕暮れに必ず確かめてゆく錠である。\nけれども今宵にかぎって、その金具は、\n娘の手の中で、ゆるりと外れた。",
+      "pages_en": [
+        "The girl drew a deep-violet haori\nover her shoulders,\nand crept on her knees to the lattice.\nHer fingers, never before touching a lock,",
+        "hesitated an instant at its cold,\nthen slowly closed around the fitting.\nIt was an old lock,\nchecked each dusk by the old head clerk.",
+        "Yet on this night, and this night alone,\nthe fitting yielded softly\nwithin the girl's hand."
+      ],
+      "text_en": "The girl drew a deep-violet haori\nover her shoulders,\nand crept on her knees to the lattice.\nHer fingers, never before touching a lock,\nhesitated an instant at its cold,\nthen slowly closed around the fitting.\nIt was an old lock,\nchecked each dusk by the old head clerk.\nYet on this night, and this night alone,\nthe fitting yielded softly\nwithin the girl's hand."
     },
     {
       "no": 7,
-      "text": "廊下には誰もいない。書斎の床の杉板も、奥座敷の畳も、ことりとも音を立てぬ。屋敷のすべてが、息を潜めているかのようであった。\n娘は戸の隙より、紫紺の羽織の裾を引いて、闇の中へ滑り出た。",
-      "img": "assets/images/chapter_00_intro/IMG-011.webp"
+      "img": "assets/images/chapter_00_intro/IMG-011.webp",
+      "pages": [
+        "廊下には誰もいない。\n書斎の床の杉板も、奥座敷の畳も、\nことりとも音を立てぬ。",
+        "屋敷のすべてが、\n息を潜めているかのようであった。\n娘は戸の隙より、紫紺の羽織の裾を引いて、\n闇の中へ滑り出た。"
+      ],
+      "text": "廊下には誰もいない。\n書斎の床の杉板も、奥座敷の畳も、\nことりとも音を立てぬ。\n屋敷のすべてが、\n息を潜めているかのようであった。\n娘は戸の隙より、紫紺の羽織の裾を引いて、\n闇の中へ滑り出た。",
+      "pages_en": [
+        "No one was in the hall.\nNeither the cedar boards of the study\nnor the tatami of the inner parlor\nmade the faintest sound.",
+        "The whole manor seemed\nto be holding its breath.\nThe girl slipped through the crack,\nthe hem of her haori trailing into darkness."
+      ],
+      "text_en": "No one was in the hall.\nNeither the cedar boards of the study\nnor the tatami of the inner parlor\nmade the faintest sound.\nThe whole manor seemed\nto be holding its breath.\nThe girl slipped through the crack,\nthe hem of her haori trailing into darkness."
     },
     {
       "no": 8,
-      "text": "屋敷の外では、夜霧が庭の植え込みの足元から、ゆっくりと立ち昇り始めるところであった。",
-      "img": "assets/images/chapter_00_intro/IMG-012.webp"
+      "img": "assets/images/chapter_00_intro/IMG-012.webp",
+      "pages": [
+        "屋敷の外では、\n夜霧が庭の植え込みの足元から、\nゆっくりと立ち昇り始めるところであった。"
+      ],
+      "text": "屋敷の外では、\n夜霧が庭の植え込みの足元から、\nゆっくりと立ち昇り始めるところであった。",
+      "pages_en": [
+        "Outside the manor,\nnight mist had begun to rise\nfrom the feet of the garden shrubs,\nslow and pale."
+      ],
+      "text_en": "Outside the manor,\nnight mist had begun to rise\nfrom the feet of the garden shrubs,\nslow and pale."
     }
   ]
 }
