@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<!-- ★viewport-fit=cover：iPhone のノッチ／Dynamic Island 領域まで背景を延ばし safe-area で内側を制御 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<!-- ★ブラウザ UI（アドレスバー等）の色を暗く統一 -->
+<meta name="theme-color" content="#0a0605">
+<!-- ★iOS Safari「ホーム画面に追加」時にフルスクリーン起動（URL バー・ステータスバー完全非表示） -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="親指隠シと座牢のムスメ">
+<title>親指隠シと座牢のムスメ ─ v1.3（第1パズル実装）</title>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="lang-ja">
+<div id="phone-frame">
+
+  <!-- ① ロゴ画面 -->
+  <div id="logo-screen" class="screen active">
+    <!-- 右上：言語トグル + 音量設定 -->
+    <div class="logo-settings">
+      <div class="lang-toggle" id="lang-toggle" role="group" aria-label="Language">
+        <button class="lang-opt active" data-lang="ja" id="btn-lang-ja">日本語</button>
+        <button class="lang-opt" data-lang="en" id="btn-lang-en">English</button>
+      </div>
+      <button id="btn-audio-settings" class="audio-icon-btn" title="Audio Settings" aria-label="Audio">
+        <span id="audio-icon">🔊</span>
+      </button>
+    </div>
+    <!-- 音量設定パネル（トグルで開閉） -->
+    <div id="audio-panel" class="audio-panel">
+      <div class="audio-panel-title">Audio</div>
+      <div class="audio-row">
+        <label class="audio-label">BGM</label>
+        <input type="range" min="0" max="100" value="50" id="slider-bgm" class="audio-slider">
+        <span class="audio-value" id="slider-bgm-val">50</span>
+      </div>
+      <div class="audio-row">
+        <label class="audio-label">SE</label>
+        <input type="range" min="0" max="100" value="70" id="slider-se" class="audio-slider">
+        <span class="audio-value" id="slider-se-val">70</span>
+      </div>
+      <label class="audio-mute">
+        <input type="checkbox" id="chk-mute"> Mute
+      </label>
+    </div>
+    <div class="by">A&nbsp;&nbsp;G A M E&nbsp;&nbsp;B Y</div>
+    <div class="logo">Bocchi-Bochi-Games</div>
+    <div class="bar"><div id="logo-bar" style="width:0%"></div></div>
+    <div id="logo-status" class="status">LOADING...  0%</div>
+  </div>
+
+  <!-- ② 導入ADV／③ シナリオ画面（共通） -->
+  <div id="scenario-screen" class="screen">
+    <div class="topbar">
+      <button id="btn-sc-back" data-i18n="buttons.backToChapters">← 章選択</button>
+      <div class="cnt" id="sc-cnt"></div>
+      <button id="btn-sc-skip" data-i18n="buttons.skip">スキップ ▶▶</button>
+      <button id="btn-sc-devfire" class="dev-only" title="DEV：次のパズル発火位置まで飛んで即発火" data-i18n="buttons.trigger">▶発火</button>
+    </div>
+    <div class="imgarea" id="sc-imgarea">
+      <div class="img-layer" id="img-layer-a"></div>
+      <div class="img-layer" id="img-layer-b"></div>
+    </div>
+    <div class="textarea" id="sc-textarea">
+      <div class="body" id="sc-body"></div>
+      <div class="nav">
+        <button id="btn-prev" class="sc-nav-btn" data-i18n="buttons.prevPage">◁ 戻る</button>
+        <div class="hint" data-i18n="loading.tapToStart">画面をタップで次へ</div>
+        <button id="btn-next" class="sc-nav-btn primary" data-i18n="buttons.next">次へ ▷</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ③ タイトル画面（木箱の蓋にタイトル＋ボタン） -->
+  <div id="title-screen" class="screen">
+    <div class="wood-box">
+      <div class="wood-box-body" id="box-body">
+        <div class="inner" data-i18n="title.openingLine">─ 物語の始まり ─</div>
+      </div>
+      <div class="wood-box-lid" id="lid">
+        <div class="lid-corner tl"></div><div class="lid-corner tr"></div>
+        <div class="lid-corner bl"></div><div class="lid-corner br"></div>
+        <div class="craft" data-i18n="title.subtitle">亰都伝統木工パズル</div>
+        <div class="lid-title-area">
+          <div class="lid-title-col" data-i18n="title.gameNameSplit1">親指隠シと</div>
+          <div class="lid-title-col" data-i18n="title.gameNameSplit2">座牢の</div>
+          <div class="lid-title-col accent" data-i18n="title.gameNameSplit3">ムスメ</div>
+        </div>
+        <div class="lid-btns" id="lid-btns">
+          <button class="btn" id="btn-continue" style="display:none;" data-i18n="titleMenu.continue">続きから</button>
+          <button class="btn" id="btn-start" data-i18n="titleMenu.gameStart">ゲーム開始</button>
+          <button class="btn" id="btn-select" data-i18n="titleMenu.chapterSelect">章選択</button>
+          <button class="btn btn-howto" id="btn-howto" data-i18n="titleMenu.howToPlay">遊戯方法</button>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="era" data-i18n="title.eraTag">明治初期 ─ 京の北山</div> -->
+    <!-- ↑一時非表示（通しプレイ確認で不要と判断）。復活させたい場合はコメント解除するだけ -->
+
+    <!-- DEV: パズル直接起動ランチャー（body.dev-mode でのみ表示） -->
+    <div class="dev-only" id="dev-puzzle-launcher">
+      <div class="dev-label" data-i18n="dev.puzzleLauncher">DEV: パズル直接起動</div>
+      <div class="dev-btns">
+        <button data-stage="1">S1</button>
+        <button data-stage="2">S2</button>
+        <button data-stage="3">S3</button>
+        <button data-stage="4">S4</button>
+        <button data-stage="5">S5</button>
+        <button data-stage="6">S6</button>
+        <button data-stage="7">S7</button>
+        <button data-stage="8">S8</button>
+        <button data-stage="9">S9</button>
+        <button data-stage="10">S10</button>
+        <button data-stage="11">S11</button>
+        <button data-stage="12">S12</button>
+        <button data-stage="13">S13</button>
+        <button data-stage="14">S14</button>
+        <button data-stage="15">S15</button>
+        <button data-stage="16">S16</button>
+        <button data-stage="17">S17</button>
+        <button data-stage="18">S18</button>
+        <button data-stage="19">S19</button>
+        <button data-stage="20">S20</button>
+        <button data-stage="21">S21</button>
+        <button data-stage="22">S22</button>
+        <button data-stage="23">S23</button>
+        <button data-stage="24">S24</button>
+      </div>
+      <div class="dev-label" data-i18n="dev.advJump">DEV: 発火直前ADVから</div>
+      <div class="dev-btns">
+        <button data-jumpch="1">C1</button>
+        <button data-jumpch="4">C4</button>
+        <button data-jumpch="5">C5</button>
+        <button data-jumpch="6">C6</button>
+        <button data-jumpch="7">C7</button>
+        <button data-jumpch="8">C8</button>
+        <button data-jumpch="9">C9</button>
+        <button data-jumpch="10">C10</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 遊び方 / How to Play -->
+  <div id="howto-screen" class="screen">
+    <div class="howto-header">
+      <button class="back" id="btn-howto-back" data-i18n="buttons.back">← 戻る</button>
+      <div class="howto-title" data-i18n="titleMenu.howToPlay">遊戯方法</div>
+      <div style="width:60px;"></div>
+    </div>
+    <div class="howto-scroll">
+      <!-- 盤面スクショ -->
+      <div class="howto-section howto-section-image">
+        <div class="howto-section-heading" data-i18n="howto.gameplayHeading">■ 遊戯の要領</div>
+        <div class="howto-board-img">
+          <img id="howto-board-img" src="assets/images/tutorial/board_ja.webp" alt="Board example">
+        </div>
+        <div class="howto-desc" data-i18n-html="howto.gameplayDesc">
+          左上の「蓋」の駒をまず外し、<br>
+          娘の駒を中央下の「玄関」まで導かねばならぬ。<br>
+          駒は一手ずつ、隣り合う空き升へ<br>
+          滑らせて動かす。 他の駒が玄関を塞がぬよう、<br>
+          順序と経路を思案して動かされたし。
+        </div>
+      </div>
+
+      <!-- 操作方法 -->
+      <div class="howto-section">
+        <div class="howto-section-heading" data-i18n="howto.controlsHeading">■ 操作の作法</div>
+        <div class="howto-desc" data-i18n-html="howto.controlsDesc">
+          駒に触れ、動かしたい方向へ引かれよ。<br>
+          「↻ 初期配置に戻す」で盤面を戻し、<br>
+          「← 中断」で表題へ戻れば、<br>
+          続きから再開できる。
+        </div>
+      </div>
+
+      <!-- ピース一覧 -->
+      <div class="howto-section">
+        <div class="howto-section-heading" data-i18n="howto.piecesHeading">■ 登場する駒</div>
+        <table class="howto-piece-table" id="howto-piece-table">
+          <!-- thead / tbody を JS で言語別に動的生成 -->
+        </table>
+      </div>
+
+      <div class="howto-footer-spacer"></div>
+    </div>
+  </div>
+
+  <!-- 章選択 -->
+  <div id="select-screen" class="screen">
+    <div class="header">
+      <button class="back" id="btn-select-back" data-i18n="buttons.back">← 戻る</button>
+      <div class="title" data-i18n="titleMenu.chapterSelect">章を選ぶ</div>
+      <div style="width:40px;"></div>
+    </div>
+    <div class="list" id="chapter-list"></div>
+    <div style="padding:12px 20px; border-top:1px solid #292524; text-align:center; font-size:11px; color:#78716c;" id="select-footer"></div>
+  </div>
+
+  <!-- 章タイトル表示 -->
+  <div id="chapter-title-overlay">
+    <div class="label" id="cto-label">第一章</div>
+    <div class="sub" id="cto-sub">座牢の朝</div>
+  </div>
+
+  <!-- パズル画面 -->
+  <div id="puzzle-screen" class="screen">
+    <div class="puz-topbar">
+      <button id="btn-puz-back" data-i18n="buttons.interrupt">← 中断</button>
+      <div class="puz-stage-info">
+        <div class="puz-stage-label" id="puz-stage-label" data-i18n="puzzle.escapeAttempt">脱出ノ試ミ</div>
+        <div class="puz-stage-sub" id="puz-stage-sub"></div>
+      </div>
+      <div class="puz-count" id="puz-count" data-i18n="puzzle.moveCount">0 手</div>
+      <!-- ★DEV用：body.dev-mode でのみ表示。リリース時は body から dev-mode クラス外すだけで無効化 -->
+      <button id="btn-puz-dev-skip" class="dev-only" title="開発用：クリア扱いで次へ">DEV▶</button>
+    </div>
+    <div class="puz-hint" id="puz-hint"></div>
+    <div class="puz-board-wrap" id="puz-board-wrap">
+      <div class="puz-board" id="puz-board">
+        <div class="puz-frame puz-frame-top"></div>
+        <div class="puz-frame puz-frame-left"></div>
+        <div class="puz-frame puz-frame-right"></div>
+        <div class="puz-frame puz-frame-bl"></div>
+        <div class="puz-frame puz-frame-br"></div>
+        <div class="puz-goal"></div>
+        <div class="puz-bg-label" data-i18n="puzzle.zaro">座牢</div>
+      </div>
+      <div class="puz-genkan" id="puz-genkan"><span data-i18n="puzzle.genkan">玄関</span></div>
+    </div>
+    <div class="puz-bottombar">
+      <button id="btn-puz-reset" data-i18n="buttons.resetBoard">↻ 初期配置に戻す</button>
+    </div>
+    <!-- クリア演出：横開きガラス戸 -->
+    <div class="puz-door-layer" id="puz-door-layer">
+      <div class="puz-door puz-door-left" id="puz-door-left"></div>
+      <div class="puz-door puz-door-right" id="puz-door-right"></div>
+      <div class="puz-door-light" id="puz-door-light"></div>
+      <div class="puz-door-dark" id="puz-door-dark"></div>
+    </div>
+    <div class="puz-clear" id="puz-clear">
+      <div class="puz-clear-title" data-i18n="puzzle.escapeSuccess">─ 脱 出 成 功 ─</div>
+      <div class="puz-clear-count" id="puz-clear-count"></div>
+      <div class="puz-clear-text" id="puz-clear-text"></div>
+      <button class="btn" id="btn-puz-next" data-i18n="buttons.continueStory">物語ヲ続ケル ▷</button>
+    </div>
+    <!-- ゲームオーバー（Stage 24 火事ギミック：娘が全マス引火時） -->
+    <div id="puz-gameover">
+      <div class="puz-gameover-title" data-i18n="gameOver.title">─ 脱 出 失 敗 ─</div>
+      <div class="puz-gameover-text" id="puz-gameover-text" data-i18n-html="gameOver.text">館ハ焔ニ包マレ、<br/>娘ノ脱出ハ叶ワザリキ。</div>
+      <div class="puz-gameover-buttons">
+        <button id="btn-puz-retry" data-i18n="gameOver.retry">再ビ、試ミル</button>
+        <button id="btn-puz-title-back" data-i18n="gameOver.titleBack">物語ノ始マリヘ</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- エンディング -->
+  <div id="ending-screen" class="screen">
+    <div class="end-title" data-i18n="credits.end">完</div>
+    <div class="credits">
+      <div class="role" data-i18n="credits.sectionScreenplay">脚本・構成・演出</div>
+      <div class="name" data-i18n="credits.creator">小山田 天</div>
+      <div class="role" data-i18n="titleMenu.specialThanks">スペシャルサンクス</div>
+      <div class="name" data-i18n="credits.sectionPlayer">プレイヤーの皆さま</div>
+    </div>
+    <div class="by">Bocchi-Bochi-Games</div>
+    <button class="btn" id="btn-ending-back" data-i18n="buttons.backToTitle">タイトルへ戻る</button>
+  </div>
+
+</div>
+<div id="err-banner"></div>
+
+<script src="data/scenarios_all.js?v=20260712ck"></script>
+<script src="data/puzzles.js?v=20260712ck"></script>
+<script src="data/i18n/all.js?v=20260712ck"></script>
+<script src="js/engine/text.js?v=20260712ck"></script>
+<script src="js/engine/save.js?v=20260712ck"></script>
+<script src="js/engine/loader.js?v=20260712ck"></script>
+<script src="js/engine/i18n.js?v=20260712ck"></script>
+<script src="js/engine/audio.js?v=20260712ck"></script>
+<script src="js/puzzle.js?v=20260712ck"></script>
+<script src="js/main.js?v=20260712ck"></script>
+</body>
+</html>
